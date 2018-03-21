@@ -28,7 +28,22 @@
     </ul>
 </div>
 <div class="content">
-    <h2 class="title"></h2>
+    <h2 class="title">Account Information</h2>
+    <?php
+        $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
+        $query= "SELECT * FROM Users WHERE username=\"".$_SESSION['username']."\"";
+        $result = $conn->query($query);
+
+        while ($row = $result->fetch_assoc()){
+            $firstname = $row['firstname'];
+            $lastname = $row['lastname'];
+            $email = $row['email'];
+        }
+        echo "<p>First Name: ".$firstname . "</p>";
+        echo "<p>Last Name: ". $lastname . "</p>";
+        echo "<p>Email Address: ". $email . "</p>";
+
+    ?>
 </div>
 </body>
 </html>

@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Log In</title>
-    <link rel="stylesheet" type="text/css" href="main.css" >
+    <link rel="stylesheet" type="text/css" href="../main.css" >
 </head>
 <body>
+<h1 class="title">Create an Account</h1>
 <?php
 //the next line is simply to debug what the user inputs to see if the data is coming through!
-echo $_POST['firstname']."<br>".$_POST['lastname']."<br>".$_POST['passwd']."<br>".$_POST['passwd_validate'];
+//echo $_POST['firstname']."<br>".$_POST['lastname']."<br>".$_POST['passwd']."<br>".$_POST['passwd_validate'];
 
 if ($_POST['passwd'] != $_POST['passwd_validate']){
     $_SESSION['msg'] = "<p style='color:red'>The passwords do not match. Try again </p>";
@@ -22,11 +23,11 @@ $hashedpasswd = hash('sha256', $_POST['passwd'].$_POST['emailaddr']);
 $email = $_POST['emailaddr'];
 
 $insert_query = "INSERT INTO Users(firstname, lastname, password, username,email) VALUES(\"".$firstname."\",\"".$lastname."\",\"".$hashedpasswd."\",\"".$username."\",\"".$email."\")";
-echo $insert_query;
+//echo $insert_query;
 $conn = new mysqli("localhost", "default_u", 'letmeinmysql', 'lcatalog');
 $conn->query($insert_query);
 
-echo "<p>Your account was successfully created. Please press \"Log in\" in order to log in with the credentials you just used </p>";
+echo "<p>Your account was successfully created. Please press \"Log in\" in order to log in with the credentials you just used. </p>";
 ?>
 <a href="../Login.php">Log in</a>
 </body>
