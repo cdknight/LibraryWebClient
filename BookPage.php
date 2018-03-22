@@ -1,3 +1,8 @@
+<?php
+session_start();
+include("Assets/Header.php");
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -37,8 +42,10 @@ if ($notes_missing){
     echo "<p>This book has been reported as missing! You will not be able to check this book out.</p>";
 }
 ?>
-<a href="Search.html"><button>Go Back to Search &leftarrow;</button></a>
-<a href="index.php"><button>Go Home &leftarrow;</button></a>
-<?php echo "<a href='SearchResults.php?query=".$_GET['squery']."'><button>Go Back to Search Results &leftarrow;</button></a>" ?>
+<a href="Search.php"><button>Go Back to Search &leftarrow;</button></a><br><br>
+<a href="index.php"><button>Go Home &leftarrow;</button></a><br><br>
+<?php echo "<a href='SearchResults.php?query=".$_GET['squery']."'><button>Go Back to Search Results &leftarrow;</button></a>" ?><br><br>
+<?php echo "<a href='UserUtils/PlaceRequest.php?bookid=".$_GET['id']."'><button>Place Request on Book &rightarrow;</button></a>" ?><br><br>
+
 </body>
 </html>

@@ -5,10 +5,10 @@
 
 .content{
     text-align:center;
-    top: 0; 
+    top: 0;
     left: 0;
-    bottom: 0; 
-    right: 0; 
+    bottom: 0;
+    right: 0;
 }
 
 button{
@@ -57,4 +57,64 @@ input [type="submit"]{
     display: block;
     text-decoration: none;
     color: black;
+}
+
+.content_left{
+    float: left;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.content_right{
+    float: right;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+.horizontal_navbar li{
+    display: inline;
+    padding: 10px;
+    background-color: #e5eeeb;
+}
+
+
+.horizontal_navbar li.nonhover:hover{
+    display: inline;
+    padding: 10px;
+    background-color: #e5eeeb;
+    cursor: default;
+}
+
+.horizontal_navbar li:hover {
+    display: inline;
+    padding: 10px;
+    background-color: #3f93ee;
+    cursor: pointer;
+}
+
+
+.horizontal_navbar {
+    background-color: #e5eeeb;
+    padding: 10px;
+}
+
+.horizontal_navbar li a{
+    text-decoration: none;
+    color: black;
+    font-family : sans-serif, Verdana, Helvetica
 }

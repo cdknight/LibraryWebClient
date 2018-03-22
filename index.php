@@ -1,3 +1,6 @@
+<?php
+include("Assets/Header.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +11,6 @@
 <body>
     <div class="content">
         <h1 class="title">Fellowship Village Library Catalog</h1>
-        <a class="in_button" href="Search.html"><button>Search</button></a>
-        <br><br>
-        <a href="Login.php"><button>Login</button></a>
     </div>
 </body>
 </html>

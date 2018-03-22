@@ -1,3 +1,7 @@
+<?php session_start();
+include("Assets/Header.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
