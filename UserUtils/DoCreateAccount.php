@@ -21,10 +21,11 @@ $firstname = $_POST['firstname'];
 $lastname= $_POST['lastname'];
 $hashedpasswd = hash('sha256', $_POST['passwd'].$_POST['emailaddr']);
 $email = $_POST['emailaddr'];
-
-$insert_query = "INSERT INTO Users(firstname, lastname, password, username,email) VALUES(\"".$firstname."\",\"".$lastname."\",\"".$hashedpasswd."\",\"".$username."\",\"".$email."\")";
-//echo $insert_query;
+$apt = $_POST['aptnum'];
 $conn = new mysqli("localhost", "default_u", 'letmeinmysql', 'lcatalog');
+
+$insert_query = "INSERT INTO Users(firstname, lastname, password, username,email, apt) VALUES(\"".$firstname."\",\"".$lastname."\",\"".$hashedpasswd."\",\"".$username."\",\"".$email."\",".$apt.")";
+//echo $insert_query;
 $conn->query($insert_query);
 
 echo "<p>Your account was successfully created. Please press \"Log in\" in order to log in with the credentials you just used. </p>";
