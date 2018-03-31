@@ -30,8 +30,19 @@ if (!isset($_SESSION['username'])){
 
 
     $result = $conn->query("SELECT * FROM Requests WHERE userid=".$userid);
+    $status_string = "";
     while ($row = $result->fetch_assoc()){
-        echo "<a href='../BookPage.php?id=".$row['bookid']."'>".getBookTitleFromId($conn, $row['bookid'])."</a><br>";
+        if ($row['status'] == 0){
+            $status_string = "The item is processing for pickup";
+        }
+        elseif ($row['status'] == 1){
+            $status_string = "The item is checked out";
+        }
+        elseif ($row[status] == 2){
+            $status_string = "The item is ready for pick up";
+        }
+
+        echo "<a href='../BookPage.php?id=".$row['bookid']."'>".getBookTitleFromId($conn, $row['bookid'])."</a><p style='display:inline'>&emsp;Request placed on: ".$row['date_out']."&emsp;Status: ".$status_string."</p><br>";
     }
 
 
