@@ -8,7 +8,7 @@
 
 <body>
     <ul class="horizontal_navbar">
-        <li class="nonhover"><a>FVLibraryCatalog</a></li>
+        <b><li class="nonhover"><a>FVLibraryCatalog</a></li></b>
         <li><a href="/FVLibraryWebClient/Search.php">Search</a></li>
         <?php
             session_start();
@@ -25,5 +25,5 @@
             }
 
         ?>
-    </ul>
+    </ul
 </body>

@@ -11,6 +11,7 @@ include("Assets/Header.php");
 <body>
     <div class="content">
         <h1 class="title">Fellowship Village Library Catalog</h1>
+        <p class="title">Click on "Search" or "Login" to begin. If you do not have an account, please contact the librarian to create one.</p>
     </div>
 </body>
 </html>

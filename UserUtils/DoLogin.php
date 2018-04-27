@@ -34,7 +34,13 @@
     else{
         echo "Login Successful!";
         $_SESSION['username'] = $wanted_username;
-        header("Location: ../UserAccount/Overview.php");
+        if ($_GET['next'] != ""){
+            header("Location: ".$_GET['next']);
+        }
+        else{
+            header("Location: ../UserAccount/Overview.php");
+        }
+
     }
 
 ?>

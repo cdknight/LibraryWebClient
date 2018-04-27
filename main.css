@@ -1,6 +1,5 @@
 .title{
     font-family:Verdana;
-
 }
 
 .content{
@@ -73,30 +72,19 @@ input [type="submit"]{
     left: 0;
     bottom: 0;
     right: 0;
-
-
-
-
-
-
-
-
-
-
-
 }
 
 .horizontal_navbar li{
     display: inline;
     padding: 10px;
-    background-color: #e5eeeb;
+    background-color: #eec682;
 }
 
 
 .horizontal_navbar li.nonhover:hover{
     display: inline;
     padding: 10px;
-    background-color: #e5eeeb;
+    background-color: #eec682;
     cursor: default;
 }
 
@@ -109,7 +97,7 @@ input [type="submit"]{
 
 
 .horizontal_navbar {
-    background-color: #e5eeeb;
+    background-color: #eec682;
     padding: 10px;
 }
 

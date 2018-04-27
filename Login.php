@@ -17,7 +17,7 @@ include('Assets/Header.php')
             Password: <input type="password" name="passwd"><br><br>
             <input type="submit" value="Log in" >
         </form>
-        <p>No account? Click <a href="UserUtils/CreateAccount.html">here</a> to create one.</div></p>
+        <!--<p>No account? Click <a href="UserUtils/CreateAccount.html">here</a> to create one.</div></p>-->
     </div>
 
 </body>
