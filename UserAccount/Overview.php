@@ -37,10 +37,12 @@
             $firstname = $row['firstname'];
             $lastname = $row['lastname'];
             $email = $row['email'];
+            $aptnum = $row['apt'];
         }
         echo "<p>First Name: ".$firstname . "</p>";
         echo "<p>Last Name: ". $lastname . "</p>";
         echo "<p>Email Address: ". $email . "</p>";
+        echo "<p>Apartment Number: ". $aptnum . "</p>";
 
         ?>
     </div>
