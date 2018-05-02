@@ -11,10 +11,6 @@
 }
 
 button{
-    background-color:black;
-    color:white;
-    border:none;
-    padding:7px;
     cursor:pointer;
 }
 
@@ -31,20 +27,6 @@ body {
    background-color:white;
 }
 
-input {
-   background-color: black; 
-   border:none; 
-   color: white; 
-   padding: 3px;
-}
-
-input [type="submit"]{
-    background-color:black;
-    color:white;
-    border:none;
-    padding:7px;
-    cursor:pointer;
-}
 
 .vertical_navbar{
     list-style-type: none;
@@ -57,7 +39,16 @@ input [type="submit"]{
     text-decoration: none;
     color: black;
 }
-
+.passwdinp{
+    border-radius : 5px;
+    border: 1px solid black;
+    padding: 5px;
+}
+.defaultinp{
+    border-radius : 5px;
+    border: 1px solid black;
+    padding: 5px;
+}
 .content_left{
     float: left;
     top: 0;
@@ -75,7 +66,7 @@ input [type="submit"]{
 }
 
 .horizontal_navbar li{
-    display: inline;
+
     padding: 10px;
     background-color: #eec682;
 }
@@ -87,7 +78,11 @@ input [type="submit"]{
     background-color: #eec682;
     cursor: default;
 }
+.nonhover {
+    cursor: default;
 
+    font-family: Verdana;
+}
 .horizontal_navbar li:hover {
     display: inline;
     padding: 10px;
@@ -99,10 +94,43 @@ input [type="submit"]{
 .horizontal_navbar {
     background-color: #eec682;
     padding: 10px;
+
 }
 
 .horizontal_navbar li a{
     text-decoration: none;
     color: black;
     font-family : sans-serif, Verdana, Helvetica
+}
+
+.rounded {
+    border-radius: 5px;
+    border: black;
+    padding: 7px;
+}
+
+.navbtn {
+    background-color:transparent;
+    border: 2px solid black;
+    color: black;
+}
+
+.navbtn:hover {
+    background-color:#ffb977;
+    border: 2px solid black;
+    color: black;
+}
+
+.vertnav{
+    float: left;
+    position: fixed;
+}
+
+
+.uifixes{
+    text-align: center;
+}
+
+h1{
+    font-family: sans-serif;
 }

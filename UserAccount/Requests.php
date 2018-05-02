@@ -18,8 +18,9 @@ if (!isset($_SESSION['username'])){
     <link rel="stylesheet" type="text/css" href="../main.css">
 </head>
 <body>
-<h1 class="title">Requests</h1>
-<?php
+<div class="uifixes">
+    <h1 class="title">Requests</h1>
+    <?php
     $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
     $query = "SELECT * FROM Users WHERE username=\"".$_SESSION['username']."\"";
     $result = $conn->query($query);
@@ -46,12 +47,14 @@ if (!isset($_SESSION['username'])){
     }
 
 
-function getBookTitleFromId($conn, $id){
-    $result = $conn->query("SELECT Title FROM Books WHERE ID=".$id);
-    while ($row = $result->fetch_assoc()){
-        return $row['Title'];
+    function getBookTitleFromId($conn, $id){
+        $result = $conn->query("SELECT Title FROM Books WHERE ID=".$id);
+        while ($row = $result->fetch_assoc()){
+            return $row['Title'];
+        }
     }
-}
-?>
+    ?>
+</div>
+
 </body>
 </html>

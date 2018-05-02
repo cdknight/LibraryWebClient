@@ -7,23 +7,25 @@
 </head>
 
 <body>
-    <ul class="horizontal_navbar">
-        <b><li class="nonhover"><a>FVLibraryCatalog</a></li></b>
-        <li><a href="/FVLibraryWebClient/Search.php">Search</a></li>
-        <?php
+        <div class="vertnav">
+            <b style="font-family: "Verdana">FVLibraryCatalog</b><br><br>
+            <a href="/FVLibraryWebClient/Search.php"><button class='rounded navbtn'>Search</button> </a><br><br>
+            <?php
             session_start();
             if (!isset($_SESSION['username'])){
-                echo "<li><a href=\"/FVLibraryWebClient/Login.php\">Login</a></li>";
+                echo "<a href=\"/FVLibraryWebClient/Login.php\"><button class='rounded navbtn'>Login</button></a><br><br>";
             }
             elseif(isset($_SESSION['username'])){
-                echo "<li><a href='/FVLibraryWebClient/UserAccount/Overview.php'>Account Overview</a>";
-                echo "<li><a href='/FVLibraryWebClient/UserAccount/Requests.php'>Requests</a>";
-                echo "<li><a href='/FVLibraryWebClient/UserAccount/ItemsOut.php'>Items Out</a>";
-                echo "<li><a href='/FVLibraryWebClient/UserUtils/Logout.php'>Log Out</a></li>";
-                echo "<li class='nonhover'><a  style='float: right'>Welcome, ".$_SESSION['username']."!</a></li>";
+                echo "<a href='/FVLibraryWebClient/UserAccount/Overview.php'><button class='rounded navbtn'>Account Overview</button></a><br><br>";
+                echo "<li><a href='/FVLibraryWebClient/UserAccount/Requests.php'><button class='rounded navbtn'>Requests</button></a><br><br>";
+                echo "<li><a href='/FVLibraryWebClient/UserAccount/ItemsOut.php'><button class='rounded navbtn'>Items Out</button></a><br><br>";
+                echo "<li><a href='/FVLibraryWebClient/UserUtils/Logout.php'><button class='rounded navbtn'>Log Out</button></a></li><br><br>";
+                echo "<li class='nonhover'><a  style='float: left'>Welcome, ".$_SESSION['username']."!</a></li>";
 
             }
 
-        ?>
-    </ul
+            ?>
+        </div>
+
+
 </body>

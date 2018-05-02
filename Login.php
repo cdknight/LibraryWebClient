@@ -13,9 +13,9 @@ include('Assets/Header.php')
     <div class="content">
         <h1 class="title">Log In</h1>
         <?php echo '<form method="POST" action="UserUtils/DoLogin.php?next='.$_GET['next'].'">' ?>
-            Username: <input type="text" name="username"><br><br>
-            Password: <input type="password" name="passwd"><br><br>
-            <input type="submit" value="Log in" >
+            Username: <input type="text" name="username" class="defaultinp"><br><br>
+            Password: <input type="password" name="passwd" class="passwdinp"><br><br>
+            <input type="submit" class="rounded navbtn" value="Log in" >
         </form>
         <!--<p>No account? Click <a href="UserUtils/CreateAccount.html">here</a> to create one.</div></p>-->
     </div>

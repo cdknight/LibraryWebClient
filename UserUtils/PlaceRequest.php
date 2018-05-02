@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include("../Assets/Header.php")
+    include("../Assets/Header.php");
 ?>
 
 <!DOCTYPE html>
@@ -12,14 +12,14 @@
 </head>
 <body>
 <?php
-session_start();
+
 $bookid = $_GET['bookid'];
 echo (string) isset($_SESSION['username']);
-if (!isset($_SESSION['username']) || $_SESSION['username'] == ""){
+if (!isset($_SESSION['username'])) {
     //user not logged in
-    $goto = "Location: ../Login.php?next=PlaceRequest.php?bookid".$bookid;
-    $_SESSION['msg'] = "<p style='color:red'>You must log in first to place a hold on a book</p>";
-    header($goto)
+    $goto = "Location: ../Login.php?next=PlaceRequest.php?bookid=" . $bookid;
+    $_SESSION['msg'] = "<p style='color:red'>You must first log in to place a hold on a book</p>";
+    header($goto);
 }
 
 
@@ -38,7 +38,7 @@ $date = $date_arr['year']."-".$date_arr['mon']."-".$date_arr['mday'];
 
 
 $insert_request_query = "INSERT INTO Requests(bookid, userid, date_out, status) VALUES(".$bookid.",".$userid.",\"".$date."\",".getBookStatus($conn, $bookid).")";
-echo $insert_request_query;
+//echo $insert_request_query;
 $conn->query($insert_request_query);
 echo "<p>Your request has been placed.</p>";
 
