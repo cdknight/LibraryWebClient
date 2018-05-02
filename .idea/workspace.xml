@@ -4,36 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/SearchResults.php" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="099ca70d-196c-454e-a082-f26487f09cad" name="Default" comment="ItemsOut and Header updated. ItemsOut now working`1">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/phpRuntime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FVLibraryWebClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FVLibraryWebClient.iml" afterDir="false" />
+    <list default="true" id="099ca70d-196c-454e-a082-f26487f09cad" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5ac0c2be-ab08-4273-a805-396b5feb8f3f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5ac0c2be-ab08-4273-a805-396b5feb8f3f.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/BookPage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Errors/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/Errors/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Installer/sql_creations.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Installer/sql_creations.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Search.php" beforeDir="false" afterPath="$PROJECT_DIR$/Search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchResults.php" beforeDir="false" afterPath="$PROJECT_DIR$/SearchResults.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAccount/ItemsOut.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserAccount/ItemsOut.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAccount/Overview.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserAccount/Overview.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAccount/Requests.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserAccount/Requests.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserUtils/CreateAccount.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserUtils/DoCreateAccount.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserUtils/DoLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/DoLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserUtils/Logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/Logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserUtils/PlaceRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/PlaceRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -280,7 +253,7 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -345,7 +318,7 @@
       <workItem from="1523702272375" duration="2999000" />
       <workItem from="1524791955753" duration="958000" />
       <workItem from="1525218485643" duration="1208000" />
-      <workItem from="1525299660100" duration="3468000" />
+      <workItem from="1525299660100" duration="3544000" />
     </task>
     <task id="LOCAL-00001" summary="Added fixed some log-in things. Requests and items out to come next.">
       <created>1521642436130</created>
@@ -375,24 +348,30 @@
       <option name="project" value="LOCAL" />
       <updated>1521828302689</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="major ui updates">
+      <created>1525303179322</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1525303179323</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57815000" />
+    <option name="totallyTimeSpent" value="57891000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="46" width="3840" height="2114" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="File Transfer" order="9" visible="true" weight="0.32745728" />
+      <window_info active="true" anchor="bottom" id="File Transfer" order="9" visible="true" weight="0.32745728" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="3" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24557291" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24557291" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -422,7 +401,8 @@
     <MESSAGE value="requests implemented" />
     <MESSAGE value="itemsout file added" />
     <MESSAGE value="ItemsOut and Header updated. ItemsOut now working" />
-    <option name="LAST_COMMIT_MESSAGE" value="ItemsOut and Header updated. ItemsOut now working" />
+    <MESSAGE value="major ui updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="major ui updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
