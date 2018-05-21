@@ -129,8 +129,13 @@ body {
 
 .uifixes{
     text-align: center;
+
 }
 
 h1{
     font-family: sans-serif;
+}
+
+.nonlink {
+    text-decoration:none;
 }

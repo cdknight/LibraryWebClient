@@ -1,5 +1,10 @@
+<?php
+include("Assets/Header.php")
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Fellowship Village Library Catalog</title>
@@ -8,9 +13,8 @@
 <body>
     <div class="content">
         <h1 class="title">Fellowship Village Library Catalog</h1>
-        <a class="in_button" href="Search.html"><button>Search</button></a>
-        <br><br>
-        <a href="Login.php"><button>Login</button></a>
+        <p class="title">Welcome to the Fellowship Village Library Catalog. Press "Login" if you want to login, and "Search" if you want to search. <br>If you would like to create an account for the catalog, please contact the librarian.
+        </p>
     </div>
 </body>
 </html>

@@ -21,6 +21,10 @@ if (!isset($_SESSION['username'])){
 <div class="uifixes">
     <h1 class="title">Requests</h1>
     <?php
+    if (isset($_SESSION['msg'])) {
+        echo $_SESSION['msg'];
+        $_SESSION['msg'] = "";
+    }
     $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
     $query = "SELECT * FROM Users WHERE username=\"".$_SESSION['username']."\"";
     $result = $conn->query($query);
@@ -32,6 +36,9 @@ if (!isset($_SESSION['username'])){
 
     $result = $conn->query("SELECT * FROM Requests WHERE userid=".$userid);
     $status_string = "";
+    if ($result->num_rows == 0){
+        echo "<p class='title'>There are no requests! Press Search at the left to find a book and place a hold on it.</p>";
+    }
     while ($row = $result->fetch_assoc()){
         if ($row['status'] == 0){
             $status_string = "The item is processing for pickup";
@@ -43,7 +50,7 @@ if (!isset($_SESSION['username'])){
             $status_string = "The item is ready for pick up";
         }
 
-        echo "<a href='../BookPage.php?id=".$row['bookid']."'>".getBookTitleFromId($conn, $row['bookid'])."</a><p style='display:inline'>&emsp;Request placed on: ".$row['date_out']."&emsp;Status: ".$status_string."</p><br>";
+        echo "<a href='../BookPage.php?id=".$row['bookid']."'>".getBookTitleFromId($conn, $row['bookid'])."</a><p style='display:inline'>&emsp;Request placed on: ".$row['date_out']."&emsp;Status: ".$status_string."</p><a class='nonlink' href='../UserUtils/CancelRequest.php?id=".$row['id']."'>&emsp;<button class='rounded navbtn'>Cancel Request</button><br>";
     }
 
 

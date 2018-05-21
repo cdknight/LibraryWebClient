@@ -28,7 +28,7 @@
     }
 
     if (!$passwd_validated || !$username_validated){
-        $_SESSION['msg'] = "<p style='color:red'>The password or username is incorrect. Please try again. </p>";
+        $_SESSION['msg'] = "<div class='uifixes'><p style='color:red'>The password or username is incorrect. Please try again. </p></div>";
         header("Location: ../Login.php");
     }
     else{
