@@ -15,8 +15,9 @@ include('../Assets/Header.php');
     <link rel="stylesheet" type="text/css" href="../main.css">
 </head>
 <body>
-<h1 class="title">Items Out</h1>
-<?php
+<div class="uifixes">
+    <h1 class="title">Items Out</h1>
+    <?php
     $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
     //echo "userid: " + getUserIdFromName($conn, $_SESSION['username']);
     $query = "SELECT * FROM ItemsOut WHERE userid=".getUserIdFromName($conn, $_SESSION['username']);
@@ -40,7 +41,9 @@ include('../Assets/Header.php');
             return $row['Title'];
         }
     }
-?>
+    ?>
+</div>
+
 
 </body>
 </html>
