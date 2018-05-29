@@ -144,6 +144,7 @@ h1{
 }
 
 .carousel {
-   display: inline-flex;
+   display: flex;
+    flex-direction: row;
     overflow-x:auto;
 }
