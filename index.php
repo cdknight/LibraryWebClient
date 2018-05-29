@@ -1,9 +1,6 @@
 <?php
 session_start();
 include("Assets/Header.php");
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 
 ?>
 
@@ -21,7 +18,7 @@ error_reporting(E_ALL);
         <p class="title">Welcome to the Fellowship Village Library Catalog. Press "Login" if you want to login, and "Search" if you want to search. <br>If you would like to create an account for the catalog, please contact the librarian.
         </p>
         <h3 class="title">Recent Items: </h3>
-        <button>Clear Items</button>
+
         <?php
         $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
         //echo "rbooklist: ". $_SESSION['recent_book_list'].count($_SESSION['recent_book_list']);
@@ -42,7 +39,20 @@ error_reporting(E_ALL);
             }
         }
         ?>
+        <button class="rounded navbtn" onclick="ajax_clear_recent_items()">Clear Items</button>
 
+        <script>
+            function ajax_clear_recent_items(){
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function(){
+                    if (this.readyState == 4 && this.status == 200){
+                        document.getElementsByClassName("carousel")[0].innerHTML = xmlhttp.responseText;
+                    }
+                };
+                xmlhttp.open("GET", "UserUtils/ClearRecentItems.php?doclear=true", true);
+                xmlhttp.send();
+            }
+        </script>
     </div>
 </body>
 </html>
