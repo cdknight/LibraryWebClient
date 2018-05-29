@@ -19,7 +19,7 @@
     if (!isset($_SESSION['username'])) {
         //user not logged in
         $goto = "Location: ../Login.php?next=PlaceRequest.php?bookid=" . $bookid;
-        $_SESSION['msg'] = "<p style='color:red'>You must first log in to place a hold on a book</p>";
+        $_SESSION['msg'] = "<div class='uifixes'><p style='color:red'>You must first log in to place a hold on a book</p></div>";
         header($goto);
     }
 

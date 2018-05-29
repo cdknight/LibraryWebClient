@@ -1,5 +1,8 @@
 <?php session_start();
 include("Assets/Header.php");
+if (!isset($_SESSION['recent_book_list'])){
+    $_SESSION['recent_book_list'] = array();
+}
 ?>
 
 <!DOCTYPE html>
@@ -14,6 +17,7 @@ include("Assets/Header.php");
 
 <div class="uifixes">
     <?php
+    array_push($_SESSION['recent_book_list'], $_GET['id']);
     $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
     $query = "SELECT * FROM Books WHERE ID=".$_GET['id'];
     $result = $conn->query($query);
