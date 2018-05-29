@@ -22,12 +22,15 @@ include("Assets/Header.php");
         $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
         //echo "rbooklist: ". $_SESSION['recent_book_list'].count($_SESSION['recent_book_list']);
         //print_r($_SESSION['recent_book_list']);
+        //echo sizeof($_SESSION['recent_book_list']);
+        echo "<div class='carousel'>";
         foreach ($_SESSION['recent_book_list'] as $key => $value){
             if (!$key == 0){
-                echo "<div class='carousel'><div class='recent_book'><img height=\"10%\" width=\"10%\" src='Assets/book.png'><br><a href='BookPage.php?id=".$value."'>".getBookTitleFromId($conn, $value)."</a></div></div>";
+                echo "<div class='recent_book'><img height=\"75%\" width=\"75%\" src='Assets/book.png'><br><a href='BookPage.php?id=".$value."'>".getBookTitleFromId($conn, $value)."</a></div>";
             }
 
         }
+        echo "</div>";
         function getBookTitleFromId($conn, $id){
             $result = $conn->query("SELECT Title FROM Books WHERE ID=".$id);
             while ($row = $result->fetch_assoc()){
@@ -35,6 +38,7 @@ include("Assets/Header.php");
             }
         }
         ?>
+        <button onclick="clearItems()">Clear Items</button>
     </div>
 </body>
 </html>
