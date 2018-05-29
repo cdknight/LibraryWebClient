@@ -1,6 +1,9 @@
 <?php
 session_start();
 include("Assets/Header.php");
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 ?>
 
@@ -18,16 +21,17 @@ include("Assets/Header.php");
         <p class="title">Welcome to the Fellowship Village Library Catalog. Press "Login" if you want to login, and "Search" if you want to search. <br>If you would like to create an account for the catalog, please contact the librarian.
         </p>
         <h3 class="title">Recent Items: </h3>
+        <button>Clear Items</button>
         <?php
         $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
         //echo "rbooklist: ". $_SESSION['recent_book_list'].count($_SESSION['recent_book_list']);
         //print_r($_SESSION['recent_book_list']);
         //echo sizeof($_SESSION['recent_book_list']);
         echo "<div class='carousel'>";
-        foreach ($_SESSION['recent_book_list'] as $key => $value){
-            if (!$key == 0){
-                echo "<div class='recent_book'><img height=\"75%\" width=\"75%\" src='Assets/book.png'><br><a href='BookPage.php?id=".$value."'>".getBookTitleFromId($conn, $value)."</a></div>";
-            }
+        for ($i = 0; $i < sizeof($_SESSION['recent_book_list']); $i++){
+            $value = $_SESSION['recent_book_list'][$i];
+            //echo $i."<br>";
+            echo "<div class='recent_book'><img height=\"50%\" width=\"50%\" src='Assets/book.png'><br><a href='BookPage.php?id=".$value."'>".getBookTitleFromId($conn, $value)."</a></div>";
 
         }
         echo "</div>";
@@ -38,7 +42,7 @@ include("Assets/Header.php");
             }
         }
         ?>
-        <button onclick="clearItems()">Clear Items</button>
+
     </div>
 </body>
 </html>

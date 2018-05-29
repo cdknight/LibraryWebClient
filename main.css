@@ -141,11 +141,9 @@ h1{
 }
 
 #recent_book {
-    vertical-align:center;
 }
 
 .carousel {
-   display: flex;
-   flex-direction: row;
-    overflow: auto;
+   display: inline-flex;
+    overflow-x:auto;
 }
