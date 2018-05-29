@@ -139,3 +139,11 @@ h1{
 .nonlink {
     text-decoration:none;
 }
+
+#recent_book {
+    display:table;
+}
+
+.carousel {
+   display: inline-block;
+}
