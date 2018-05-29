@@ -24,7 +24,7 @@ include("Assets/Header.php");
         //print_r($_SESSION['recent_book_list']);
         foreach ($_SESSION['recent_book_list'] as $key => $value){
             if (!$key == 0){
-                echo "<div class='carousel'><div class='recent_book'><img height=\"10%\" width=\"10%\" src='Assets/book.png'><br><a href='BookPage.php?id='".$value."'>".getBookTitleFromId($conn, $key)."</a></div></div>";
+                echo "<div class='carousel'><div class='recent_book'><img height=\"10%\" width=\"10%\" src='Assets/book.png'><br><a href='BookPage.php?id=".$value."'>".getBookTitleFromId($conn, $value)."</a></div></div>";
             }
 
         }
