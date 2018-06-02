@@ -3,7 +3,7 @@ include('../Assets/Header.php');
 session_start();
 if (!isset($_SESSION['username'])){
     //not logged in, dump at Login page to log in <i>with</i> msg
-    $_SESSION['msg'] = "<p style='color=red'>You must log in first in order to view your requests.</p>";
+    $_SESSION['msg'] = "<div class='uifixes'><p style='color=red'>You must log in first in order to view your requests.</p></div>";
     header("Location: ../Login.php");
 }
 ?>

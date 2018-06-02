@@ -2,7 +2,7 @@
 session_start();
 if (!isset($_SESSION['username'])) {
     //user not logged in
-    $_SESSION['msg'] = "<p style='color:red'>You must log in first in order to view your checked-out items</p>";
+    $_SESSION['msg'] = "<div class='uifixes'><p style='color:red'>You must log in first in order to view your checked-out items</p></div>";
     header("Location: ../Login.php");
 }
 include('../Assets/Header.php');

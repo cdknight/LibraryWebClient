@@ -16,7 +16,7 @@ if (isset($_GET['next'])){
 ?>
     <div class="content">
         <h1 class="title">Log In</h1>
-        <?php echo '<form method="POST" action="UserUtils/DoLogin.php?next='.$_GET['next'].'">' ?>
+        <?php echo '<form method="POST" action="UserUtils/DoLogin.php">' ?>
             Username: <input type="text" name="username" class="defaultinp"><br><br>
             Password: <input type="password" name="passwd" class="passwdinp"><br><br>
             <input type="submit" class="rounded navbtn" value="Log in" >
