@@ -9,7 +9,11 @@ include('Assets/Header.php')
     <link rel="stylesheet" type="text/css" href="main.css" >
 </head>
 <body>
-<?php session_start(); echo $_SESSION['msg']; $_SESSION['msg'] = "" ?>
+<?php session_start(); echo $_SESSION['msg']; $_SESSION['msg'] = "";
+if (isset($_GET['next'])){
+    $_SESSION['next'] = $_GET['next'];
+}
+?>
     <div class="content">
         <h1 class="title">Log In</h1>
         <?php echo '<form method="POST" action="UserUtils/DoLogin.php?next='.$_GET['next'].'">' ?>

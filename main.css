@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 .title{
-    font-family:Verdana;
+    font-family:Poppins;
 }
 
 .content{
@@ -138,6 +140,8 @@ h1{
 
 .nonlink {
     text-decoration:none;
+    color: black;
+    font-family: Poppins;
 }
 
 #recent_book {

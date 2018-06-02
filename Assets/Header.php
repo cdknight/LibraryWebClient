@@ -8,7 +8,7 @@
 
 <body>
         <div class="vertnav">
-            <b style="font-family: "Verdana">FVLibraryCatalog</b><br><br>
+            <a href="/FVLibraryWebClient/index.php" class="nonlink"><b style="font-family: "Verdana">FVLibraryCatalog</b></a><br><br>
             <a href="/FVLibraryWebClient/Search.php"><button class='rounded navbtn'>Search</button> </a><br><br>
             <?php
             session_start();
