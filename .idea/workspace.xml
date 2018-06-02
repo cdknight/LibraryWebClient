@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="099ca70d-196c-454e-a082-f26487f09cad" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/sweetalert.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Header.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -110,19 +108,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Overview.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UserAccount/Overview.php">
+      <file leaf-file-name="sql_creations.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Installer/sql_creations.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="5" column="141" selection-start-line="5" selection-start-column="141" selection-end-line="5" selection-end-column="141" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="174">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Header.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Header.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="261">
@@ -356,7 +351,7 @@
       <workItem from="1527544467506" duration="209000" />
       <workItem from="1527546305098" duration="14000" />
       <workItem from="1527555414130" duration="5759000" />
-      <workItem from="1527941193692" duration="3194000" />
+      <workItem from="1527941193692" duration="4162000" />
     </task>
     <task id="LOCAL-00001" summary="Added fixed some log-in things. Requests and items out to come next.">
       <created>1521642436130</created>
@@ -477,15 +472,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527944098266</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="changed swal location to local for faster load times.">
+      <created>1527944433363</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1527944433363</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74249000" />
+    <option name="totallyTimeSpent" value="75217000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="46" width="3840" height="2114" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
@@ -537,7 +538,8 @@
     <MESSAGE value="touchups" />
     <MESSAGE value="reworked broken requests, font and ui touchups" />
     <MESSAGE value="more ui tweaks and fixes. Logout revamped" />
-    <option name="LAST_COMMIT_MESSAGE" value="more ui tweaks and fixes. Logout revamped" />
+    <MESSAGE value="changed swal location to local for faster load times." />
+    <option name="LAST_COMMIT_MESSAGE" value="changed swal location to local for faster load times." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -742,9 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/installer/sql_creations.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Installer/mysqldump52018.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -754,13 +753,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/book.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Installer/sql_creations.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BookPage.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -891,6 +883,16 @@
           <folding>
             <element signature="n#style#0;n#a#0;n#li#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/installer/sql_creations.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Installer/sql_creations.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
