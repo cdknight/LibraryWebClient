@@ -351,7 +351,7 @@
       <workItem from="1527544467506" duration="209000" />
       <workItem from="1527546305098" duration="14000" />
       <workItem from="1527555414130" duration="5759000" />
-      <workItem from="1527941193692" duration="4162000" />
+      <workItem from="1527941193692" duration="4432000" />
     </task>
     <task id="LOCAL-00001" summary="Added fixed some log-in things. Requests and items out to come next.">
       <created>1521642436130</created>
@@ -479,11 +479,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527944433363</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="new dump!">
+      <created>1527946000917</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1527946000917</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75217000" />
+    <option name="totallyTimeSpent" value="75487000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="46" width="3840" height="2114" extended-state="6" />
@@ -539,7 +546,8 @@
     <MESSAGE value="reworked broken requests, font and ui touchups" />
     <MESSAGE value="more ui tweaks and fixes. Logout revamped" />
     <MESSAGE value="changed swal location to local for faster load times." />
-    <option name="LAST_COMMIT_MESSAGE" value="changed swal location to local for faster load times." />
+    <MESSAGE value="new dump!" />
+    <option name="LAST_COMMIT_MESSAGE" value="new dump!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
