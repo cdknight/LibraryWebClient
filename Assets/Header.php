@@ -18,10 +18,10 @@
             }
             elseif(isset($_SESSION['username'])){
                 echo "<a href='/FVLibraryWebClient/UserAccount/Overview.php'><button class='rounded navbtn'>Account Overview</button></a><br><br>";
-                echo "<li><a href='/FVLibraryWebClient/UserAccount/Requests.php'><button class='rounded navbtn'>Requests</button></a><br><br>";
-                echo "<li><a href='/FVLibraryWebClient/UserAccount/ItemsOut.php'><button class='rounded navbtn'>Items Out</button></a><br><br>";
+                echo "<a href='/FVLibraryWebClient/UserAccount/Requests.php'><button class='rounded navbtn'>Requests</button></a><br><br>";
+                echo "<a href='/FVLibraryWebClient/UserAccount/ItemsOut.php'><button class='rounded navbtn'>Items Out</button></a><br><br>";
                 echo "<button onclick='ajax_logout()' class='rounded navbtn'>Log Out</button><br><br>";
-                echo "<li class='nonhover'><a  style='float: left'>Welcome, ".$_SESSION['username']."!</a></li>";
+                echo "<a  style='float: left'>Welcome, ".$_SESSION['username']."!</a>";
 
             }
 
