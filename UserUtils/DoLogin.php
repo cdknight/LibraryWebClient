@@ -21,10 +21,11 @@
     while ($row = $result->fetch_assoc()){
         if ($wanted_username == $row['username']){
             $username_validated = true;
+            if (hash('sha256', $wanted_passwd.$row['email']) == $row['password']){
+                $passwd_validated = true;
+            }
         }
-        if (hash('sha256', $wanted_passwd.$row['email']) == $row['password']){
-            $passwd_validated = true;
-        }
+
     }
 
     if (!$passwd_validated || !$username_validated){
