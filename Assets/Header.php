@@ -10,7 +10,7 @@
         <script src="/FVLibraryWebClient/Assets/sweetalert.min.js"></script>
         <div class="vertnav">
             <a href="/FVLibraryWebClient/index.php" class="nonlink"><b style="font-family: "Verdana">FVLibraryCatalog</b></a><br><br>
-            <a href="/FVLibraryWebClient/Search.php"><button class='rounded navbtn'>Search</button> </a><br><br>
+            <a href="/FVLibraryWebClient/Search.php"><button class='rounded navbtn'>Search</button></a><br><br>
             <?php
             session_start();
             if (!isset($_SESSION['username'])){
