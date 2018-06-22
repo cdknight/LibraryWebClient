@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="099ca70d-196c-454e-a082-f26487f09cad" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserAccount/ItemsOut.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserAccount/ItemsOut.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -88,11 +88,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemsOut.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ItemsOut.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UserAccount/ItemsOut.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+            <state relative-caret-position="754">
+              <caret line="26" column="73" selection-start-line="26" selection-start-column="73" selection-end-line="26" selection-end-column="73" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,11 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Header.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="23" column="85" lean-forward="true" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
+            <state relative-caret-position="261">
+              <caret line="9" column="76" lean-forward="true" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="76" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#li#0;n#!!top" expanded="true" />
               </folding>
@@ -179,13 +182,13 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Login.php" />
         <option value="$PROJECT_DIR$/UserUtils/Logout.php" />
-        <option value="$PROJECT_DIR$/UserAccount/ItemsOut.php" />
         <option value="$PROJECT_DIR$/UserAccount/Overview.php" />
         <option value="$PROJECT_DIR$/UserAccount/Requests.php" />
         <option value="$PROJECT_DIR$/Assets/sweetalert.min.js" />
         <option value="$PROJECT_DIR$/UserUtils/DoLogin.php" />
         <option value="$PROJECT_DIR$/main.css" />
         <option value="$PROJECT_DIR$/Assets/Header.php" />
+        <option value="$PROJECT_DIR$/UserAccount/ItemsOut.php" />
       </list>
     </option>
   </component>
@@ -206,9 +209,9 @@
       <path value="" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1413" />
-    <option name="y" value="270" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1043" />
+    <option name="y" value="46" />
     <option name="width" value="2091" />
     <option name="height" value="1200" />
   </component>
@@ -354,7 +357,7 @@
       <workItem from="1527546305098" duration="14000" />
       <workItem from="1527555414130" duration="5759000" />
       <workItem from="1527941193692" duration="5069000" />
-      <workItem from="1529631998509" duration="1125000" />
+      <workItem from="1529631998509" duration="1774000" />
     </task>
     <task id="LOCAL-00001" summary="Added fixed some log-in things. Requests and items out to come next.">
       <created>1521642436130</created>
@@ -503,14 +506,28 @@
       <option name="project" value="LOCAL" />
       <updated>1529632435470</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Fixed bullet issue in WebKit and WebKit-based (or forked, like blink) browsers">
+      <created>1529633440588</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1529633440588</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Fixed annoying bar issue in WebKit and WebKit-based (or forked, like blink) browsers">
+      <created>1529633490346</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1529633490346</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77249000" />
+    <option name="totallyTimeSpent" value="77898000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1413" y="270" width="2091" height="1200" extended-state="0" />
+    <frame x="0" y="46" width="3840" height="2114" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -520,7 +537,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32959402" />
       <window_info anchor="bottom" id="Run" order="3" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4509804" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24557291" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -567,7 +584,9 @@
     <MESSAGE value="new dump!" />
     <MESSAGE value="new dump 2" />
     <MESSAGE value="fixed rather large security loophole" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed rather large security loophole" />
+    <MESSAGE value="Fixed bullet issue in WebKit and WebKit-based (or forked, like blink) browsers" />
+    <MESSAGE value="Fixed annoying bar issue in WebKit and WebKit-based (or forked, like blink) browsers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed annoying bar issue in WebKit and WebKit-based (or forked, like blink) browsers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -831,23 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserAccount/Requests.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="129" selection-start-line="5" selection-start-column="129" selection-end-line="5" selection-end-column="129" />
-          <folding>
-            <marker date="1527943967074" expanded="true" signature="213:222" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserAccount/ItemsOut.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UserUtils/PlaceRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
@@ -898,10 +900,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="23" column="85" lean-forward="true" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
+        <state relative-caret-position="261">
+          <caret line="9" column="76" lean-forward="true" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="76" />
           <folding>
             <element signature="n#style#0;n#a#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserAccount/Requests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="129" selection-start-line="5" selection-start-column="129" selection-end-line="5" selection-end-column="129" />
+          <folding>
+            <marker date="1527943967074" expanded="true" signature="213:222" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserAccount/ItemsOut.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="26" column="73" selection-start-line="26" selection-start-column="73" selection-end-line="26" selection-end-column="73" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

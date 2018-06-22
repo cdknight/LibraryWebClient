@@ -23,7 +23,9 @@ include('../Assets/Header.php');
     $query = "SELECT * FROM ItemsOut WHERE userid=".getUserIdFromName($conn, $_SESSION['username']);
     //echo "<br>".$query;
     $result = $conn->query($query);
-
+    if ($result->num_rows == 0){
+        echo "<p class='title'>You haven't checked any books out yet!<br>Either go to the library, find, and ask your librarian to check out the book, or find a book online with the Search button and ask your librarian to check out the book.";
+    }
     while ($row = $result->fetch_assoc()){
         echo "<a href='../BookPage.php?id=".$row['bookid']."'>".getBookTitleFromId($conn, $row['bookid'])."</a><br>";
     }
@@ -34,6 +36,7 @@ include('../Assets/Header.php');
         while ($row = $result->fetch_assoc()){
             return $row['id'];
         }
+
     }
     function getBookTitleFromId($conn, $id){
         $result = $conn->query("SELECT Title FROM Books WHERE ID=".$id);
