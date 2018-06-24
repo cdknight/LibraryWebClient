@@ -1,5 +1,5 @@
 <?php session_start();
-include("Assets/Header.php");
+include("../Assets/Header.php");
 ?>
 
 <!DOCTYPE html>
@@ -7,7 +7,7 @@ include("Assets/Header.php");
 <html>
 <head>
     <title>Search Results</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
 </head>
 <body>
 <div class="uifixes">
@@ -21,7 +21,7 @@ include("Assets/Header.php");
     <?php
     while($row = $result->fetch_assoc()){
         $id = $row['ID'];
-        echo "<a href=\"BookPage.php?id=".(string)$id."&squery=".$_GET["query"]."\">".$row['Title']." </a><i>&emsp;&emsp;By: </i>".$row['Author']."<br><br>";
+        echo "<a href=\"../BookPage.php?id=".(string)$id."&squery=".$_GET["query"]."\">".$row['Title']." </a><i>&emsp;&emsp;By: </i>".$row['Author']."<br><br>";
     }
     ?>
 </div>

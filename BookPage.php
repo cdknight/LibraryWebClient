@@ -45,9 +45,9 @@ if (!isset($_SESSION['recent_book_list'])){
         echo "<p>This book has been reported as missing! You will not be able to check this book out.</p>";
     }
     ?>
-    <a href="Search.php"><button class="rounded navbtn">Go Back to Search &leftarrow;</button></a><br><br>
+    <a href="Search/Search.php"><button class="rounded navbtn">Go Back to Search &leftarrow;</button></a><br><br>
     <a href="index.php"><button class="rounded navbtn">Go Home &leftarrow;</button></a><br><br>
-    <?php echo "<a href='SearchResults.php?query=".$_GET['squery']."'><button class='rounded navbtn'>Go Back to Search Results &leftarrow;</button></a><br><br>" ?>
+    <?php echo "<a href='Search/SearchResults.php?query=".$_GET['squery']."'><button class='rounded navbtn'>Go Back to Search Results &leftarrow;</button></a><br><br>" ?>
     <?php echo "<a href='UserUtils/PlaceRequest.php?bookid=".$_GET['id']."'><button class='rounded navbtn'>Place Request on Book &rightarrow;</button></a>" ?><br><br>
 </div>
 

@@ -10,7 +10,7 @@
         <script src="/FVLibraryWebClient/Assets/sweetalert.min.js"></script>
         <div class="vertnav">
             <a href="/FVLibraryWebClient/index.php" class="nonlink"><b style="font-family: "Verdana">FVLibraryCatalog</b></a><br><br>
-            <a href="/FVLibraryWebClient/Search.php"><button class='rounded navbtn'>Search</button></a><br><br>
+            <a href="/FVLibraryWebClient/Search/Search.php"><button class='rounded navbtn'>Search</button></a><br><br>
             <?php
             session_start();
             if (!isset($_SESSION['username'])){
@@ -21,7 +21,7 @@
                 echo "<a href='/FVLibraryWebClient/UserAccount/Requests.php'><button class='rounded navbtn'>Requests</button></a><br><br>";
                 echo "<a href='/FVLibraryWebClient/UserAccount/ItemsOut.php'><button class='rounded navbtn'>Items Out</button></a><br><br>";
                 echo "<button onclick='ajax_logout()' class='rounded navbtn'>Log Out</button><br><br>";
-                echo "<a  style='float: left'>Welcome, ".$_SESSION['username']."!</a>";
+                echo "<a class='title' style='float: left'>Welcome, ".$_SESSION['username']."!</a>";
 
             }
 
@@ -35,8 +35,13 @@
                     if (this.readyState == 4 && this.status == 200){
 
                         if (xmlhttp.responseText == "success"){
-                            swal("Logout", "You have been logged out successfully! Click \"Ok\" to go home.", "success").then(function(confirmVar){
-                                location.href = "/FVLibraryWebClient/index.php"
+                            swal("Logout", "You have been logged out successfully!", "success").then(function(confirmVar){
+                                if (window.location.pathname.includes("/FVLibraryWebClient/UserAccount")){
+                                    location.href = "/FVLibraryWebClient/Login.php";
+                                }
+                                else{
+                                    window.location.reload();
+                                }
                             });
 
                         }
