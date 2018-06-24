@@ -17,9 +17,11 @@ require('../Assets/Header.php')
             //echo $query;
             $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
             $result = $conn->query($query);
+            unset($_SESSION['password_reset_allowed']);
+            unset($_SESSION['password_reset_email']);
+            unset($_SESSION['password_reset_username']);
             if ($result == false){
                 echo "<p style='color:red' class='title'>Something went wrong when changing your password. Please try again.</p>";
-
                 die();
             }
             else {

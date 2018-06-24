@@ -3,47 +3,35 @@ session_start();
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+require '../vendor/autoload.php';
 
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
 
-require('../vendor/autoload.php');
-
-function sendPasswordResetMail($link_to_passwordreset){
-    $mail = new PHPMailer(true);
+function sendPasswordResetMail($emailaddr, $link_to_passwordreset)
+{
+    $email = new \SendGrid\Mail\Mail();
+    $email->setFrom("warpnotifier.fvlib@sendgrid.net", "Fellowship Village Library Catalog Notifier");
+    $email->setSubject("Fellowship Village Library Catalog Password Reset");
+    $email->addTo($emailaddr);
+    $email->addContent('text/plain', 'Go to ' . $link_to_passwordreset . " to reset your password.");
+    $email->addContent("text/html", 'Hello ' . getFirstnameFromEmail($_POST['emailaddr']) . ",<br>Please click <a href='" . $link_to_passwordreset . "'>here</a> to reset your password.");
+    $sendgrid = new \SendGrid('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');
     try {
-        //Server settings
-        //$mail->SMTPDebug = 2;                                 // Enable verbose debug output
-        $mail->isSMTP();                                      // Set mailer to use SMTP
-        $mail->Host = 'smtp.live.com';  // Specify main and backup SMTP servers
-        $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = 'warpnotifier.fvlib@hotmail.com';                 // SMTP username
-        $mail->Password = 'penia3217';                           // SMTP password
-        $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-        $mail->Port = 587;                                    // TCP port to connect to
-
-        //Recipients
-        $mail->setFrom('warpnotifier.fvlib@hotmail.com', 'Fellowship Village Library Catalog Mailer Service');
-        $mail->addAddress('yellowstar107@gmail.com');     // Add a recipient     // Name is optional
-
-
-        //Content
-        $mail->isHTML(true);                                  // Set email format to HTML
-        $mail->Subject = 'Fellowship Village Library Catalog Password Reset';
-        $mail->Body    = 'Hello '.getFirstnameFromEmail($_POST['emailaddr']).",<br>Please click <a href='".$link_to_passwordreset."'>here</a> to reset your password.";
-        $mail->AltBody = 'Go to '.$link_to_passwordreset." to reset your password.";
-
-        $mail->send();
-        //echo 'Message has been sent';
+        $response = $sendgrid->send($email);
+        print $response->statusCode() . "\n";
+        print_r($response->headers());
+        print $response->body() . "\n";
 
     } catch (Exception $e) {
-        echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+        $_SESSION['msg'] = '<p style="color:red" class="title">Sorry, we couldn\'t send the email to you. Check if your email is valid, and please ask the librarian to change it if it isn\'t.</p>';
+        $_SESSION['msg'] = $_SESSION['msg'] . "Stack trace: " . $mail->ErrorInfo;
+        header("Location: /FVLibraryWebClient/UserUtils/ResetPasswordForm.php");
+        die();
     }
 
 }
 
-$username_from_email = getUsernameFromEmail($_POST['emailaddr']);
+
 
 function getUsernameFromEmail($email){
 
@@ -81,14 +69,19 @@ function getHashedPasswordFromEmail($email){
 <body>
     <div class="uifixes">
         <?php
+            $username_from_email = getUsernameFromEmail($_POST['emailaddr']);
+            //echo var_export($username_from_email, true);
+            //die();
             if ($username_from_email == false){
                 $_SESSION['msg'] = "<p style='color:red' class='title'>The email address you entered: ".$_POST['emailaddr']." does not match any account in the database. Please try again.</p>";
                 header("Location: /FVLibraryWebClient/UserUtils/ResetPasswordForm.php");
+                die();
             }
             //echo $username_from_email."<br> ";
             //echo getPasswordResetLink($username_from_email);
-            sendPasswordResetMail(getPasswordResetLink($username_from_email));
-            echo "We have sent you a password reset link. Please check your email.";
+            sendPasswordResetMail($_POST['emailaddr'], getPasswordResetLink($username_from_email));
+            $_SESSION['msg']="<p style='color:green' class='title'>We have sent you a password reset link. Please check your email. If you don't see the email, check your spam folder as some domains are known to blacklist the website this software usees to send this email.</p>";
+            header("Location: /FVLibraryWebClient/UserUtils/ResetPasswordForm.php");
 
             function getPasswordResetLink($username_from_email){
                 $token_metadata = getHashedPasswordFromEmail($_POST['emailaddr']).getUsernameFromEmail($_POST['emailaddr']).date("Ymd.h");
