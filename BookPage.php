@@ -44,12 +44,19 @@ if (!isset($_SESSION['recent_book_list'])){
     if ($notes_missing){
         echo "<p>This book has been reported as missing! You will not be able to check this book out.</p>";
     }
+    if ($_SESSION['previous'] == "advancedsearch"){
+        echo "<a href=\"Search/AdvancedSearch.php\"><button class=\"rounded navbtn\">Go Back to Advanced Search &leftarrow;</button></a><br><br>";
+        echo "<a href=\"index.php\"><button class=\"rounded navbtn\">Go Home &leftarrow;</button></a><br><br>";
+        echo "<a href='UserUtils/PlaceRequest.php?bookid=".$_GET['id']."'><button class='rounded navbtn'>Place Request on Book &rightarrow;</button></a>";
+    }
+    else {
+        echo "<a href=\"Search/Search.php\"><button class=\"rounded navbtn\">Go Back to Search &leftarrow;</button></a><br><br>";
+        echo "<a href=\"index.php\"><button class=\"rounded navbtn\">Go Home &leftarrow;</button></a><br><br>";
+        echo "<a href='Search/SearchResults.php?query=".$_GET['squery']."'><button class='rounded navbtn'>Go Back to Search Results &leftarrow;</button></a><br><br>";
+        echo "<a href='UserUtils/PlaceRequest.php?bookid=".$_GET['id']."'><button class='rounded navbtn'>Place Request on Book &rightarrow;</button></a>";
+    }
     ?>
-    <a href="Search/Search.php"><button class="rounded navbtn">Go Back to Search &leftarrow;</button></a><br><br>
-    <a href="index.php"><button class="rounded navbtn">Go Home &leftarrow;</button></a><br><br>
-    <?php echo "<a href='Search/SearchResults.php?query=".$_GET['squery']."'><button class='rounded navbtn'>Go Back to Search Results &leftarrow;</button></a><br><br>" ?>
-    <?php echo "<a href='UserUtils/PlaceRequest.php?bookid=".$_GET['id']."'><button class='rounded navbtn'>Place Request on Book &rightarrow;</button></a>" ?><br><br>
-</div>
+    </div>
 
 </body>
 </html>

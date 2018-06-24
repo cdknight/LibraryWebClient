@@ -156,3 +156,15 @@ h1{
     font-family: Poppins;
 }
 
+.navselect {
+    background-color:transparent;
+    border: 2px solid black;
+    color: black;
+}
+
+.navselect:hover {
+    background-color:#ffb977;
+    border: 2px solid black;
+    color: black;
+    cursor:pointer;
+}
