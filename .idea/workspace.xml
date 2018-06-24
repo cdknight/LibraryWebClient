@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="099ca70d-196c-454e-a082-f26487f09cad" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/UserUtils/DoResetPassword.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserUtils/ResetPassword.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserUtils/ResetPasswordForm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserUtils/SendPasswordResetMail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FVLibraryWebClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FVLibraryWebClient.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserUtils/DoResetPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/DoResetPassword.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,8 +39,8 @@
       <file leaf-file-name="Login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+            <state relative-caret-position="551">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -96,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoResetPassword.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DoResetPassword.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UserUtils/DoResetPassword.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="406">
-              <caret line="14" column="117" selection-start-line="14" selection-start-column="117" selection-end-line="14" selection-end-column="117" />
+              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -109,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Header.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="16" column="81" selection-start-line="16" selection-start-column="81" selection-end-line="16" selection-end-column="81" />
+            <state relative-caret-position="667">
+              <caret line="23" column="100" lean-forward="true" selection-start-line="23" selection-start-column="100" selection-end-line="23" selection-end-column="100" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
               </folding>
@@ -124,7 +119,7 @@
       <file leaf-file-name="ItemsOut.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UserAccount/ItemsOut.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
+            <state relative-caret-position="1189">
               <caret line="41" column="72" selection-start-line="41" selection-start-column="72" selection-end-line="41" selection-end-column="72" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
@@ -210,11 +205,11 @@
         <option value="$PROJECT_DIR$/Search/AdvancedSearch.php" />
         <option value="$PROJECT_DIR$/Search/AdvancedSearchResults.php" />
         <option value="$PROJECT_DIR$/BookPage.php" />
-        <option value="$PROJECT_DIR$/Login.php" />
         <option value="$PROJECT_DIR$/UserUtils/SendPasswordResetMail.php" />
         <option value="$PROJECT_DIR$/UserUtils/ResetPassword.php" />
-        <option value="$PROJECT_DIR$/UserUtils/DoResetPassword.php" />
         <option value="$PROJECT_DIR$/Assets/Header.php" />
+        <option value="$PROJECT_DIR$/Login.php" />
+        <option value="$PROJECT_DIR$/UserUtils/DoResetPassword.php" />
       </list>
     </option>
   </component>
@@ -417,7 +412,7 @@
       <workItem from="1529631998509" duration="1799000" />
       <workItem from="1529846526753" duration="82000" />
       <workItem from="1529848776527" duration="11657000" />
-      <workItem from="1529863890518" duration="5425000" />
+      <workItem from="1529863890518" duration="6137000" />
     </task>
     <task id="LOCAL-00001" summary="Added fixed some log-in things. Requests and items out to come next.">
       <created>1521642436130</created>
@@ -608,11 +603,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529856063688</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="&#10;password reset works">
+      <created>1529871029330</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1529871029330</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95087000" />
+    <option name="totallyTimeSpent" value="95799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="46" width="3840" height="2114" extended-state="6" />
@@ -651,7 +653,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="itemsout file added" />
     <MESSAGE value="ItemsOut and Header updated. ItemsOut now working" />
     <MESSAGE value="major ui updates" />
     <MESSAGE value="ui fixes" />
@@ -676,7 +677,8 @@
     <MESSAGE value="ui tweaks, work on advanced search, refactoring and stuff" />
     <MESSAGE value="login -&gt; go to previous url" />
     <MESSAGE value="advanced search working" />
-    <option name="LAST_COMMIT_MESSAGE" value="advanced search working" />
+    <MESSAGE value="&#10;password reset works" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;password reset works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -953,23 +955,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserAccount/ItemsOut.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="41" column="72" selection-start-line="41" selection-start-column="72" selection-end-line="41" selection-end-column="72" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UserUtils/DoLogin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="725">
@@ -998,6 +983,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/UserAccount/ItemsOut.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1189">
+          <caret line="41" column="72" selection-start-line="41" selection-start-column="72" selection-end-line="41" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/UserUtils/ResetPassword.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="783">
@@ -1008,23 +1010,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserUtils/DoResetPassword.php">
+    <entry file="file://$PROJECT_DIR$/Assets/Header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="14" column="117" selection-start-line="14" selection-start-column="117" selection-end-line="14" selection-end-column="117" />
+        <state relative-caret-position="667">
+          <caret line="23" column="100" lean-forward="true" selection-start-line="23" selection-start-column="100" selection-end-line="23" selection-end-column="100" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Header.php">
+    <entry file="file://$PROJECT_DIR$/UserUtils/DoResetPassword.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="16" column="81" selection-start-line="16" selection-start-column="81" selection-end-line="16" selection-end-column="81" />
+        <state relative-caret-position="406">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

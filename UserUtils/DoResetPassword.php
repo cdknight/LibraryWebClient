@@ -12,6 +12,7 @@ require('../Assets/Header.php')
     <h1 class="title">Reset Password</h1>
     <?php
         if($_SESSION['password_reset_allowed'] == true){
+            unset($_SESSION['next']);
             $query = "update Users set password=\"".hash('sha256', $_POST['newpass'].$_SESSION['password_reset_email'])."\" where username=\"".$_SESSION['password_reset_username']."\"";
             //echo $query;
             $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
