@@ -9,12 +9,12 @@
 <body>
         <script src="/FVLibraryWebClient/Assets/sweetalert.min.js"></script>
         <div class="vertnav">
-            <a href="/FVLibraryWebClient/index.php" class="nonlink"><b style="font-family: "Verdana">FVLibraryCatalog</b></a><br><br>
+            <a href="/FVLibraryWebClient/index.php" class="nonlink"><b style="font-family: "Verdana">Fellowhip Village Library Catalog</b></a><br><br>
             <a href="/FVLibraryWebClient/Search/Search.php"><button class='rounded navbtn'>Search</button></a><br><br>
             <?php
             session_start();
             if (!isset($_SESSION['username'])){
-                if ($_SERVER["REQUEST_URI"] != "/FVLibraryWebClient/Login.php"){
+                if ($_SERVER["REQUEST_URI"] != "/FVLibraryWebClient/Login.php" or $_SERVER["REQUEST_URI"] == "/FVLibraryWebClient/DoResetPassword.php"){
                     $_SESSION['next'] = $_SERVER["REQUEST_URI"];
                 }
                 echo "<a href=\"/FVLibraryWebClient/Login.php\"><button class='rounded navbtn'>Login</button></a><br><br>";

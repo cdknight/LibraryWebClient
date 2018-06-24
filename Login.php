@@ -20,7 +20,8 @@ if (isset($_GET['next'])){
             Username: <input type="text" name="username" class="defaultinp"><br><br>
             Password: <input type="password" name="passwd" class="passwdinp"><br><br>
             <input type="submit" class="rounded navbtn" value="Log in" >
-        </form>
+        </form><br>
+        <a href="UserUtils/ResetPasswordForm.php">Forgot password?</a>
         <!--<p>No account? Click <a href="UserUtils/CreateAccount.html">here</a> to create one.</div></p>-->
     </div>
 
