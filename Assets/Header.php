@@ -14,6 +14,9 @@
             <?php
             session_start();
             if (!isset($_SESSION['username'])){
+                if ($_SERVER["REQUEST_URI"] != "/FVLibraryWebClient/Login.php"){
+                    $_SESSION['next'] = $_SERVER["REQUEST_URI"];
+                }
                 echo "<a href=\"/FVLibraryWebClient/Login.php\"><button class='rounded navbtn'>Login</button></a><br><br>";
             }
             elseif(isset($_SESSION['username'])){
