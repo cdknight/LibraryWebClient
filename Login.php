@@ -10,6 +10,7 @@ include('Assets/Header.php')
 </head>
 <body>
 <?php session_start(); echo $_SESSION['msg']; $_SESSION['msg'] = "";
+unset($_SESSION['next']);
 if (isset($_GET['next'])){
     $_SESSION['next'] = $_GET['next'];
 }

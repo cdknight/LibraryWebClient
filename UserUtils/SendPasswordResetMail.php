@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 require '../vendor/autoload.php';
-
+require 'EncryptLib.php';
 
 
 function sendPasswordResetMail($emailaddr, $link_to_passwordreset)
@@ -24,7 +24,6 @@ function sendPasswordResetMail($emailaddr, $link_to_passwordreset)
 
     } catch (Exception $e) {
         $_SESSION['msg'] = '<p style="color:red" class="title">Sorry, we couldn\'t send the email to you. Check if your email is valid, and please ask the librarian to change it if it isn\'t.</p>';
-        $_SESSION['msg'] = $_SESSION['msg'] . "Stack trace: " . $mail->ErrorInfo;
         header("Location: /FVLibraryWebClient/UserUtils/ResetPasswordForm.php");
         die();
     }
@@ -73,7 +72,7 @@ function getHashedPasswordFromEmail($email){
             //echo var_export($username_from_email, true);
             //die();
             if ($username_from_email == false){
-                $_SESSION['msg'] = "<p style='color:red' class='title'>The email address you entered: ".$_POST['emailaddr']." does not match any account in the database. Please try again.</p>";
+                $_SESSION['msg'] = "<p style='color:green' class='title'>We have sent you a password reset link. Please check your email.<br>If you don't see the email, check your spam folder as some domains are known to blacklist the website this software usees to send this email.</p>";
                 header("Location: /FVLibraryWebClient/UserUtils/ResetPasswordForm.php");
                 die();
             }
@@ -86,7 +85,7 @@ function getHashedPasswordFromEmail($email){
             function getPasswordResetLink($username_from_email){
                 $token_metadata = getHashedPasswordFromEmail($_POST['emailaddr']).getUsernameFromEmail($_POST['emailaddr']).date("Ymd.h");
                 $token_metadata = hash('sha256', $token_metadata);
-                $token = $_POST['emailaddr']."_".$token_metadata;
+                $token = encrypt($_POST['emailaddr'],'6bRoYBGlR2zjgYR4KcDD')."_".$token_metadata;
                 $reset_url = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]"."/FVLibraryWebClient/UserUtils/ResetPassword.php?token=".$token;
                 return $reset_url;
             }

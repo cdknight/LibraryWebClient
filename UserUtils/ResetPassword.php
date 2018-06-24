@@ -1,6 +1,7 @@
 <?php
 session_start();
-require('../Assets/Header.php')
+require('../Assets/Header.php');
+require('EncryptLib.php');
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +15,8 @@ require('../Assets/Header.php')
     <?php
         $token = $_GET['token'];
         $token_splitted = explode("_", $token);
-        $email = $token_splitted[0];
+        $email = decrypt($token_splitted[0],'6bRoYBGlR2zjgYR4KcDD');
+        //echo $email;
         //generate rest of token
         //echo $email;
         $new_token = hash('sha256',getHashedPasswordFromEmail($email).getUsernameFromEmail($email).date("Ymd.h"));
