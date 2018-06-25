@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 
 .title{
     font-family:Poppins;
@@ -42,13 +43,20 @@ body {
     color: black;
 }
 .passwdinp{
-    border-radius : 5px;
-    border: 1px solid black;
+    /*border-radius : 5px;*/
+
+    border:0;
+    border-bottom: 1px solid #0032ee;
+    outline:0;
+    background:transparent;
     padding: 5px;
 }
 .defaultinp{
-    border-radius : 5px;
-    border: 1px solid black;
+    /*border-radius : 5px;*/
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #0032ee;
+    background:transparent;
     padding: 5px;
 }
 .content_left{
@@ -82,7 +90,6 @@ body {
 }
 .nonhover {
     cursor: default;
-
     font-family: Verdana;
 }
 .horizontal_navbar li:hover {
@@ -112,23 +119,62 @@ body {
 }
 
 .navbtn {
-    background-color:transparent;
-    border: 2px solid black;
-    color: black;
-}
-
-.navbtn:hover {
-    background-color:#ffb977;
-    border: 2px solid black;
-    color: black;
+    color:white;
+    border: 2px solid #0032ee;
+    background-color:#0032ee;
+    border-radius: 2px;
+    transition:all 0.4s;
+    text-align:center;
 }
 
 .vertnav{
     float: left;
     position: fixed;
+    background-color: white;
+    padding: 10px;
+}
+.vertnav b{
+    color: #0032ee;
+}
+.vertnav button{
+    color:white;
+    border: 2px solid #0032ee;
+    background-color:#0032ee;
+    border-radius: 2px;
+    transition:all 0.4s;
+    text-align:center;
+
+}
+.vertnav button:hover{
+    background-color:#0032ee;
+    color:white;
+    border: 2px solid #0032ee;
+}
+.vertnav button span {
+    position:relative;
+    transition: 0.4s;
+    display: inline-block;
+    font-family: "Fira Sans";
+    text-align:center;
+}
+.vertnav span:after {
+    top: 0;
+    opacity: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.vertnav button:hover span:after{
+    opacity:1;
+    right: 0;
 }
 
-
+/*.vernav button:hover span{
+    padding-right:25px;
+}*/
+.vertnav a{
+    color:#0032ee;
+    font-weight: bold;
+}
 .uifixes{
     text-align: center;
 

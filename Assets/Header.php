@@ -4,26 +4,27 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="../main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
         <script src="/FVLibraryWebClient/Assets/sweetalert.min.js"></script>
         <div class="vertnav">
             <a href="/FVLibraryWebClient/index.php" class="nonlink"><b style="font-family: "Verdana">Fellowhip Village Library Catalog</b></a><br><br>
-            <a href="/FVLibraryWebClient/Search/Search.php"><button class='rounded navbtn'>Search</button></a><br><br>
+            <a href="/FVLibraryWebClient/Search/Search.php"><button class='rounded navbtn'><span>Search </span></button></a><br><br>
             <?php
             session_start();
             if (!isset($_SESSION['username'])){
                 if ($_SERVER["REQUEST_URI"] != "/FVLibraryWebClient/Login.php" || $_SERVER["REQUEST_URI"] != "/FVLibraryWebClient/UserUtils/DoResetPassword.php" || $_SERVER['REQUEST_URI'] != "/FVLibraryWebClient/index.php" || $_SERVER["REQUEST_URI"] != "/FVLibraryWebClient/Login.php"){
                     $_SESSION['next'] = $_SERVER["REQUEST_URI"];
                 }
-                echo "<a href=\"/FVLibraryWebClient/Login.php\"><button class='rounded navbtn'>Login</button></a><br><br>";
+                echo "<a href=\"/FVLibraryWebClient/Login.php\"><button class='rounded navbtn'><span>Login </span></button></a><br><br>";
             }
             elseif(isset($_SESSION['username'])){
-                echo "<a href='/FVLibraryWebClient/UserAccount/Overview.php'><button class='rounded navbtn'>Account Overview</button></a><br><br>";
-                echo "<a href='/FVLibraryWebClient/UserAccount/Requests.php'><button class='rounded navbtn'>Requests</button></a><br><br>";
-                echo "<a href='/FVLibraryWebClient/UserAccount/ItemsOut.php'><button class='rounded navbtn'>Items Out</button></a><br><br>";
-                echo "<button onclick='ajax_logout()' class='rounded navbtn'>Log Out</button><br><br>";
+                echo "<a href='/FVLibraryWebClient/UserAccount/Overview.php'><button class='rounded navbtn'><span>Account Overview </span></button></a><br><br>";
+                echo "<a href='/FVLibraryWebClient/UserAccount/Requests.php'><button class='rounded navbtn'><span>Requests </span></button></a><br><br>";
+                echo "<a href='/FVLibraryWebClient/UserAccount/ItemsOut.php'><button class='rounded navbtn'><span>Items Out </span></button></a><br><br>";
+                echo "<button onclick='ajax_logout()' class='rounded navbtn'><span>Log Out </span></button><br><br>";
                 echo "<a class='title' style='float: left'>Welcome, ".$_SESSION['username']."!</a>";
 
             }
