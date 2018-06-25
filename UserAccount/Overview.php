@@ -32,10 +32,10 @@
                 $email = $row['email'];
                 $aptnum = $row['apt'];
             }
-            echo "<p>First Name: ".$firstname . "</p>";
-            echo "<p>Last Name: ". $lastname . "</p>";
-            echo "<p>Email Address: ". $email . "</p>";
-            echo "<p>Apartment Number: ". $aptnum . "</p>";
+            echo "<p class='title'>First Name: ".$firstname . "</p>";
+            echo "<p class='title'>Last Name: ". $lastname . "</p>";
+            echo "<p class='title'>Email Address: ". $email . "</p>";
+            echo "<p class='title'>Apartment Number: ". $aptnum . "</p>";
 
             ?>
         </div>

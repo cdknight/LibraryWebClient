@@ -59,6 +59,9 @@ body {
     background:transparent;
     padding: 5px;
 }
+.swal2-styled.swal2-cancel{
+    background-color: #0032ee !important;
+}
 .content_left{
     float: left;
     top: 0;

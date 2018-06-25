@@ -50,7 +50,7 @@ if (!isset($_SESSION['username'])){
             $status_string = "The item is ready for pick up";
         }
 
-        echo "<a href='../BookPage.php?id=".$row['bookid']."'>".getBookTitleFromId($conn, $row['bookid'])."</a><p style='display:inline'>&emsp;Request placed on: ".$row['date_out']."&emsp;Status: ".$status_string."</p><a class='nonlink' href='../UserUtils/CancelRequest.php?id=".$row['id']."'>&emsp;<button class='rounded navbtn'>Cancel Request</button><br>";
+        echo "<a class='title' href='../BookPage.php?id=".$row['bookid']."'>".getBookTitleFromId($conn, $row['bookid'])."</a><p style='display:inline' class='title'>&emsp;Request placed on: ".$row['date_out']."&emsp;Status: ".$status_string."</p><a class='nonlink' href='../UserUtils/CancelRequest.php?id=".$row['id']."'>&emsp;<button class='rounded navbtn'>Cancel Request</button><br>";
     }
 
 

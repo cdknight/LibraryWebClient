@@ -10,7 +10,7 @@
 <body>
         <script src="/FVLibraryWebClient/Assets/sweetalert.min.js"></script>
         <div class="vertnav">
-            <a href="/FVLibraryWebClient/index.php" class="nonlink"><b style="font-family: "Verdana">Fellowhip Village Library Catalog</b></a><br><br>
+            <a href="/FVLibraryWebClient/index.php" class="nonlink"><b style="font-family: "Verdana">Fellowship Village Library Catalog</b></a><br><br>
             <a href="/FVLibraryWebClient/Search/Search.php"><button class='rounded navbtn'><span>Search </span></button></a><br><br>
             <?php
             session_start();

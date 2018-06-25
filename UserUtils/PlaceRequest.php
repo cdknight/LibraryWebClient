@@ -42,7 +42,7 @@
     $insert_request_query = "INSERT INTO Requests(bookid, userid, date_out, status) VALUES(".$bookid.",".$userid.",\"".$date."\",".getBookStatus($conn, $bookid).")";
     //echo $insert_request_query;
     $conn->query($insert_request_query);
-    echo "<p>Your request has been placed.</p>";
+    echo "<p class='title'>Your request has been placed.</p>";
 
     function getBookStatus($conn, $bookid){
         $query = "SELECT * FROM ItemsOut WHERE bookid=".$bookid;
@@ -56,8 +56,9 @@
     }
 
     ?>
-    <a href="../UserAccount/Overview.php"><button class="rounded navbtn">View Account Overview &leftarrow;</button></a><br><br>
-    <a href="../UserAccount/Requests.php"><button class="rounded navbtn">View Requests List &leftarrow;</button></a><br><br>
+
+    <a href="../UserAccount/Overview.php"><button class="rounded navbtn">View Account Overview &rightarrow;</button></a><br><br>
+    <a href="../UserAccount/Requests.php"><button class="rounded navbtn">View Requests List &rightarrow;</button></a><br><br>
 </div>
 
 </body>
