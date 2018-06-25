@@ -30,7 +30,7 @@ include("Assets/Header.php");
             for ($i = 0; $i < sizeof($_SESSION['recent_book_list']); $i++){
                 $value = $_SESSION['recent_book_list'][$i];
                 //echo $i."<br>";
-                echo "<div class='recent_book'><img height=\"50%\" width=\"50%\" src='Assets/book.png'><br><a href='BookPage.php?id=".$value."'>".getBookTitleFromId($conn, $value)."</a></div>";
+                echo "<div class='recent_book'><img style='height:200px;width:auto' src='Assets/book.png'><br><a href='BookPage.php?id=".$value."'>".getBookTitleFromId($conn, $value)."</a></div>";
 
             }
             echo "</div>";

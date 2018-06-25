@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="099ca70d-196c-454e-a082-f26487f09cad" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAccount/Overview.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserAccount/Overview.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAccount/Requests.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserAccount/Requests.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserUtils/CancelRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/CancelRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserUtils/PlaceRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/PlaceRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,21 +50,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="638">
               <caret line="22" column="67" lean-forward="true" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SendPasswordResetMail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UserUtils/SendPasswordResetMail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="87" column="73" selection-start-line="87" selection-start-column="73" selection-end-line="87" selection-end-column="73" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -132,22 +113,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="948">
-              <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+            <state relative-caret-position="583">
+              <caret line="209" column="26" selection-start-line="209" selection-start-column="26" selection-end-line="209" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Header.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="12" column="108" selection-start-line="12" selection-start-column="108" selection-end-line="12" selection-end-column="108" />
+            <state relative-caret-position="261">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,6 +164,7 @@
       <find>defaultinp</find>
       <find>vertnam</find>
       <find>navbtn</find>
+      <find>select</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -198,7 +192,6 @@
         <option value="$PROJECT_DIR$/Search.html" />
         <option value="$PROJECT_DIR$/SearchResults.php" />
         <option value="$PROJECT_DIR$/UserUtils/ClearRecentItems.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/UserUtils/Logout.php" />
         <option value="$PROJECT_DIR$/Assets/sweetalert.min.js" />
         <option value="$PROJECT_DIR$/UserUtils/DoLogin.php" />
@@ -220,8 +213,9 @@
         <option value="$PROJECT_DIR$/UserAccount/Requests.php" />
         <option value="$PROJECT_DIR$/UserUtils/CancelRequest.php" />
         <option value="$PROJECT_DIR$/UserUtils/PlaceRequest.php" />
-        <option value="$PROJECT_DIR$/main.css" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Assets/Header.php" />
+        <option value="$PROJECT_DIR$/main.css" />
       </list>
     </option>
   </component>
@@ -426,7 +420,7 @@
       <workItem from="1529631998509" duration="1799000" />
       <workItem from="1529846526753" duration="82000" />
       <workItem from="1529848776527" duration="11657000" />
-      <workItem from="1529863890518" duration="24580000" />
+      <workItem from="1529863890518" duration="26705000" />
     </task>
     <task id="LOCAL-00001" summary="Added fixed some log-in things. Requests and items out to come next.">
       <created>1521642436130</created>
@@ -652,11 +646,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529947920159</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="typo fix">
+      <created>1529949280453</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1529949280453</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114242000" />
+    <option name="totallyTimeSpent" value="116367000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="46" width="3840" height="2114" extended-state="6" />
@@ -695,7 +696,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="recent books" />
     <MESSAGE value="cancel request functionality, uifixes" />
     <MESSAGE value="working functionality for recent books" />
     <MESSAGE value="fixed recent books errors" />
@@ -720,7 +720,8 @@
     <MESSAGE value="password reset **actually** works" />
     <MESSAGE value="encrypt email address in url" />
     <MESSAGE value="css updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="css updates" />
+    <MESSAGE value="typo fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="typo fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -850,13 +851,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/book.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="48" column="10" lean-forward="true" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/sweetalert.min.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1067,20 +1061,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.css">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="948">
-          <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="12" column="108" selection-start-line="12" selection-start-column="108" selection-end-line="12" selection-end-column="108" />
+        <state relative-caret-position="261">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding>
             <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="209" column="26" selection-start-line="209" selection-start-column="26" selection-end-line="209" selection-end-column="26" />
         </state>
       </provider>
     </entry>
