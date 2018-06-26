@@ -1,4 +1,5 @@
-<?php require("../Assets/Header.php");
+<?php
+require("../Assets/Header.php");
 
 ?>
 

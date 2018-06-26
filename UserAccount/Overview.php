@@ -16,6 +16,8 @@
 <head>
     <title>Overview</title>
     <link rel="stylesheet" type="text/css" href="../Assets/main.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/modal.css">
+
 </head>
 <body>
 <div class="uifixes">
@@ -38,6 +40,23 @@
             echo "<p class='title'>Apartment Number: ". $aptnum . "</p>";
 
             ?>
+            <a href="ChangeUserInformation.php"><button class="rounded navbtn">Change</button></a>
+            <div class="modal">
+                <div id="modal_header">
+                    <h2 class="title modal-title">Change</h2>
+                </div>
+                <div class="modal-content">
+                    <form method="POST">
+                        <select class="navselect rounded">
+                            <option name="emailaddr">Email Address</option>
+                            <option name="aptnum">Apartment Number</option>
+                        </select><br><br>
+                        <label id="change_value_label" class="title" for="change-val">Value: </label>
+                        <input name="change-val" class="defaultinp"><br><br>
+                        <input type="submit" class="rounded navbtn" value="change">
+                    </form>
+                </div>
+            </div>
         </div>
 
     </div>

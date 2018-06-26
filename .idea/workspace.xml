@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="099ca70d-196c-454e-a082-f26487f09cad" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/modal.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/BookPage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Search/Search.php" beforeDir="false" afterPath="$PROJECT_DIR$/Search/Search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Search/SearchResults.php" beforeDir="false" afterPath="$PROJECT_DIR$/Search/SearchResults.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAccount/ItemsOut.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserAccount/ItemsOut.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserAccount/Overview.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserAccount/Overview.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAccount/Requests.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserAccount/Requests.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserUtils/ClearRecentItems.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/ClearRecentItems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserUtils/DoLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/DoLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserUtils/PlaceRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/PlaceRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserUtils/emailtest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserUtils/ResetPasswordForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/ResetPasswordForm.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,23 +48,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EncryptLib.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UserUtils/EncryptLib.php">
+      <file leaf-file-name="ResetPasswordForm.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserUtils/ResetPasswordForm.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="58">
-              <caret line="2" column="102" selection-start-line="2" selection-start-column="102" selection-end-line="2" selection-end-column="102" />
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Overview.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Overview.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UserAccount/Overview.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="34" column="67" lean-forward="true" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
+            <state relative-caret-position="903">
+              <caret line="55" column="81" selection-start-line="55" selection-start-column="81" selection-end-line="55" selection-end-column="81" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modal.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/modal.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -93,8 +93,17 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="159" column="22" lean-forward="true" selection-start-line="159" selection-start-column="22" selection-end-line="159" selection-end-column="22" />
+            <state relative-caret-position="369">
+              <caret line="118" column="1" lean-forward="true" selection-start-line="118" selection-start-column="1" selection-end-line="118" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdvancedSearch.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Search/AdvancedSearch.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -113,23 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CancelRequest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UserUtils/CancelRequest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+            <state relative-caret-position="145">
+              <caret line="5" column="84" selection-start-line="5" selection-start-column="84" selection-end-line="5" selection-end-column="84" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
               </folding>
@@ -137,22 +134,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClearRecentItems.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UserUtils/ClearRecentItems.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="468">
@@ -170,6 +152,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -187,6 +170,7 @@
       <find>carousel</find>
       <find>navbtn</find>
       <find>uifie</find>
+      <find>rounded</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -228,17 +212,19 @@
         <option value="$PROJECT_DIR$/UserUtils/SendPasswordResetMail.php" />
         <option value="$PROJECT_DIR$/UserUtils/ResetPassword.php" />
         <option value="$PROJECT_DIR$/UserUtils/EncryptLib.php" />
-        <option value="$PROJECT_DIR$/UserAccount/Overview.php" />
         <option value="$PROJECT_DIR$/UserAccount/Requests.php" />
         <option value="$PROJECT_DIR$/UserUtils/CancelRequest.php" />
         <option value="$PROJECT_DIR$/UserUtils/PlaceRequest.php" />
-        <option value="$PROJECT_DIR$/Assets/Header.php" />
         <option value="$PROJECT_DIR$/BookPage.php" />
         <option value="$PROJECT_DIR$/main.css" />
-        <option value="$PROJECT_DIR$/Assets/main.css" />
         <option value="$PROJECT_DIR$/UserUtils/ClearRecentItems.php" />
         <option value="$PROJECT_DIR$/Login.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/Assets/main.css" />
+        <option value="$PROJECT_DIR$/Assets/modal.css" />
+        <option value="$PROJECT_DIR$/UserUtils/ResetPasswordForm.php" />
+        <option value="$PROJECT_DIR$/Assets/Header.php" />
+        <option value="$PROJECT_DIR$/UserAccount/Overview.php" />
       </list>
     </option>
   </component>
@@ -340,6 +326,13 @@
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
               <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
+              <item name="Assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
               <item name="UserUtils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -359,6 +352,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
@@ -439,7 +433,7 @@
       <workItem from="1529631998509" duration="1799000" />
       <workItem from="1529846526753" duration="82000" />
       <workItem from="1529848776527" duration="11657000" />
-      <workItem from="1529863890518" duration="31343000" />
+      <workItem from="1529863890518" duration="33259000" />
     </task>
     <task id="LOCAL-00001" summary="Added fixed some log-in things. Requests and items out to come next.">
       <created>1521642436130</created>
@@ -679,11 +673,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529951933901</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="tweaks, css updates">
+      <created>1529976084880</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1529976084880</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121005000" />
+    <option name="totallyTimeSpent" value="122921000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="46" width="3840" height="2114" extended-state="6" />
@@ -722,7 +723,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cancel request functionality, uifixes" />
     <MESSAGE value="working functionality for recent books" />
     <MESSAGE value="fixed recent books errors" />
     <MESSAGE value="more work on carousel" />
@@ -747,7 +747,8 @@
     <MESSAGE value="encrypt email address in url" />
     <MESSAGE value="typo fix" />
     <MESSAGE value="css updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="css updates" />
+    <MESSAGE value="tweaks, css updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="tweaks, css updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -755,13 +756,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Search/Search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Installer/sql_creations.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -909,13 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Search/AdvancedSearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1566">
-          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Search/AdvancedSearchResults.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2552">
@@ -1004,23 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserUtils/ResetPasswordForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="22" column="67" lean-forward="true" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserAccount/Requests.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
-          <folding>
-            <marker date="1529959510484" expanded="true" signature="213:222" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookPage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="758">
@@ -1044,29 +1014,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserUtils/PlaceRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="957">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#1762#1774#0#HTML" expanded="true" />
-            <element signature="e#1887#1899#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UserUtils/EncryptLib.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
           <caret line="2" column="102" selection-start-line="2" selection-start-column="102" selection-end-line="2" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="159" column="22" lean-forward="true" selection-start-line="159" selection-start-column="22" selection-end-line="159" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1078,26 +1029,6 @@
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserAccount/Overview.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="34" column="67" lean-forward="true" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
-          <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
@@ -1116,6 +1047,76 @@
           <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserUtils/PlaceRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="957">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#1762#1774#0#HTML" expanded="true" />
+            <element signature="e#1887#1899#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="118" column="1" lean-forward="true" selection-start-line="118" selection-start-column="1" selection-end-line="118" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Search/AdvancedSearch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserAccount/Requests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+          <folding>
+            <marker date="1529959510484" expanded="true" signature="213:222" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="84" selection-start-line="5" selection-start-column="84" selection-end-line="5" selection-end-column="84" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/modal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserUtils/ResetPasswordForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserAccount/Overview.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="903">
+          <caret line="55" column="81" selection-start-line="55" selection-start-column="81" selection-end-line="55" selection-end-column="81" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,0 +1,20 @@
+/*the modal stylesheet*/
+.modal-title{
+    background-color:#0032ee;
+    padding:7px;
+    color:white;
+}
+.modal-header{
+    width:200px;
+}
+.modal-content{
+
+}
+.modal {
+    width:500px;
+    height:300px;
+    text-align:center;
+    z-index:1;
+    float:right;
+    border:1px solid black;
+}
