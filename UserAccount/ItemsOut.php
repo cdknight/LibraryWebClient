@@ -24,7 +24,7 @@ include('../Assets/Header.php');
     //echo "<br>".$query;
     $result = $conn->query($query);
     if ($result->num_rows == 0){
-        echo "<p class='title'>You haven't checked any books out yet!<br>Either go to the library, find, and ask your librarian to check out the book, or find a book online with the Search button and ask your librarian to check out the book.";
+        echo "<p class='title'>You haven't checked any books out yet!<br>Go to the library, find, and ask your librarian to check out the book.<br>Or, find a book online with the Search button and ask your librarian to check out the book.";
     }
     while ($row = $result->fetch_assoc()){
         echo "<a href='../BookPage.php?id=".$row['bookid']."'>".getBookTitleFromId($conn, $row['bookid'])."</a><br>";
