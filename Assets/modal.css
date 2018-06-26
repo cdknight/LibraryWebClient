@@ -3,18 +3,30 @@
     background-color:#0032ee;
     padding:7px;
     color:white;
+
 }
 .modal-header{
-    width:200px;
+    display:inline;
 }
 .modal-content{
 
 }
 .modal {
     width:500px;
-    height:300px;
+    height:400px;
     text-align:center;
-    z-index:1;
-    float:right;
     border:1px solid black;
+    display:none;
+    position:fixed;
+    top: 0%;
+    right:35%;
+    z-index:1;
+
+}
+.wrapper{
+
+}
+.rightfloat{
+    float:right;
+    margin-right:50px;
 }

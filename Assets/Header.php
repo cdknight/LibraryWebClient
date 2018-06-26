@@ -5,6 +5,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/FVLibraryWebClient/Assets/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/FVLibraryWebClient/Assets/jquery.min.js"></script>
 </head>
 
 <body>
