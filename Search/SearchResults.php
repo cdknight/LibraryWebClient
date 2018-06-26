@@ -7,7 +7,7 @@ include("../Assets/Header.php");
 <html>
 <head>
     <title>Search Results</title>
-    <link rel="stylesheet" type="text/css" href="../main.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/main.css">
 </head>
 <body>
 <div class="uifixes">

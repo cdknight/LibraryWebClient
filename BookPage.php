@@ -10,7 +10,7 @@ if (!isset($_SESSION['recent_book_list'])){
 <html>
 <head>
     <title>Search Results</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="Assets/main.css">
 </head>
 <body>
 
@@ -50,9 +50,9 @@ if (!isset($_SESSION['recent_book_list'])){
         echo "<a href='UserUtils/PlaceRequest.php?bookid=".$_GET['id']."'><button class='rounded navbtn'>Place Request on Book &rightarrow;</button></a>";
     }
     else {
+        echo "<a href='Search/SearchResults.php?query=".$_GET['squery']."'><button class='rounded navbtn'>Go Back to Search Results &leftarrow;</button></a><br><br>";
         echo "<a href=\"Search/Search.php\"><button class=\"rounded navbtn\">Go Back to Search &leftarrow;</button></a><br><br>";
         echo "<a href=\"index.php\"><button class=\"rounded navbtn\">Go Home &leftarrow;</button></a><br><br>";
-        echo "<a href='Search/SearchResults.php?query=".$_GET['squery']."'><button class='rounded navbtn'>Go Back to Search Results &leftarrow;</button></a><br><br>";
         echo "<a href='UserUtils/PlaceRequest.php?bookid=".$_GET['id']."'><button class='rounded navbtn'>Place Request on Book &rightarrow;</button></a>";
     }
     ?>

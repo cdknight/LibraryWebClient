@@ -44,18 +44,21 @@ body {
 }
 .passwdinp{
     /*border-radius : 5px;*/
-
     border:0;
-    border-bottom: 1px solid #0032ee;
+    border-bottom: 2px solid #0032ee;
     outline:0;
     background:transparent;
     padding: 5px;
+}
+a{
+    color:#0032ee;
+    font-family:"Fira Sans";
 }
 .defaultinp{
     /*border-radius : 5px;*/
     border: 0;
     outline: 0;
-    border-bottom: 1px solid #0032ee;
+    border-bottom: 2px solid #0032ee;
     background:transparent;
     padding: 5px;
 }
@@ -180,7 +183,6 @@ body {
 }
 .uifixes{
     text-align: center;
-
 }
 
 h1{
@@ -194,12 +196,29 @@ h1{
 }
 
 #recent_book {
+    text-align:center;
+    float:right;
 }
 
 .carousel {
    display: flex;
     flex-direction: row;
     overflow-x:auto;
+
+}
+.carousel ul {
+    list-style:none;
+    display:table;
+    margin:0;
+    padding:0;
+}
+.carousel li {
+    min-width:500px;
+    padding:10px 100px;
+    text-align:center;
+    display:table-cell;
+    vertical-align:middle;
+
 }
 .swal-modal {
     font-family: Poppins;

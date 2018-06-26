@@ -10,12 +10,12 @@ include("Assets/Header.php");
 <head>
     <meta charset="UTF-8">
     <title>Fellowship Village Library Catalog</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="Assets/main.css">
 </head>
 <body>
     <div class="content">
         <h1 class="title">Fellowship Village Library Catalog</h1>
-        <p class="title">Welcome to the Fellowship Village Library Catalog. Press "Login" if you want to login, and "Search" if you want to search. <br>If you would like to create an account for the catalog, please contact the librarian.
+        <p class="title">Press "Login" if you want to log in to your account, and "Search" if you want to search for a book. <br>If you would like to create an account for the catalog, please contact the librarian.
         </p>
 
 
@@ -26,14 +26,16 @@ include("Assets/Header.php");
         //echo sizeof($_SESSION['recent_book_list']);
         if (isset($_SESSION['recent_book_list'])){
             echo '<h3 class="title">Recent Items: </h3>';
-            echo "<div class='carousel'>";
+            echo "<div class='carousel'><ul>";
             for ($i = 0; $i < sizeof($_SESSION['recent_book_list']); $i++){
                 $value = $_SESSION['recent_book_list'][$i];
                 //echo $i."<br>";
-                echo "<div class='recent_book'><img style='height:200px;width:auto' src='Assets/book.png'><br><a href='BookPage.php?id=".$value."'>".getBookTitleFromId($conn, $value)."</a></div>";
+                echo "
+                        <li><img style='height:200px;width:auto' src='Assets/book.png'><br><a href='BookPage.php?id=".$value."'>".getBookTitleFromId($conn, $value)."</a></li>
+                       ";
 
             }
-            echo "</div>";
+            echo "</ul></div>";
             echo "<button class=\"rounded navbtn\" onclick=\"ajax_clear_recent_items()\">Clear Items</button>";
         }
         else {
