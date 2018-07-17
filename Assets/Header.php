@@ -10,6 +10,13 @@
 
 <body>
         <script src="/FVLibraryWebClient/Assets/sweetalert.min.js"></script>
+        <script>
+
+            $(document).ready(function(){
+                    $( '#ajax_logout_btn' ).show();
+
+            });
+        </script>
         <div class="vertnav">
             <a href="/FVLibraryWebClient/index.php" class="nonlink"><b style="font-family: "Verdana">Fellowship Village Library Catalog</b></a><br><br>
             <a href="/FVLibraryWebClient/Search/Search.php"><button class='rounded navbtn'><span>Search </span></button></a><br><br>
@@ -25,7 +32,9 @@
                 echo "<a href='/FVLibraryWebClient/UserAccount/Overview.php'><button class='rounded navbtn'><span>Account Overview </span></button></a><br><br>";
                 echo "<a href='/FVLibraryWebClient/UserAccount/Requests.php'><button class='rounded navbtn'><span>Requests </span></button></a><br><br>";
                 echo "<a href='/FVLibraryWebClient/UserAccount/ItemsOut.php'><button class='rounded navbtn'><span>Items Out </span></button></a><br><br>";
-                echo "<button onclick='ajax_logout()' class='rounded navbtn'><span>Log Out </span></button><br><br>";
+                echo "<button id='ajax_logout_btn' style='display:none' onclick='ajax_logout()' class='rounded navbtn'><span>Log Out </span></button>";
+                echo "<noscript><a href='/FVLibraryWebClient/UserUtils/Logout.php'><button class='rounded navbtn'><span>Log Out </span></button></a></noscript>";
+                echo "<br><br>";
                 echo "<a class='title' style='float: left'>Welcome, ".$_SESSION['username']."!</a>";
 
             }
@@ -55,7 +64,7 @@
                         }
                     }
                 };
-                xmlhttp.open("GET", "/FVLibraryWebClient/UserUtils/Logout.php", true);
+                xmlhttp.open("GET", "/FVLibraryWebClient/UserUtils/Logout.php?ajax=true", true);
                 xmlhttp.send();
             }
         </script>

@@ -1,0 +1,4 @@
+user default_u
+password letmeinmysql
+host localhost
+db lcatalog

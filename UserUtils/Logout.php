@@ -7,6 +7,12 @@ if (!isset($_SESSION['username'])){
 }
 elseif(isset($_SESSION['username'])){
     unset($_SESSION['username']);
-    echo "success";
+    if ($_GET['ajax']=='true'){
+        echo "success";
+    }
+    else {
+        header("Location: /FVLibraryWebClient/index.php");
+    }
+
 }
 ?>

@@ -6,8 +6,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="099ca70d-196c-454e-a082-f26487f09cad" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/SQLUtils/ConnectionData.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SQLUtils/GetConnection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SQLUtils/UserUtils.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAccount/ItemsOut.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserAccount/ItemsOut.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserUtils/Logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/Logout.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,15 +41,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ResetPasswordForm.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UserUtils/ResetPasswordForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Overview.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UserAccount/Overview.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,25 +53,44 @@
       <file leaf-file-name="ChangeUserInformation.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UserUtils/ChangeUserInformation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="827">
-              <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="1189">
+              <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemsOut.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/UserAccount/ItemsOut.php">
+      <file leaf-file-name="GetConnection.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SQLUtils/GetConnection.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="26" column="69" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="377">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="167" column="23" selection-start-line="167" selection-start-column="23" selection-end-line="167" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserUtils.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SQLUtils/UserUtils.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConnectionData.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SQLUtils/ConnectionData.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -83,8 +98,11 @@
       <file leaf-file-name="DoLogin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UserUtils/DoLogin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1160">
+            <state relative-caret-position="1073">
               <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,8 +110,21 @@
       <file leaf-file-name="Header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="522">
+              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Logout.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserUtils/Logout.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -103,33 +134,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
               <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3422">
-              <caret line="118" column="1" selection-start-line="118" selection-start-column="1" selection-end-line="118" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlaceRequest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UserUtils/PlaceRequest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1682">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -160,6 +164,7 @@
       <find>uifie</find>
       <find>rounded</find>
       <find>register</find>
+      <find>vertnav</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -186,7 +191,6 @@
         <option value="$PROJECT_DIR$/Installer/sql_creations.sql" />
         <option value="$PROJECT_DIR$/Search.html" />
         <option value="$PROJECT_DIR$/SearchResults.php" />
-        <option value="$PROJECT_DIR$/UserUtils/Logout.php" />
         <option value="$PROJECT_DIR$/Assets/sweetalert.min.js" />
         <option value="$PROJECT_DIR$/UserUtils/DoLogin.php" />
         <option value="$PROJECT_DIR$/Search.php" />
@@ -208,14 +212,20 @@
         <option value="$PROJECT_DIR$/UserUtils/ClearRecentItems.php" />
         <option value="$PROJECT_DIR$/Login.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/Assets/main.css" />
         <option value="$PROJECT_DIR$/UserUtils/ResetPasswordForm.php" />
         <option value="$PROJECT_DIR$/Assets/jquery.min.js" />
-        <option value="$PROJECT_DIR$/Assets/Header.php" />
         <option value="$PROJECT_DIR$/Assets/modal.css" />
         <option value="$PROJECT_DIR$/UserAccount/Overview.php" />
         <option value="$PROJECT_DIR$/UserUtils/ChangeUserInformation.php" />
         <option value="$PROJECT_DIR$/UserAccount/ItemsOut.php" />
+        <option value="$PROJECT_DIR$/SQLUtils/ConnectionData.txt" />
+        <option value="$PROJECT_DIR$/SQLUtils/DBDataRetrieval.php" />
+        <option value="$PROJECT_DIR$/SQLUtils/DBUserDataRetrieval.php" />
+        <option value="$PROJECT_DIR$/SQLUtils/GetConnection.php" />
+        <option value="$PROJECT_DIR$/UserUtils/Logout.php" />
+        <option value="$PROJECT_DIR$/Assets/Header.php" />
+        <option value="$PROJECT_DIR$/SQLUtils/UserUtils.php" />
+        <option value="$PROJECT_DIR$/Assets/main.css" />
       </list>
     </option>
   </component>
@@ -289,6 +299,11 @@
             <path>
               <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
               <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
+              <item name="SQLUtils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
               <item name="UserAccount" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -317,7 +332,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../REN-WebApp" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
@@ -401,7 +416,9 @@
       <workItem from="1529848776527" duration="11657000" />
       <workItem from="1529863890518" duration="37332000" />
       <workItem from="1530012760622" duration="5945000" />
-      <workItem from="1530018878189" duration="58000" />
+      <workItem from="1530018878189" duration="107000" />
+      <workItem from="1530492322213" duration="3577000" />
+      <workItem from="1531798097079" duration="707000" />
     </task>
     <task id="LOCAL-00001" summary="Added fixed some log-in things. Requests and items out to come next.">
       <created>1521642436130</created>
@@ -662,29 +679,36 @@
       <option name="project" value="LOCAL" />
       <updated>1530018684688</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="minor tweaks">
+      <created>1530018947420</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1530018947420</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132997000" />
+    <option name="totallyTimeSpent" value="137330000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="46" width="3840" height="2114" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5005208" side_tool="true" visible="true" weight="0.24839744" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50104165" side_tool="true" visible="true" weight="0.24839744" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.49947917" visible="true" weight="0.24839744" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32959402" />
+      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.49895832" visible="true" weight="0.24839744" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.32959402" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49895832" weight="0.24626069" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32959402" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4984375" weight="0.24626069" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.122135416" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.32994792" />
@@ -705,7 +729,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="more work on carousel" />
     <MESSAGE value="better recent items layout" />
     <MESSAGE value="ajax request to clear recent" />
     <MESSAGE value="touchups" />
@@ -730,7 +753,8 @@
     <MESSAGE value="tweaks, css updates" />
     <MESSAGE value="working on modal, critical css changes" />
     <MESSAGE value="change values modal works" />
-    <option name="LAST_COMMIT_MESSAGE" value="change values modal works" />
+    <MESSAGE value="minor tweaks" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor tweaks" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -738,27 +762,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Search/SearchResults.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="83" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookPage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="125" selection-start-line="41" selection-start-column="125" selection-end-line="41" selection-end-column="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Errors/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -850,13 +853,6 @@
     <entry file="file://$PROJECT_DIR$/installer/sql_creations.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserUtils/Logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Search/Search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
@@ -889,20 +885,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/UserUtils/emailtest.php" />
-    <entry file="file://$PROJECT_DIR$/UserUtils/ResetPassword.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1131">
-          <caret line="39" column="66" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserUtils/DoResetPassword.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -973,31 +955,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3422">
-          <caret line="118" column="1" selection-start-line="118" selection-start-column="1" selection-end-line="118" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/modal.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -1015,10 +976,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserUtils/DoLogin.php">
+    <entry file="file://$PROJECT_DIR$/UserUtils/DoResetPassword.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1160">
-          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+        <state relative-caret-position="580">
+          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserUtils/ResetPassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1131">
+          <caret line="39" column="66" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/modal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserAccount/ItemsOut.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserUtils/ChangeUserInformation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1189">
+          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1029,25 +1018,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserUtils/ChangeUserInformation.php">
+    <entry file="file://$PROJECT_DIR$/SQLUtils/ConnectionData.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="827">
-          <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+        <state relative-caret-position="87">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserUtils/DoLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1073">
+          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserAccount/ItemsOut.php">
+    <entry file="file://$PROJECT_DIR$/UserUtils/Logout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="26" column="69" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+        <state relative-caret-position="377">
+          <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLUtils/GetConnection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLUtils/UserUtils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="167" column="23" selection-start-line="167" selection-start-column="23" selection-end-line="167" selection-end-column="23" />
         </state>
       </provider>
     </entry>
