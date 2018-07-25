@@ -10,7 +10,7 @@ include("../Assets/Header.php");
     <link rel="stylesheet" type="text/css" href="../Assets/main.css">
 </head>
 <body>
-    <div class="content">
+    <div class="uifixes">
         <h1 class="title">Search</h1>
         <form method="GET" action="SearchResults.php">
             <input name="query" type="text" class="defaultinp"><br><br>

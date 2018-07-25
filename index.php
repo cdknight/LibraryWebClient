@@ -13,7 +13,7 @@ include("Assets/Header.php");
     <link rel="stylesheet" type="text/css" href="Assets/main.css">
 </head>
 <body>
-    <div class="content">
+    <div class="uifixes">
         <h1 class="title">Fellowship Village Library Catalog</h1>
         <p class="title">Press "Login" if you want to log in to your account, and "Search" if you want to search for a book. <br>If you would like to create an account for the catalog, please contact the librarian.
         </p>

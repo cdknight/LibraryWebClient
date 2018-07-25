@@ -15,7 +15,7 @@ if (isset($_GET['next'])){
     $_SESSION['next'] = $_GET['next'];
 }
 ?>
-    <div class="content">
+    <div class="uifixes">
         <h1 class="title">Log In</h1>
         <?php echo '<form method="POST" action="UserUtils/DoLogin.php">' ?>
             <label for="username" class="title">Username: </label>
