@@ -1,7 +1,7 @@
 <?php
 
 function getDefaultConnection(){
-    $db_vars = explode("\n", file_get_contents("ConnectionData.txt"));
+    $db_vars = explode("\n", file_get_contents("/var/www/html/FVLibraryWebClient/SQLUtils/ConnectionData.txt"));
 
     $user = $db_vars[0];
     $password = $db_vars[1];

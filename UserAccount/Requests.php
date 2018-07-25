@@ -1,5 +1,6 @@
 <?php
 include('../Assets/Header.php');
+include('../SQLUtils/GetConnection.php');
 session_start();
 if (!isset($_SESSION['username'])){
     //not logged in, dump at Login page to log in <i>with</i> msg
@@ -25,7 +26,7 @@ if (!isset($_SESSION['username'])){
         echo $_SESSION['msg'];
         $_SESSION['msg'] = "";
     }
-    $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
+    $conn = getDefaultConnection();
     $query = "SELECT * FROM Users WHERE username=\"".$_SESSION['username']."\"";
     $result = $conn->query($query);
     while ($row = $result->fetch_assoc()){

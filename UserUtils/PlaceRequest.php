@@ -1,7 +1,20 @@
 <?php
     session_start();
+
+    if (!isset($_SESSION['username']) || $_SESSION['username'] == "") {
+        //user not logged in
+
+        $goto = "Location: ../Login.php?next=PlaceRequest.php?bookid=" . $_GET['bookid'];
+        $_SESSION['msg'] = "<div class='uifixes'><p style='color:red'>You must first log in to place a hold on a book</p></div>";
+        header($goto);
+    }
     unset($_SESSION['next']);
     include("../Assets/Header.php");
+    include('../SQLUtils/GetConnection.php');
+
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -17,17 +30,12 @@
 
     $bookid = $_GET['bookid'];
 
-    if (!isset($_SESSION['username'])) {
-        //user not logged in
-        $goto = "Location: ../Login.php?next=PlaceRequest.php?bookid=" . $bookid;
-        $_SESSION['msg'] = "<div class='uifixes'><p style='color:red'>You must first log in to place a hold on a book</p></div>";
-        header($goto);
-    }
+
 
 
     $username = $_SESSION['username'];
 
-    $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
+    $conn = getDefaultConnection();
     $query = "SElECT * FROM Users WHERE username=\"".$username."\"";
     $result = $conn->query($query);
     while ($row = $result->fetch_assoc()){

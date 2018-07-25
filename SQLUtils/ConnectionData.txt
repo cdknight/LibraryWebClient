@@ -1,4 +1,4 @@
-user default_u
-password letmeinmysql
-host localhost
-db lcatalog
+default_u
+letmeinmysql
+localhost
+lcatalog

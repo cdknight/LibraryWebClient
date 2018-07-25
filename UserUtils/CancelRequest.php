@@ -1,5 +1,8 @@
 <?php session_start();
-include("../Assets/Header.php");
+//include("../Assets/Header.php");
+
+
+
 ?>
 <!DOCTYPE html>
 
@@ -12,6 +15,6 @@ include("../Assets/Header.php");
         $query = "DELETE FROM Requests WHERE id=".$_GET['id'];
         $conn->query($query);
         $_SESSION['msg'] = "<div class='uifixes'><p class='title' style='color:green'>The request was canceled successfully.</p></div>";
-        header("Location: ../UserAccount/Requests.php ")
+        header("Location: ../UserAccount/Requests.php")
     ?>
 </html>
