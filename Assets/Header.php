@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="/FVLibraryWebClient/Assets/main.css">
     <link rel="stylesheet" type="text/css" href="/FVLibraryWebClient/Assets/header.css"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/FVLibraryWebClient/Images/fvlogo.png">
     <script src="/FVLibraryWebClient/Assets/jquery.min.js"></script>
 </head>
 
@@ -103,7 +104,18 @@
                     if (this.readyState == 4 && this.status == 200){
 
                         if (xmlhttp.responseText == "success"){
-                            swal("Logout", "You have been logged out successfully!", "success").then(function(confirmVar){
+                            swal({
+                                title: "Logout",
+                                text: "You have been logged out successfully!",
+                                icon: "success",
+                                button: {
+                                    text: "OK",
+                                    value: true,
+                                    visible: true,
+                                    className: "rounded navbtn",
+                                    closeModal: true
+                                }
+                            }).then(function(confirmVar){
                                 if (window.location.pathname.includes("/FVLibraryWebClient/UserAccount")){
                                     location.href = "/FVLibraryWebClient/Login.php";
                                 }

@@ -206,9 +206,12 @@ h1{
 
 }
 .swal-modal {
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
+    border-radius:5px;
 }
-
+.swal-text {
+    color:black;
+}
 .navselect {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -244,3 +247,4 @@ select::-ms-expand{
     width:100%;
     height:100%;
 }
+
