@@ -5,14 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/UserUtils/ChangeUserInformation.php" line="53" mnemonic="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="099ca70d-196c-454e-a082-f26487f09cad" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SQLUtils/ConnectionData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SQLUtils/ConnectionData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SQLUtils/GetConnection.php" beforeDir="false" afterPath="$PROJECT_DIR$/SQLUtils/GetConnection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAccount/Requests.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserAccount/Requests.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserUtils/CancelRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/CancelRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserUtils/PlaceRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/PlaceRequest.php" afterDir="false" />
-    </list>
+    <list default="true" id="099ca70d-196c-454e-a082-f26487f09cad" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,15 +33,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6032">
-              <caret line="208" column="36" selection-start-line="208" selection-start-column="36" selection-end-line="208" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="About.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/About.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -74,18 +58,6 @@
               <caret line="112" column="47" selection-start-line="112" selection-start-column="47" selection-end-line="112" selection-end-column="47" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="33" column="174" selection-start-line="33" selection-start-column="174" selection-end-line="33" selection-end-column="174" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#li#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,13 +93,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlaceRequest.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PlaceRequest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UserUtils/PlaceRequest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="174">
               <caret line="6" column="86" selection-start-line="6" selection-start-column="86" selection-end-line="6" selection-end-column="86" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Search.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Search/Search.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchResults.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Search/SearchResults.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+              <folding>
+                <element signature="e#66#77#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -201,7 +194,6 @@
         <option value="$PROJECT_DIR$/Assets/sweetalert.min.js" />
         <option value="$PROJECT_DIR$/UserUtils/DoLogin.php" />
         <option value="$PROJECT_DIR$/Search.php" />
-        <option value="$PROJECT_DIR$/Search/SearchResults.php" />
         <option value="$PROJECT_DIR$/Search/AdvancedSearch.php" />
         <option value="$PROJECT_DIR$/Search/AdvancedSearchResults.php" />
         <option value="$PROJECT_DIR$/UserUtils/DoResetPassword.php" />
@@ -241,6 +233,7 @@
         <option value="$PROJECT_DIR$/SQLUtils/ConnectionData.txt" />
         <option value="$PROJECT_DIR$/UserUtils/CancelRequest.php" />
         <option value="$PROJECT_DIR$/UserUtils/PlaceRequest.php" />
+        <option value="$PROJECT_DIR$/Search/SearchResults.php" />
       </list>
     </option>
   </component>
@@ -444,7 +437,7 @@
       <workItem from="1531883864712" duration="514000" />
       <workItem from="1531932752085" duration="44000" />
       <workItem from="1532470533522" duration="13242000" />
-      <workItem from="1532490723360" duration="778000" />
+      <workItem from="1532490723360" duration="1274000" />
     </task>
     <task id="LOCAL-00001" summary="Added fixed some log-in things. Requests and items out to come next.">
       <created>1521642436130</created>
@@ -740,15 +733,28 @@
       <option name="project" value="LOCAL" />
       <updated>1532490599564</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="requests fix">
+      <created>1532491523461</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1532491523461</updated>
+    </task>
+    <task id="LOCAL-00044" summary="bug fixes, use getDefaultConnection more">
+      <created>1532491987924</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1532491987924</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156965000" />
+    <option name="totallyTimeSpent" value="157461000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="46" width="3840" height="2114" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5015625" side_tool="true" weight="0.3178419" />
@@ -809,8 +815,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="more ui tweaks and fixes. Logout revamped" />
-    <MESSAGE value="changed swal location to local for faster load times." />
     <MESSAGE value="new dump!" />
     <MESSAGE value="new dump 2" />
     <MESSAGE value="fixed rather large security loophole" />
@@ -834,7 +838,9 @@
     <MESSAGE value="work on getUserData.php" />
     <MESSAGE value="HUGE update to headerbar" />
     <MESSAGE value="about" />
-    <option name="LAST_COMMIT_MESSAGE" value="about" />
+    <MESSAGE value="requests fix" />
+    <MESSAGE value="bug fixes, use getDefaultConnection more" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixes, use getDefaultConnection more" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -993,13 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Search/SearchResults.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Search/AdvancedSearchResults.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2552">
@@ -1032,13 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1128">
           <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Search/Search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1158,6 +1150,23 @@
           <caret line="6" column="86" selection-start-line="6" selection-start-column="86" selection-end-line="6" selection-end-column="86" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Search/Search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Search/SearchResults.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding>
+            <element signature="e#66#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
