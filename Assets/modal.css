@@ -5,7 +5,7 @@
     color:white;
 
 }
-.modal-header{
+#modal-header{
     display:inline;
 }
 .modal-content{
@@ -18,7 +18,7 @@
     border:1px solid black;
     display:none;
     position:fixed;
-    top: 0%;
+    top: 0;
     right:35%;
     z-index:1;
 

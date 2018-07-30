@@ -101,9 +101,9 @@
                 console.log("hi?");
                 var xmlhttp = new XMLHttpRequest();
                 xmlhttp.onreadystatechange = function(){
-                    if (this.readyState == 4 && this.status == 200){
+                    if (this.readyState === 4 && this.status === 200){
 
-                        if (xmlhttp.responseText == "success"){
+                        if (xmlhttp.responseText === "success"){
                             swal({
                                 title: "Logout",
                                 text: "You have been logged out successfully!",

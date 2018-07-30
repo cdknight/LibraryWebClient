@@ -58,7 +58,7 @@ if (!isset($_SESSION['username'])){
         elseif ($row['status'] == 1){
             $status_string = "The item is checked out";
         }
-        elseif ($row[status] == 2){
+        elseif ($row['status'] == 2){
             $status_string = "The item is ready for pick up";
         }
         echo "<td><a class='title' href='../BookPage.php?id=".$row['bookid']."'>".getBookTitleFromId($conn, $row['bookid'])."</a></td>";

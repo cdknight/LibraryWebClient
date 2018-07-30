@@ -108,7 +108,7 @@
         var dataHasChanged = false;
         function sendForm(){
             var details = $('#change_data').serialize();
-            console.log('here')
+            console.log('here');
 
             $.post('/FVLibraryWebClient/UserUtils/ChangeUserInformation.php', details, function(data){
                 dataHasChanged = true;

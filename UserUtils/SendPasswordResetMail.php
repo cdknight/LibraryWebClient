@@ -83,7 +83,7 @@ function getHashedPasswordFromEmail($email){
             $_SESSION['msg']="<p style='color:green' class='title'>We have sent you a password reset link. Please check your email. If you don't see the email, check your spam folder as some domains are known to blacklist the website this software usees to send this email.</p>";
             header("Location: /FVLibraryWebClient/UserUtils/ResetPasswordForm.php");
 
-            function getPasswordResetLink($username_from_email){
+            function getPasswordResetLink(){
                 $token_metadata = getHashedPasswordFromEmail($_POST['emailaddr']).getUsernameFromEmail($_POST['emailaddr']).date("Ymd.h");
                 $token_metadata = hash('sha256', $token_metadata);
                 $token = encrypt($_POST['emailaddr'],'6bRoYBGlR2zjgYR4KcDD')."_".$token_metadata;

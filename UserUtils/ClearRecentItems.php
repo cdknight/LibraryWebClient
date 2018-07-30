@@ -9,5 +9,3 @@ if ($clear_bool){
 else {
     echo "<div style='margin 0 auto'><p style='color:red'>Unable to clear list!</p></div>";
 }
-
-?>

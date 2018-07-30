@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 
 .title{
-    font-family:Poppins;
+    font-family:Poppins, sans-serif;
 }
 
 .content{
@@ -52,7 +52,7 @@ body {
 }
 a{
     color:#0032ee;
-    font-family:"Fira Sans";
+    font-family:"Fira Sans", sans-serif;
 }
 .defaultinp{
     /*border-radius : 5px;*/
@@ -64,13 +64,6 @@ a{
 }
 .swal2-styled.swal2-cancel{
     background-color: #0032ee !important;
-}
-.content_left{
-    float: left;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
 }
 
 .content_right{
@@ -96,7 +89,7 @@ a{
 }
 .nonhover {
     cursor: default;
-    font-family: Verdana;
+    font-family: Verdana, sans-serif;
 }
 .horizontal_navbar li:hover {
     display: inline;
@@ -177,7 +170,7 @@ h1{
 .nonlink {
     text-decoration:none;
     color: black;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
 }
 
 #recent_book {

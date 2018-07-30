@@ -9,7 +9,7 @@
         $result = $conn->query("SELECT * FROM Users");
         while ($row = $result->fetch_assoc()){
             if ($row[$userdatatype] == $val_userdatatype){
-                return row[$get_userdatatype];
+                return $row[$get_userdatatype];
             }
         }
     }

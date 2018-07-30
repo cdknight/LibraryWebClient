@@ -48,7 +48,9 @@
             echo "<p class='title' style='color:red'>The value was not updated successfully. Try again later.</p>";
             die();
 }
-
+    /**
+     * @conn mysqli
+     */
     function getEmailFromUsername($conn, $username){
         $result = $conn->query("SELECT * FROM Users");
         while ($row = $result->fetch_assoc()){
