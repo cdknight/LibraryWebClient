@@ -5,6 +5,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 require '../vendor/autoload.php';
 require 'EncryptLib.php';
+require '../SQLUtils/GetConnection.php';
 
 
 function sendPasswordResetMail($emailaddr, $link_to_passwordreset)
@@ -34,7 +35,7 @@ function sendPasswordResetMail($emailaddr, $link_to_passwordreset)
 
 function getUsernameFromEmail($email){
 
-    $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
+    $conn = getDefaultConnection();
     $result = $conn->query("SELECT username FROM Users WHERE email=\"".$email."\"");
     if($result->num_rows == 0){return false;}
     while ($row = $result->fetch_assoc()){
@@ -43,7 +44,7 @@ function getUsernameFromEmail($email){
 }
 function getFirstnameFromEmail($email){
 
-    $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
+    $conn = getDefaultConnection();
     $result = $conn->query("SELECT firstname FROM Users WHERE email=\"".$email."\"");
     if($result->num_rows == 0){return false;}
     while ($row = $result->fetch_assoc()){
@@ -51,7 +52,7 @@ function getFirstnameFromEmail($email){
     }
 }
 function getHashedPasswordFromEmail($email){
-    $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
+    $conn = getDefaultConnection();
     $result = $conn->query("SELECT password FROM Users WHERE email=\"".$email."\"");
     if($result->num_rows == 0){return false;}
     while ($row = $result->fetch_assoc()){

@@ -5,7 +5,7 @@
         //user not logged in
 
         $goto = "Location: ../Login.php?next=PlaceRequest.php?bookid=" . $_GET['bookid'];
-        $_SESSION['msg'] = "<div class='uifixes'><p style='color:red'>You must first log in to place a hold on a book</p></div>";
+        $_SESSION['msg'] = "<p style='color:red'>You must first log in to place a hold on a book</p>";
         header($goto);
     }
     unset($_SESSION['next']);

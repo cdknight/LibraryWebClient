@@ -1,3 +1,7 @@
+<?php
+require("../SQLUtils/GetConnection.php")
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -8,7 +12,7 @@
 <body>
 <?php
     session_start();
-    $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
+    $conn = getDefaultConnection();
     $query = "SELECT * FROM Users";
     $result = $conn->query($query);
 

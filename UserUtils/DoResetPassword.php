@@ -1,6 +1,7 @@
 <?php
 session_start();
-require('../Assets/Header.php')
+require('../Assets/Header.php');
+require("../SQLUtils/GetConnection.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,7 +16,7 @@ require('../Assets/Header.php')
             unset($_SESSION['next']);
             $query = "update Users set password=\"".hash('sha256', $_POST['newpass'].$_SESSION['password_reset_email'])."\" where username=\"".$_SESSION['password_reset_username']."\"";
             //echo $query;
-            $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
+            $conn = getDefaultConnection();
             $result = $conn->query($query);
             unset($_SESSION['password_reset_allowed']);
             unset($_SESSION['password_reset_email']);

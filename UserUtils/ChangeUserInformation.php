@@ -4,7 +4,7 @@
     $tochange = $_POST['to_change'];
     $changeval = $_POST['change_val'];
     $username = $_SESSION['username'];
-    $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
+    $conn = getDefaultConnection();
 
     if (!isset($username)){
         //not logged in.

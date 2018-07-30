@@ -5,7 +5,28 @@
     <bookmark url="file://$PROJECT_DIR$/UserUtils/ChangeUserInformation.php" line="53" mnemonic="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="099ca70d-196c-454e-a082-f26487f09cad" name="Default" comment="" />
+    <list default="true" id="099ca70d-196c-454e-a082-f26487f09cad" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/tables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserUtils/ItemsOut/Book.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserUtils/ItemsOut/RenewBook.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/BookPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Installer/sql_creations.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Installer/sql_creations.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search/AdvancedSearchResults.php" beforeDir="false" afterPath="$PROJECT_DIR$/Search/AdvancedSearchResults.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserAccount/ItemsOut.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserAccount/ItemsOut.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserAccount/Overview.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserAccount/Overview.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserAccount/Requests.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserAccount/Requests.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserUtils/CancelRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/CancelRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserUtils/ChangeUserInformation.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/ChangeUserInformation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserUtils/DoLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/DoLogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserUtils/DoResetPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/DoResetPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserUtils/PlaceRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/PlaceRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserUtils/ResetPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/ResetPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserUtils/SendPasswordResetMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/SendPasswordResetMail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/installer/sql_creations.sql" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,15 +54,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="About.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/About.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="925">
-              <caret line="47" column="64" selection-start-line="47" selection-start-column="64" selection-end-line="47" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ver.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/ver.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -51,14 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Header.php">
+      <file leaf-file-name="GetConnection.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SQLUtils/GetConnection.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2784">
-              <caret line="112" column="47" selection-start-line="112" selection-start-column="47" selection-end-line="112" selection-end-column="47" />
-              <folding>
-                <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-              </folding>
+            <state>
+              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -66,8 +75,8 @@
       <file leaf-file-name="Requests.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UserAccount/Requests.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+            <state relative-caret-position="534">
+              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -75,20 +84,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetConnection.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SQLUtils/GetConnection.php">
+      <file leaf-file-name="sql_creations.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Installer/sql_creations.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+            <state relative-caret-position="174">
+              <caret line="6" column="103" selection-start-line="6" selection-start-column="103" selection-end-line="6" selection-end-column="103" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConnectionData.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SQLUtils/ConnectionData.txt">
+      <file leaf-file-name="ItemsOut.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserAccount/ItemsOut.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="725">
+              <caret line="67" column="89" lean-forward="true" selection-start-line="67" selection-start-column="89" selection-end-line="67" selection-end-column="89" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="499">
+              <caret line="254" column="17" selection-start-line="254" selection-start-column="17" selection-end-line="254" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RenewBook.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserUtils/ItemsOut/RenewBook.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="734">
+              <caret line="31" column="105" selection-start-line="31" selection-start-column="105" selection-end-line="31" selection-end-column="105" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,8 +130,8 @@
       <file leaf-file-name="PlaceRequest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UserUtils/PlaceRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="6" column="86" selection-start-line="6" selection-start-column="86" selection-end-line="6" selection-end-column="86" />
+            <state relative-caret-position="-870">
+              <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -105,35 +139,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Search.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Search/Search.php">
+      <file leaf-file-name="Book.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserUtils/ItemsOut/Book.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            <state relative-caret-position="496">
+              <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchResults.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Search/SearchResults.php">
+      <file leaf-file-name="tables.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/tables.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-              <folding>
-                <element signature="e#66#77#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CancelRequest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UserUtils/CancelRequest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="667">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -169,7 +188,19 @@
       <find>swal</find>
       <find>rounded</find>
       <find>Account O</find>
+      <find>$conn</find>
+      <find>new mysqli</find>
+      <find>new mY</find>
+      <find>echo</find>
+      <find>UPDATE TABLE Requests</find>
+      <find>UPDATE TABLE</find>
+      <find>request</find>
     </findStrings>
+    <replaceStrings>
+      <replace>UPDATE TABLE ItemsOut</replace>
+      <replace>UPDATE</replace>
+      <replace>book</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -183,34 +214,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/installer/sql_creations.sql" />
-        <option value="$PROJECT_DIR$/DoLogin.php" />
-        <option value="$PROJECT_DIR$/Login.html" />
-        <option value="$PROJECT_DIR$/UserUtils/DoCreateAccount.php" />
-        <option value="$PROJECT_DIR$/UserUtils/CreateAccount.html" />
-        <option value="$PROJECT_DIR$/Installer/sql_creations.sql" />
-        <option value="$PROJECT_DIR$/Search.html" />
-        <option value="$PROJECT_DIR$/SearchResults.php" />
         <option value="$PROJECT_DIR$/Assets/sweetalert.min.js" />
-        <option value="$PROJECT_DIR$/UserUtils/DoLogin.php" />
         <option value="$PROJECT_DIR$/Search.php" />
         <option value="$PROJECT_DIR$/Search/AdvancedSearch.php" />
-        <option value="$PROJECT_DIR$/Search/AdvancedSearchResults.php" />
-        <option value="$PROJECT_DIR$/UserUtils/DoResetPassword.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/UserUtils/emailtest.php" />
-        <option value="$PROJECT_DIR$/UserUtils/SendPasswordResetMail.php" />
-        <option value="$PROJECT_DIR$/UserUtils/ResetPassword.php" />
         <option value="$PROJECT_DIR$/UserUtils/EncryptLib.php" />
-        <option value="$PROJECT_DIR$/BookPage.php" />
         <option value="$PROJECT_DIR$/main.css" />
         <option value="$PROJECT_DIR$/UserUtils/ClearRecentItems.php" />
         <option value="$PROJECT_DIR$/UserUtils/ResetPasswordForm.php" />
         <option value="$PROJECT_DIR$/Assets/jquery.min.js" />
         <option value="$PROJECT_DIR$/Assets/modal.css" />
-        <option value="$PROJECT_DIR$/UserAccount/Overview.php" />
-        <option value="$PROJECT_DIR$/UserUtils/ChangeUserInformation.php" />
-        <option value="$PROJECT_DIR$/UserAccount/ItemsOut.php" />
         <option value="$PROJECT_DIR$/SQLUtils/DBDataRetrieval.php" />
         <option value="$PROJECT_DIR$/SQLUtils/DBUserDataRetrieval.php" />
         <option value="$PROJECT_DIR$/UserUtils/Logout.php" />
@@ -223,17 +237,34 @@
         <option value="$PROJECT_DIR$/Login.php" />
         <option value="$PROJECT_DIR$/Assets/header.css" />
         <option value="$PROJECT_DIR$/Assets/Header.php" />
-        <option value="$PROJECT_DIR$/Assets/main.css" />
         <option value="$PROJECT_DIR$/Assets/ver.txt" />
         <option value="$PROJECT_DIR$/Assets/About.php" />
         <option value="$PROJECT_DIR$/Assets/Footer.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/UserAccount/Requests.php" />
         <option value="$PROJECT_DIR$/SQLUtils/GetConnection.php" />
         <option value="$PROJECT_DIR$/SQLUtils/ConnectionData.txt" />
+        <option value="$PROJECT_DIR$/Search/SearchResults.php" />
+        <option value="$PROJECT_DIR$/UserUtils/ResetPassword.php" />
+        <option value="$PROJECT_DIR$/UserUtils/DoLogin.php" />
+        <option value="$PROJECT_DIR$/UserUtils/SendPasswordResetMail.php" />
+        <option value="$PROJECT_DIR$/UserUtils/ChangeUserInformation.php" />
+        <option value="$PROJECT_DIR$/UserUtils/DoResetPassword.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/Search/AdvancedSearchResults.php" />
+        <option value="$PROJECT_DIR$/BookPage.php" />
+        <option value="$PROJECT_DIR$/UserAccount/Overview.php" />
+        <option value="$PROJECT_DIR$/installer/sql_creations.sql" />
+        <option value="$PROJECT_DIR$/Assets/tables.css" />
         <option value="$PROJECT_DIR$/UserUtils/CancelRequest.php" />
         <option value="$PROJECT_DIR$/UserUtils/PlaceRequest.php" />
-        <option value="$PROJECT_DIR$/Search/SearchResults.php" />
+        <option value="$PROJECT_DIR$/Installer/sql_creations.sql" />
+        <option value="$PROJECT_DIR$/UserUtils/Requests/Request.php" />
+        <option value="$PROJECT_DIR$/UserUtils/Requests/Book.php" />
+        <option value="$PROJECT_DIR$/UserUtils/Requests/RenewBook.php" />
+        <option value="$PROJECT_DIR$/UserUtils/ItemsOut/Book.php" />
+        <option value="$PROJECT_DIR$/UserAccount/Requests.php" />
+        <option value="$PROJECT_DIR$/UserUtils/ItemsOut/RenewBook.php" />
+        <option value="$PROJECT_DIR$/UserAccount/ItemsOut.php" />
+        <option value="$PROJECT_DIR$/Assets/main.css" />
       </list>
     </option>
   </component>
@@ -303,11 +334,6 @@
             <path>
               <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
               <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
-              <item name="installer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
               <item name="Search" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -327,7 +353,31 @@
             </path>
             <path>
               <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
+              <item name="UserUtils" type="462c0819:PsiDirectoryNode" />
+              <item name="ItemsOut" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+            </path>
+            <path>
+              <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
+              <item name="UserUtils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -438,6 +488,9 @@
       <workItem from="1531932752085" duration="44000" />
       <workItem from="1532470533522" duration="13242000" />
       <workItem from="1532490723360" duration="1274000" />
+      <workItem from="1532613322050" duration="4108000" />
+      <workItem from="1532829986450" duration="49000" />
+      <workItem from="1532959289379" duration="9077000" />
     </task>
     <task id="LOCAL-00001" summary="Added fixed some log-in things. Requests and items out to come next.">
       <created>1521642436130</created>
@@ -747,25 +800,34 @@
       <option name="project" value="LOCAL" />
       <updated>1532491987924</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="images uploaded to gitlab">
+      <created>1532613351259</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1532613351260</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157461000" />
+    <option name="totallyTimeSpent" value="170695000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="46" width="3840" height="2114" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5015625" side_tool="true" weight="0.3178419" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.4984375" visible="true" weight="0.3178419" />
+      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.4984375" weight="0.3178419" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32959402" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.32959402" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49817708" weight="0.24626069" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12135417" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="2" visible="true" weight="0.32852563" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
@@ -779,11 +841,11 @@
       <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32852563" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.32959402" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.32994792" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -793,18 +855,17 @@
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Statistic" order="8" weight="0.32942432" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32852563" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49817708" weight="0.24626069" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015625" side_tool="true" visible="true" weight="0.3178419" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32959402" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32857144" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015625" side_tool="true" visible="true" weight="0.3178419" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12135417" />
     </layout-to-restore>
   </component>
@@ -815,7 +876,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new dump!" />
     <MESSAGE value="new dump 2" />
     <MESSAGE value="fixed rather large security loophole" />
     <MESSAGE value="Fixed bullet issue in WebKit and WebKit-based (or forked, like blink) browsers" />
@@ -840,24 +900,15 @@
     <MESSAGE value="about" />
     <MESSAGE value="requests fix" />
     <MESSAGE value="bug fixes, use getDefaultConnection more" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fixes, use getDefaultConnection more" />
+    <MESSAGE value="images uploaded to gitlab" />
+    <option name="LAST_COMMIT_MESSAGE" value="images uploaded to gitlab" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Search/Search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="56" lean-forward="true" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/info.php" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5ac0c2be-ab08-4273-a805-396b5feb8f3f/console.sql" />
-    <entry file="file://$PROJECT_DIR$/UserUtils/DoCreateAccount.php" />
     <entry file="file://$PROJECT_DIR$/UserUtils/CreateAccount.html" />
     <entry file="file://$PROJECT_DIR$/Installer/dump512018.sql">
       <provider selected="true" editor-type-id="text-editor" />
@@ -880,16 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/installer/sql_creations.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Installer/sql_creations.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.lock">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -898,20 +939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserUtils/SendPasswordResetMail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="87" column="73" selection-start-line="87" selection-start-column="73" selection-end-line="87" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookPage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
-          <caret line="54" column="111" selection-start-line="54" selection-start-column="111" selection-end-line="54" selection-end-column="111" />
         </state>
       </provider>
     </entry>
@@ -943,38 +970,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserUtils/DoResetPassword.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserUtils/ResetPassword.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1131">
-          <caret line="39" column="66" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/modal.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserAccount/ItemsOut.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="39" column="5" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserUtils/ChangeUserInformation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1189">
-          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -999,13 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Search/AdvancedSearchResults.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2552">
-          <caret line="88" column="49" selection-start-line="88" selection-start-column="49" selection-end-line="88" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UserUtils/Logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
@@ -1027,24 +1019,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserAccount/Overview.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1128">
-          <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserUtils/DoLogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1062,33 +1040,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6032">
-          <caret line="208" column="36" selection-start-line="208" selection-start-column="36" selection-end-line="208" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="33" column="174" selection-start-line="33" selection-start-column="174" selection-end-line="33" selection-end-column="174" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#li#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ver.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/About.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
+        <state relative-caret-position="1363">
           <caret line="47" column="64" selection-start-line="47" selection-start-column="64" selection-end-line="47" selection-end-column="64" />
         </state>
       </provider>
@@ -1097,60 +1051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SQLUtils/ConnectionData.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SQLUtils/GetConnection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserAccount/Requests.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2784">
-          <caret line="112" column="47" selection-start-line="112" selection-start-column="47" selection-end-line="112" selection-end-column="47" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserUtils/CancelRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserUtils/PlaceRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="86" selection-start-line="6" selection-start-column="86" selection-end-line="6" selection-end-column="86" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1163,11 +1063,189 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Search/SearchResults.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        <state relative-caret-position="812">
+          <caret line="28" column="122" selection-start-line="28" selection-start-column="122" selection-end-line="28" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserUtils/ResetPassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="28" column="55" lean-forward="true" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserUtils/DoLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserUtils/SendPasswordResetMail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserUtils/ChangeUserInformation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
           <folding>
-            <element signature="e#66#77#0" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserUtils/DoResetPassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="33" column="154" selection-start-line="33" selection-start-column="149" selection-end-line="33" selection-end-column="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Search/AdvancedSearchResults.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="84" column="38" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookPage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserAccount/Overview.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Installer/sqldump622018.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/installer/sql_creations.sql" />
+    <entry file="file://$PROJECT_DIR$/SQLUtils/ConnectionData.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLUtils/GetConnection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/tables.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="112" column="47" selection-start-line="112" selection-start-column="47" selection-end-line="112" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ver.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserUtils/CancelRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="16" column="75" lean-forward="true" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserUtils/ItemsOut/Book.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserUtils/PlaceRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-870">
+          <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserAccount/Requests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Installer/sql_creations.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="103" selection-start-line="6" selection-start-column="103" selection-end-line="6" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserUtils/ItemsOut/RenewBook.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="734">
+          <caret line="31" column="105" selection-start-line="31" selection-start-column="105" selection-end-line="31" selection-end-column="105" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserAccount/ItemsOut.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="67" column="89" lean-forward="true" selection-start-line="67" selection-start-column="89" selection-end-line="67" selection-end-column="89" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="254" column="17" selection-start-line="254" selection-start-column="17" selection-end-line="254" selection-end-column="17" />
         </state>
       </provider>
     </entry>

@@ -2,6 +2,7 @@
 session_start();
 require('../Assets/Header.php');
 require('EncryptLib.php');
+require("../SQLUtils/GetConnection.php")
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +37,7 @@ require('EncryptLib.php');
             echo "</form>";
         }
         function getHashedPasswordFromEmail($email){
-            $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
+            $conn = getDefaultConnection();
             $result = $conn->query("SELECT password FROM Users WHERE email=\"".$email."\"");
             if($result->num_rows == 0){return false;}
             while ($row = $result->fetch_assoc()){
@@ -45,7 +46,7 @@ require('EncryptLib.php');
         }
         function getUsernameFromEmail($email){
 
-            $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
+            $conn = getDefaultConnection();
             $result = $conn->query("SELECT username FROM Users WHERE email=\"".$email."\"");
             if($result->num_rows == 0){return false;}
             while ($row = $result->fetch_assoc()){

@@ -248,3 +248,25 @@ select::-ms-expand{
     height:100%;
 }
 
+.noRenew {
+    cursor: not-allowed;
+}
+
+#noRenewTooltip {
+    padding:5px;
+    background-color: #efefef;
+    border: 1px solid black;
+    display:inline-block;
+    position:absolute;
+    visibility:hidden;
+    margin-left: 10px;
+    border-radius: 5px;
+    color:red;
+    font-family:Poppins, sans-serif;
+    z-index: 1;
+}
+
+button.noRenew:hover + #noRenewTooltip{
+    visibility: visible;
+}
+

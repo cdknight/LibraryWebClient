@@ -1,6 +1,7 @@
 <?php
 session_start();
 require("../Assets/Header.php");
+require("../SQLUtils/GetConnection.php");
 ?>
 
 
@@ -81,7 +82,7 @@ require("../Assets/Header.php");
         }
         //echo "GENERATED QUERY: ".$query."<br>";
 
-        $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
+        $conn = getDefaultConnection();
         $result = $conn->query($query);
         if ($result->num_rows == 0){
             echo "<p class='title' style='color:red'>Sorry, but no books were found</p>";

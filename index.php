@@ -1,7 +1,7 @@
 <?php
 session_start();
-include("Assets/Header.php");
-
+require("Assets/Header.php");
+require("SQLUtils/GetConnection.php");
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +20,7 @@ include("Assets/Header.php");
 
 
         <?php
-        $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
+        $conn = getDefaultConnection();
         //echo "rbooklist: ". $_SESSION['recent_book_list'].count($_SESSION['recent_book_list']);
         //print_r($_SESSION['recent_book_list']);
         //echo sizeof($_SESSION['recent_book_list']);

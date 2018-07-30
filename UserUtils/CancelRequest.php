@@ -1,6 +1,6 @@
 <?php session_start();
 //include("../Assets/Header.php");
-
+require("../SQLUtils/GetConnection.php");
 
 
 ?>
@@ -11,10 +11,10 @@
 </head>
 <html>
     <?php
-        $conn = new mysqli('localhost', 'default_u', 'letmeinmysql', 'lcatalog');
+        $conn = getDefaultConnection();
         $query = "DELETE FROM Requests WHERE id=".$_GET['id'];
         $conn->query($query);
-        $_SESSION['msg'] = "<div class='uifixes'><p class='title' style='color:green'>The request was canceled successfully.</p></div>";
+        $_SESSION['msg'] = "<p class='title' style='color:green'>The request was canceled successfully.</p>";
         header("Location: ../UserAccount/Requests.php")
     ?>
 </html>

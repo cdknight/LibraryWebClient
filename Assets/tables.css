@@ -1,0 +1,23 @@
+.regularTable, .regularTable td, .regularTable th {
+    /*styles */
+    border: 1px solid black;
+    border-collapse: collapse;
+
+
+
+    /*positioning*/
+    margin:auto;
+}
+
+.regularTable th {
+    /*styles */
+    font-family:Poppins, sans-serif;
+    padding: 10px;
+}
+
+.regularTable td {
+    /*styles */
+    font-family:"Fira Sans", sans-serif;
+    padding: 5px;
+}
+
