@@ -2,7 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="lcatalog" uuid="75ecb176-4bb8-4a45-a9f2-92185af0987b">
-      <database-info product="MySQL" version="10.1.29-MariaDB-6" jdbc-version="4.2" driver-name="MariaDB connector/J" driver-version="2.2.1">
+      <database-info product="MySQL" version="10.1.29-MariaDB-6" jdbc-version="4.2" driver-name="MariaDB connector/J" driver-version="2.2.1" family="MARIADB" exact-version="10.1.29">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>

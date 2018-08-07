@@ -163,6 +163,15 @@ a{
     margin:4%;
 }
 
+/* mobile phone from https://davidwalsh.name/device-state-detection-css-media-queries-javascript */
+@media all and (max-width: 768px) {
+    .uifixes {
+        text-align: center;
+        margin:20%;
+    }
+}
+
+
 h1{
     font-family: sans-serif;
 }
@@ -263,3 +272,10 @@ button.noRenew:hover + #noRenewTooltip{
     visibility: visible;
 }
 
+.inlineParagraph{
+    display:inline;
+}
+
+.contentText {
+    font-family:"Fira Sans", Verdana, Helvetica, "sans-serif";
+}

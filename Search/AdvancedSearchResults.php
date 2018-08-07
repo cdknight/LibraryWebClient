@@ -37,18 +37,22 @@ require("../SQLUtils/GetConnection.php");
             //how did they get here? input required is there
             $_SESSION['msg'] = "<p class='title' style='color: red'>You need to input a search query for Column 1.</p>";
             header("Location: /FVLibraryWebClient/Search/AdvancedSearch.php");
+            die();
         }
         if ($column1 == "select"){
             $_SESSION['msg'] = $_SESSION['msg']."<p class='title' style='color: red'>You need to select an option from the drop-down box in Column 1.</p>";
             header("Location: /FVLibraryWebClient/Search/AdvancedSearch.php");
+            die();
         }
         if ($column2val != "" && $column2 == "select"){
             $_SESSION['msg'] = $_SESSION['msg']."<p class='title' style='color: red'>You need to select an option from the drop-down box in Column 2.</p>";
             header("Location: /FVLibraryWebClient/Search/AdvancedSearch.php");
+            die();
         }
         if ($column3val != "" && $column3 == "select"){
             $_SESSION['msg'] = $_SESSION['msg']."<p class='title' style='color: red'>You need to select an option from the drop-down box in Column 3.</p>";
             header("Location: /FVLibraryWebClient/Search/AdvancedSearch.php");
+            die();
         }
 
         // throw out empty boxes

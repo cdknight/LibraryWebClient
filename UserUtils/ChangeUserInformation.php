@@ -1,6 +1,11 @@
 <?php
     //retr vars
     session_start();
+    require("../SQLUtils/GetConnection.php");
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+
     $tochange = $_POST['to_change'];
     $changeval = $_POST['change_val'];
     $username = $_SESSION['username'];

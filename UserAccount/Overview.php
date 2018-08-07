@@ -112,6 +112,7 @@
 
             $.post('/FVLibraryWebClient/UserUtils/ChangeUserInformation.php', details, function(data){
                 dataHasChanged = true;
+                console.log('got recieved data');
                 $("#change_data").hide();
                 $("#info").html(data);
             })

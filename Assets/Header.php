@@ -19,34 +19,10 @@
 
             });
         </script>
-        <!--<div class="vertnav">
-            <a href="/FVLibraryWebClient/index.php" class="nonlink"><b style="font-family: "Verdana">Fellowship Village Library Catalog</b></a><br><br>
-            <a href="/FVLibraryWebClient/Search/Search.php"><button class='rounded navbtn'><span>Search </span></button></a><br><br>
-            <?php
-            /*session_start();
-            if (!isset($_SESSION['username'])){
-                if ($_SERVER["REQUEST_URI"] != "/FVLibraryWebClient/Login.php" || $_SERVER["REQUEST_URI"] != "/FVLibraryWebClient/UserUtils/DoResetPassword.php" || $_SERVER['REQUEST_URI'] != "/FVLibraryWebClient/index.php" || $_SERVER["REQUEST_URI"] != "/FVLibraryWebClient/Login.php"){
-                    $_SESSION['next'] = $_SERVER["REQUEST_URI"];
-                }
-                echo "<a href=\"/FVLibraryWebClient/Login.php\"><button class='rounded navbtn'><span>Login </span></button></a><br><br>";
-            }
-            elseif(isset($_SESSION['username'])){
-                echo "<a href='/FVLibraryWebClient/UserAccount/Overview.php'><button class='rounded navbtn'><span>Account Overview </span></button></a><br><br>";
-                echo "<a href='/FVLibraryWebClient/UserAccount/Requests.php'><button class='rounded navbtn'><span>Requests </span></button></a><br><br>";
-                echo "<a href='/FVLibraryWebClient/UserAccount/ItemsOut.php'><button class='rounded navbtn'><span>Items Out </span></button></a><br><br>";
-                echo "<button id='ajax_logout_btn' style='display:none' onclick='ajax_logout()' class='rounded navbtn'><span>Log Out </span></button>";
-                echo "<noscript><a href='/FVLibraryWebClient/UserUtils/Logout.php'><button class='rounded navbtn'><span>Log Out </span></button></a></noscript>";
-                echo "<br><br>";
-                echo "<a class='title' style='float: left'>Welcome, ".$_SESSION['username']."!</a>";
-
-            }*/
-
-            ?>
-        </div>-->
 
         <div class="nav">
             <ul>
-            <li><div class="dropdown" style="max-width:2.5%; ">
+            <li><div class="dropdown" id="logodropdown">
                     <a href="/FVLibraryWebClient/index.php" class="nonlink"><button class="rounded navbtn"><img alt="Search" src="/FVLibraryWebClient/Images/fvlogo.png" class="fvlogo  "></button></a>
                     <div id="dropdown-options">
 

@@ -1,4 +1,7 @@
-<?php session_start();
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 include("../Assets/Header.php");
 ?>
 
@@ -11,6 +14,7 @@ include("../Assets/Header.php");
 </head>
 <body>
     <div class="uifixes">
+        <?php if(isset($_SESSION['msg'])){echo $_SESSION['msg'];unset($_SESSION['msg']);} ?>
         <h1 class="title">Search</h1>
         <form method="GET" action="SearchResults.php">
             <input name="query" type="text" class="defaultinp"><br><br>

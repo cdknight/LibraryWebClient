@@ -55,3 +55,12 @@ div.nav div.dropdown:hover div#dropdown-options {
     transition-delay:0.5s;
 }
 
+div#logodropdown {
+    max-width:2.5%;
+}
+
+@media all and (max-width: 768px) {
+    div#logodropdown {
+        max-width:15%;
+    }
+}

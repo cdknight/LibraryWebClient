@@ -1,4 +1,10 @@
-<?php session_start();
+<?php
+session_start();
+if (empty($_GET["query"])){
+    $_SESSION['msg'] = "<p style='color:red' class='title'>Please enter a search term.</p>";
+    header("Location: /FVLibraryWebClient/Search/Search.php");
+}
+
 include("../Assets/Header.php");
 include("../SQLUtils/GetConnection.php")
 ?>
@@ -15,17 +21,20 @@ include("../SQLUtils/GetConnection.php")
     <?php
 
     $conn = getDefaultConnection();
-    $query = "SELECT * FROM Books WHERE Author LIKE '%".$_GET['query']."%' OR Title LIKE '%".$_GET['query']."%' OR Genre LIKE '%".$_GET['query']."%' OR Notes1 LIKE '%".$_GET['query']."%' OR Notes2 LIKE '%".$_GET['query']."%'";
+    $query = "SELECT * FROM Books WHERE Author LIKE '%".$_GET['query']."%' OR Title LIKE '%".$_GET['query']."%' OR Genre LIKE '%".$_GET['query']."%' OR CheckedOut LIKE '%".$_GET['query']."%' OR Missing LIKE '%".$_GET['query']."%'";
     $result = $conn->query($query);
     ?>
     <h1 class="title">Search Results</h1>
     <?php
+
     while($row = $result->fetch_assoc()){
         $id = $row['ID'];
-        echo "<a href=\"../BookPage.php?id=".(string)$id."&squery=".$_GET["query"]."\">".$row['Title']." </a><i>&emsp;&emsp;By: </i>".$row['Author']."<br><br>";
+        echo "<div class='searchResultBlock'>";
+        echo "<a href=\"../BookPage.php?id=".(string)$id."&squery=".$_GET["query"]."\">".$row['Title']." </a><p class='inlineParagraph contentText'>&emsp;&emsp;Author: ".$row['Author']."</p><br><br>";
+        echo "</div>";
     }
     if ($result->num_rows == 0){
-        echo "<p class='title'>There are no search results for this term.</p>";
+        echo "<p class='title'>Sorry, but there were no search results for this term.</p>";
         echo "<a href='/FVLibraryWebClient/Search/Search.php'><button class='navbtn rounded'>Go Back to Search &leftarrow;</button></a>";
     }
     ?>
