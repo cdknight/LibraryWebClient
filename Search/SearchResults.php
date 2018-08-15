@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (empty($_GET["query"])){
-    $_SESSION['msg'] = "<p style='color:red' class='title'>Please enter a search term.</p>";
+    $_SESSION['msg'] = "<p style='color:red' id='msg' class='title'>Please enter a search term.</p>";
     header("Location: /FVLibraryWebClient/Search/Search.php");
 }
 

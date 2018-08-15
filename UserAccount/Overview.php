@@ -1,6 +1,6 @@
 <?php
     require("../Assets/Header.php");
-    session_start();
+
     if (!isset($_SESSION['username'])){
         //not logged in, dump at Login page to log in <i>with</i> msg
         $_SESSION['msg'] = "<div class='uifixes'><p style='color=red'>You must log in first in order to view your account overview.</p></div>";
@@ -25,6 +25,10 @@
         <div class="content">
             <h2 class="title">Account Information</h2>
             <?php
+            if (isset($_SESSION['msg'])){
+                echo($_SESSION['msg']);
+                unset($_SESSION['msg']);
+            }
             $conn = getDefaultConnection();
             $query= "SELECT * FROM Users WHERE username=\"".$_SESSION['username']."\"";
             $result = $conn->query($query);
