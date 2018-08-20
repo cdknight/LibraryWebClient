@@ -4,7 +4,8 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="/FVLibraryWebClient/Assets/main.css">
-    <link rel="stylesheet" type="text/css" href="/FVLibraryWebClient/Assets/header.css"
+    <link rel="stylesheet" type="text/css" href="/FVLibraryWebClient/Assets/header.css" />
+    <link rel="stylesheet" type="text/css" href="/FVLibraryWebClient/Assets/card.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/FVLibraryWebClient/Images/fvlogo.png">
     <script src="/FVLibraryWebClient/Assets/jquery.min.js"></script>

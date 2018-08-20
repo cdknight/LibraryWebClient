@@ -1,0 +1,45 @@
+/* book card */
+
+.bookCard{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookLinks {
+    margin-left: 10%;
+    display: inline-block;
+}
+
+.bookInfoExpand {
+    margin-top: 10px;
+
+}
+
+.extraBookInfo {
+    display: none;
+    flex-flow: column;
+    align-items: flex-start;
+    margin-left: 10%;
+
+
+}
+/* generic card*/
+
+.card {
+    min-width: 30%;
+    min-height: 10%;
+    border-radius: 3px;
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* card container */
+
+.cardList {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}

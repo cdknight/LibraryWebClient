@@ -279,3 +279,33 @@ button.noRenew:hover + #noRenewTooltip{
 .contentText {
     font-family:"Fira Sans", Verdana, Helvetica, "sans-serif";
 }
+
+.round {
+    padding: 7px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+}
+
+.largeText {
+    font-size: 20px;
+}
+
+.tooltipSpan {
+    max-width:90px;
+    padding:5px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    display:block;
+    position:absolute;
+    visibility:hidden;
+    border-radius: 5px;
+    color:green;
+    font-family:Poppins, sans-serif;
+    z-index: 1;
+}
+
+button.tooltipButton:hover + .tooltipSpan {
+    visibility: visible;
+}

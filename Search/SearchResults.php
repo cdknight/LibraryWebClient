@@ -5,8 +5,10 @@ if (empty($_GET["query"])){
     header("Location: /FVLibraryWebClient/Search/Search.php");
 }
 
+
 include("../Assets/Header.php");
-include("../SQLUtils/GetConnection.php")
+include("../SQLUtils/GetConnection.php");
+require_once("../BookUtils/BookTools.php")
 ?>
 
 <!DOCTYPE html>
@@ -25,19 +27,26 @@ include("../SQLUtils/GetConnection.php")
     $result = $conn->query($query);
     ?>
     <h1 class="title">Search Results</h1>
+    <div class="cardList">
+
+
     <?php
 
     while($row = $result->fetch_assoc()){
         $id = $row['ID'];
-        echo "<div class='searchResultBlock'>";
-        echo "<a href=\"../BookPage.php?id=".(string)$id."&squery=".$_GET["query"]."\">".$row['Title']." </a><p class='inlineParagraph contentText'>&emsp;&emsp;Author: ".$row['Author']."</p><br><br>";
-        echo "</div>";
+        echo generateBookCard($id, $_GET['query']);
+        //echo "<div class='card bookCard'>";
+        //echo "<a href=\"../BookPage.php?id=".(string)$id."&squery=".$_GET["query"]."\">".$row['Title']." </a><p class='inlineParagraph contentText'>&emsp;&emsp;Author: ".$row['Author']."</p><br><br>";
+        //echo "</div>";
+
     }
     if ($result->num_rows == 0){
         echo "<p class='title'>Sorry, but there were no search results for this term.</p>";
         echo "<a href='/FVLibraryWebClient/Search/Search.php'><button class='navbtn rounded'>Go Back to Search &leftarrow;</button></a>";
     }
     ?>
+    </div>
+    <script src='/FVLibraryWebClient/Assets/bookCardHandler.js'></script>
 </div>
 
 </body>

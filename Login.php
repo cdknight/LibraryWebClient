@@ -15,13 +15,14 @@ require('Assets/Header.php')
     <link rel="stylesheet" type="text/css" href="Assets/main.css" >
 </head>
 <body>
-<?php echo $_SESSION['msg']; $_SESSION['msg'] = "";
-unset($_SESSION['next']);
-if (isset($_GET['next'])){
-    $_SESSION['next'] = $_GET['next'];
-}
-?>
+
     <div class="uifixes">
+        <?php echo $_SESSION['msg']; $_SESSION['msg'] = "";
+            unset($_SESSION['next']);
+            if (isset($_GET['next'])){
+                $_SESSION['next'] = $_GET['next'];
+            }
+        ?>
         <h1 class="title">Log In</h1>
         <?php echo '<form method="POST" action="UserUtils/DoLogin.php">' ?>
             <label for="username" class="title">Username: </label>

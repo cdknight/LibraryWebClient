@@ -1,16 +1,19 @@
 <?php session_start();
 require("Assets/Header.php");
+require("BookUtils/BookData.php");
 if (!isset($_SESSION['recent_book_list'])){
     $_SESSION['recent_book_list'] = array();
 }
-require("SQLUtils/GetConnection.php");
+require_once("SQLUtils/GetConnection.php");
+
+
 ?>
 
 <!DOCTYPE html>
 
 <html>
 <head>
-    <title>Search Results</title>
+    <title><?php getBookTitle($_GET['id'])?></title>
     <link rel="stylesheet" type="text/css" href="Assets/main.css">
 </head>
 <body>

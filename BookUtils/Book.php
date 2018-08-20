@@ -112,6 +112,7 @@ require("../../SQLUtils/GetConnection.php");
                 $this->renewals_remaining= $row['renewals_remaining'];
                 $this->previous_renewal= $row['previous_renewal'];
             }
+
         }
 
         private function execQuery($query){
