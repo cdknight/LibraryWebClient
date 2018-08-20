@@ -18,7 +18,7 @@
 
 
         $finalCardString = "";
-        $finalCardString .= "<div class='card bookCard'>";
+        $finalCardString .= "<div class='card bookCard' id='book$bookId'>";
 
         $finalCardString .= "<div class='mainBookInfo'>";
 

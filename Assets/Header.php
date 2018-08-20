@@ -24,9 +24,8 @@
         <div class="nav">
             <ul>
             <li><div class="dropdown" id="logodropdown">
-                    <a href="/FVLibraryWebClient/index.php" class="nonlink"><button class="rounded navbtn"><img alt="Search" src="/FVLibraryWebClient/Images/fvlogo.png" class="fvlogo  "></button></a>
+                    <a href="/FVLibraryWebClient/index.php" class="nonlink"><button class="rounded navbtn"><img alt="Search" src="/FVLibraryWebClient/Images/fvlogo.png" class="fvlogo "></button></a>
                     <div id="dropdown-options">
-
                         <a class="nohover">Home</a>
                     </div>
                 </div></li>

@@ -7,26 +7,26 @@
 
     session_start();
 
-    require("../../BookUtils/Book.php");
+    require("../../BookUtils/ItemOut.php");
 
     $itemout_id = $_GET['id'];
 
-    $book = new Book($itemout_id);
+    $book = new ItemOut($itemout_id);
 
 
-    echo "bookid: ".$book->getBookid();
-    echo "<br>datedue: ".$book->getDateDue();
-    echo "<br>dateout: ".$book->getDateOut();
-    echo "<br>id: ".$book->getId();
-    echo "<br>prevrenewal: ".$book->getPreviousRenewal();
-    echo "<br>renremaining: ".$book->getRenewalsRemaining()."<br>";
+    //echo "bookid: ".$book->getBookid();
+    //echo "<br>datedue: ".$book->getDateDue();
+    //echo "<br>dateout: ".$book->getDateOut();
+    //echo "<br>id: ".$book->getId();
+    //echo "<br>prevrenewal: ".$book->getPreviousRenewal();
+    //echo "<br>renremaining: ".$book->getRenewalsRemaining()."<br>";
 
 
     $result = $book->renew();
 
+
     if ($result == "limitreached"){
-        $_SESSION['msg'] = "<p class='title' style='color:red'>The book cannot be renewed anymore. The limit of renewals has been reached.</p>";
-        header("Location: /FVLibraryWebClient/UserAccount/ItemsOut.php");
+        $_SESSION['msg'] = "<p class='title' style='color:red'>This book cannot be renewed anymore. The limit of renewals has been reached.</p>";
     }
     else {
         $_SESSION['msg'] = "<p class='title' style='color:green'>The book was renewed successfully.</p>";

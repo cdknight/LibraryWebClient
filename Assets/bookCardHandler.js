@@ -1,9 +1,8 @@
 $(function () {
 
    $(".bookInfoExpand").click(function () {
-       var bookInfoShowing = JSON.parse($(this).attr('data-book-showing'));
-       console.log(bookInfoShowing);
-       $(this).attr('data-book-showing', !(bookInfoShowing).toString());
+       var bookInfoShowing = !JSON.parse($(this).attr('data-book-showing'));
+       $(this).attr('data-book-showing', (bookInfoShowing).toString());
        var bookId = $(this).attr('data-book-id');
        var infoDiv = $("#extraBookInfo" +  bookId);
        if (bookInfoShowing){

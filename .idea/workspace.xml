@@ -4,19 +4,19 @@
     <bookmark url="file://$PROJECT_DIR$/Search/SearchResults.php" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="099ca70d-196c-454e-a082-f26487f09cad" name="Default" comment="Modal updates, login will redirect to overview when logged in.">
-      <change afterPath="$PROJECT_DIR$/Assets/bookCardHandler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/card.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookUtils/BookData.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookUtils/BookTools.php" afterDir="false" />
+    <list default="true" id="099ca70d-196c-454e-a082-f26487f09cad" name="Default" comment="start work on search card">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bookCardHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bookCardHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/card.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/card.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/BookPage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Search/SearchResults.php" beforeDir="false" afterPath="$PROJECT_DIR$/Search/SearchResults.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserUtils/ItemsOut/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/BookUtils/Book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookUtils/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/BookUtils/ItemOut.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookUtils/BookData.php" beforeDir="false" afterPath="$PROJECT_DIR$/BookUtils/BookData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookUtils/BookTools.php" beforeDir="false" afterPath="$PROJECT_DIR$/BookUtils/BookTools.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/fvlogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/fvlogo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserUtils/ItemsOut/RenewBook.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/ItemsOut/RenewBook.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserUtils/PlaceRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/PlaceRequest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,44 +51,46 @@
     <session id="-1800002687">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1292" />
-          <entry key="js" value="645" />
-          <entry key="php" value="3685" />
-          <entry key="txt" value="194" />
+          <entry key="css" value="1471" />
+          <entry key="js" value="646" />
+          <entry key="php" value="4015" />
+          <entry key="txt" value="227" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1292" />
-          <entry key="JavaScript" value="645" />
-          <entry key="PHP" value="3685" />
-          <entry key="PLAIN_TEXT" value="194" />
+          <entry key="CSS" value="1471" />
+          <entry key="JavaScript" value="646" />
+          <entry key="PHP" value="4015" />
+          <entry key="PLAIN_TEXT" value="227" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="5" />
-          <entry key="js" value="1" />
-          <entry key="php" value="16" />
+          <entry key="css" value="6" />
+          <entry key="js" value="2" />
+          <entry key="php" value="19" />
+          <entry key="png" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="5" />
-          <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="16" />
+          <entry key="CSS" value="6" />
+          <entry key="Image" value="1" />
+          <entry key="JavaScript" value="2" />
+          <entry key="PHP" value="19" />
         </counts>
       </usages-collector>
     </session>
@@ -96,32 +98,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Search/SearchResults.php">
+        <entry file="file://$PROJECT_DIR$/BookUtils/BookTools.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1004">
-              <caret line="48" column="73" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="e#97#108#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="452">
+              <caret line="20" column="71" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookUtils/BookTools.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="887">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/bookCardHandler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+            <state relative-caret-position="377">
+              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -129,17 +118,57 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookUtils/BookData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1206">
-              <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
+            <state relative-caret-position="812">
+              <caret line="28" column="74" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserUtils/ItemsOut/RenewBook.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="725">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BookUtils/ItemOut.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BookPage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-783">
-              <caret column="22" selection-start-column="22" selection-end-column="22" />
+            <state relative-caret-position="899">
+              <caret line="57" column="91" selection-start-line="57" selection-start-column="91" selection-end-line="57" selection-end-column="91" />
+              <folding>
+                <element signature="e#98#109#0" expanded="true" />
+                <element signature="e#63#74#0" expanded="true" />
+                <element signature="e#81#92#0" expanded="true" />
+                <element signature="e#63#74#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,8 +176,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="295" column="15" selection-start-line="295" selection-start-column="15" selection-end-line="295" selection-end-column="15" />
+            <state relative-caret-position="84">
+              <caret line="239" column="16" lean-forward="true" selection-start-line="239" selection-start-column="16" selection-end-line="239" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -156,8 +185,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/card.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="553">
+              <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -167,24 +196,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="638">
               <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookUtils/Book.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="114" selection-start-line="114" selection-end-line="114" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UserAccount/ItemsOut.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="957">
-              <caret line="69" column="23" lean-forward="true" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -202,8 +216,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.uifixes</find>
-      <find>nonlink</find>
       <find>vertnam</find>
       <find>select</find>
       <find>defaultinp</find>
@@ -232,6 +244,8 @@
       <find>bookid</find>
       <find>rounded</find>
       <find>font-</find>
+      <find>button</find>
+      <find>fvlogo</find>
     </findStrings>
     <replaceStrings>
       <replace>UPDATE TABLE ItemsOut</replace>
@@ -251,7 +265,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SQLUtils/DBDataRetrieval.php" />
         <option value="$PROJECT_DIR$/SQLUtils/DBUserDataRetrieval.php" />
         <option value="$PROJECT_DIR$/Assets/phpinfo.php" />
         <option value="$PROJECT_DIR$/SQLUtils/UserDataTypes.php" />
@@ -270,7 +283,6 @@
         <option value="$PROJECT_DIR$/installer/sql_creations.sql" />
         <option value="$PROJECT_DIR$/Assets/tables.css" />
         <option value="$PROJECT_DIR$/UserUtils/CancelRequest.php" />
-        <option value="$PROJECT_DIR$/UserUtils/PlaceRequest.php" />
         <option value="$PROJECT_DIR$/UserUtils/Requests/Request.php" />
         <option value="$PROJECT_DIR$/UserUtils/Requests/Book.php" />
         <option value="$PROJECT_DIR$/UserUtils/Requests/RenewBook.php" />
@@ -290,18 +302,20 @@
         <option value="$PROJECT_DIR$/Search/AdvancedSearch.php" />
         <option value="$PROJECT_DIR$/UserAccount/Overview.php" />
         <option value="$PROJECT_DIR$/Assets/modal.css" />
-        <option value="$PROJECT_DIR$/Assets/Header.php" />
-        <option value="$PROJECT_DIR$/UserUtils/ItemsOut/RenewBook.php" />
         <option value="$PROJECT_DIR$/BookUtils/Book.php" />
         <option value="$PROJECT_DIR$/Assets/BookTools.php" />
-        <option value="$PROJECT_DIR$/BookPage.php" />
         <option value="$PROJECT_DIR$/Login.php" />
-        <option value="$PROJECT_DIR$/BookUtils/BookData.php" />
-        <option value="$PROJECT_DIR$/Assets/main.css" />
-        <option value="$PROJECT_DIR$/Assets/card.css" />
-        <option value="$PROJECT_DIR$/BookUtils/BookTools.php" />
         <option value="$PROJECT_DIR$/Search/SearchResults.php" />
         <option value="$PROJECT_DIR$/Assets/bookCardHandler.js" />
+        <option value="$PROJECT_DIR$/Assets/card.css" />
+        <option value="$PROJECT_DIR$/Assets/main.css" />
+        <option value="$PROJECT_DIR$/Assets/Header.php" />
+        <option value="$PROJECT_DIR$/UserUtils/PlaceRequest.php" />
+        <option value="$PROJECT_DIR$/BookUtils/ItemOut.php" />
+        <option value="$PROJECT_DIR$/UserUtils/ItemsOut/RenewBook.php" />
+        <option value="$PROJECT_DIR$/BookUtils/BookData.php" />
+        <option value="$PROJECT_DIR$/BookUtils/BookTools.php" />
+        <option value="$PROJECT_DIR$/BookPage.php" />
       </list>
     </option>
   </component>
@@ -337,6 +351,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -352,135 +367,57 @@
             <path>
               <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
               <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
-              <item name="Errors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
-              <item name="Images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
-              <item name="Installer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
-              <item name="Search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
-              <item name="SQLUtils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
-              <item name="UserAccount" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
-              <item name="UserUtils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
-              <item name="UserUtils" type="462c0819:PsiDirectoryNode" />
-              <item name="ItemsOut" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </path>
-            <path>
-              <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
-              <item name="Assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
               <item name="BookUtils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
               <item name="Errors" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
               <item name="Images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
               <item name="Installer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
               <item name="Search" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
               <item name="SQLUtils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
               <item name="UserAccount" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
               <item name="UserUtils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="FVLibraryWebClient" type="462c0819:PsiDirectoryNode" />
               <item name="UserUtils" type="462c0819:PsiDirectoryNode" />
               <item name="ItemsOut" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FVLibraryWebClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -603,14 +540,8 @@
       <workItem from="1534103235061" duration="21000" />
       <workItem from="1534300761144" duration="1399000" />
       <workItem from="1534720403137" duration="5000" />
-      <workItem from="1534720422891" duration="9482000" />
-    </task>
-    <task id="LOCAL-00001" summary="Added fixed some log-in things. Requests and items out to come next.">
-      <created>1521642436130</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1521642436131</updated>
+      <workItem from="1534720422891" duration="9511000" />
+      <workItem from="1534769485643" duration="4437000" />
     </task>
     <task id="LOCAL-00002" summary="requests implemented">
       <created>1521752772157</created>
@@ -948,17 +879,24 @@
       <option name="project" value="LOCAL" />
       <updated>1534302153282</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="start work on search card">
+      <created>1534736177901</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1534736177901</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190801000" />
+    <option name="totallyTimeSpent" value="195267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="46" width="3840" height="2114" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12912673" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13045794" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32857144" />
@@ -972,10 +910,10 @@
       <window_info anchor="bottom" id="Statistic" order="8" weight="0.32942432" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015625" side_tool="true" weight="0.3178419" />
       <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="File Transfer" order="11" sideWeight="0.4984375" weight="0.3175381" />
+      <window_info anchor="bottom" id="File Transfer" order="11" sideWeight="0.4984375" visible="true" weight="0.3175381" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32959402" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="14" sideWeight="0.49817708" visible="true" weight="0.24618736" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49817708" weight="0.24618736" />
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection Results" order="16" weight="0.32959402" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -1019,7 +957,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ItemsOut no items checked out message" />
     <MESSAGE value="ui tweaks, work on advanced search, refactoring and stuff" />
     <MESSAGE value="login -&gt; go to previous url" />
     <MESSAGE value="advanced search working" />
@@ -1044,24 +981,15 @@
     <MESSAGE value="update with less bugs" />
     <MESSAGE value="Search results are more refined. SearchResults will eventually have an expandable div." />
     <MESSAGE value="Modal updates, login will redirect to overview when logged in." />
-    <option name="LAST_COMMIT_MESSAGE" value="Modal updates, login will redirect to overview when logged in." />
+    <MESSAGE value="start work on search card" />
+    <option name="LAST_COMMIT_MESSAGE" value="start work on search card" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/composer.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/UserUtils/emailtest.php" />
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1093">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
@@ -1164,13 +1092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
           <caret line="16" column="75" lean-forward="true" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserUtils/PlaceRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-307">
-          <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -1292,31 +1213,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Header.php">
+    <entry file="file://$PROJECT_DIR$/Search/SearchResults.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87">
-          <caret line="6" column="90" selection-start-line="6" selection-start-column="90" selection-end-line="6" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserUtils/ItemsOut/RenewBook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookUtils/Book.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
+        <state relative-caret-position="1392">
+          <caret line="48" column="73" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UserAccount/ItemsOut.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="957">
-          <caret line="69" column="23" lean-forward="true" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
+          <caret line="69" column="23" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1324,59 +1231,105 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
           <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookPage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-783">
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookUtils/BookData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1206">
-          <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="295" column="15" selection-start-line="295" selection-start-column="15" selection-end-line="295" selection-end-column="15" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/card.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        <state relative-caret-position="553">
+          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookUtils/BookTools.php">
+    <entry file="file://$PROJECT_DIR$/Images/fvlogo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="887">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="58">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Search/SearchResults.php">
+    <entry file="file://$PROJECT_DIR$/UserUtils/PlaceRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1004">
-          <caret line="48" column="73" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
+        <state relative-caret-position="145">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="e#97#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="239" column="16" lean-forward="true" selection-start-line="239" selection-start-column="16" selection-end-line="239" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookUtils/ItemOut.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/bookCardHandler.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        <state relative-caret-position="377">
+          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookUtils/BookTools.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="20" column="71" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserUtils/ItemsOut/RenewBook.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookUtils/BookData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="28" column="74" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookPage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="899">
+          <caret line="57" column="91" selection-start-line="57" selection-start-column="91" selection-end-line="57" selection-end-column="91" />
+          <folding>
+            <element signature="e#98#109#0" expanded="true" />
+            <element signature="e#63#74#0" expanded="true" />
+            <element signature="e#81#92#0" expanded="true" />
+            <element signature="e#63#74#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

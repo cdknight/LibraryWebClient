@@ -26,7 +26,7 @@
     }
 
     function getBookLink($bookid, $sQuery){
-        return "/FVLibraryWebClient/BookPage.php?id=$bookid&query=$sQuery";
+        return "/FVLibraryWebClient/BookPage.php?id=$bookid&squery=$sQuery";
     }
 
     function getBookCheckedOutDate($bookid){

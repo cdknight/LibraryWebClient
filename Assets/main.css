@@ -5,6 +5,10 @@
     font-family:Poppins, sans-serif;
 }
 
+button {
+    font-family: "Fira Sans", Verdana, Helvetica, sans-serif;
+}
+
 .content{
     text-align:center;
     top: 0;
@@ -294,7 +298,7 @@ button.noRenew:hover + #noRenewTooltip{
 
 .tooltipSpan {
     max-width:90px;
-    padding:5px;
+    padding:7px;
     background-color: #ffffff;
     border: 1px solid black;
     display:block;
@@ -304,6 +308,7 @@ button.noRenew:hover + #noRenewTooltip{
     color:green;
     font-family:Poppins, sans-serif;
     z-index: 1;
+
 }
 
 button.tooltipButton:hover + .tooltipSpan {

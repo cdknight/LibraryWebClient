@@ -1,7 +1,7 @@
 <?php
 require("../../SQLUtils/GetConnection.php");
 
-    class Book {
+    class ItemOut {
         private $id;
         private $userid;
         private $bookid;
@@ -71,6 +71,7 @@ require("../../SQLUtils/GetConnection.php");
 
         public function renew()
         {
+            $this->readData();
             if ($this->renewals_remaining == 0){
                 return "limitreached";
 
@@ -81,9 +82,11 @@ require("../../SQLUtils/GetConnection.php");
 
             $update = "UPDATE ItemsOut SET renewals_remaining=$this->renewals_remaining where id=$this->id";
             $updatePrevRenewal = "UPDATE ItemsOut SET previous_renewal=$prev_renewals where id=$this->id";
+            $updateDueDate = "UPDATE ItemsOut SET date_due=DATE_ADD(date_due, INTERVAL 7 DAY) where id=$this->id";
 
             $this->execQuery($update);
             $this->execQuery($updatePrevRenewal);
+            $this->execQuery($updateDueDate);
 
             return true;
         }
