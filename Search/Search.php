@@ -16,7 +16,7 @@ include("../Assets/Header.php");
     <div class="uifixes">
         <?php if(isset($_SESSION['msg'])){echo $_SESSION['msg'];unset($_SESSION['msg']);} ?>
         <h1 class="title">Search</h1>
-        <form method="GET" action="SearchResults.php">
+        <form method="GET" action="SearchResults.php" autocomplete="off">
             <input name="query" type="text" class="defaultinp"><br><br>
             <input type="Submit" value="Search!" class="rounded navbtn"><br><br>
 

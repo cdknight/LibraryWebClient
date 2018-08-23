@@ -1,7 +1,9 @@
 <?php
+
 session_start();
-require("../Assets/Header.php");
-require("../SQLUtils/GetConnection.php");
+require_once("../BookUtils/BookTools.php");
+require_once("../Assets/Header.php");
+require_once("../SQLUtils/GetConnection.php");
 ?>
 
 
@@ -13,7 +15,10 @@ require("../SQLUtils/GetConnection.php");
 </head>
 <body>
 <div class="uifixes">
-    <h1 class="title">Search Results</h1>
+    <h1 class="title">Advanced Search Results</h1>
+    <div class="cardList">
+
+
     <?php
         //echo "Getting POST Data:<br>";
         $column1 = $_POST['column1'];
@@ -94,12 +99,14 @@ require("../SQLUtils/GetConnection.php");
         $_SESSION['previous'] = "advancedsearch";
         while ($row = $result->fetch_assoc()){
                 $id = $row["ID"];
-                echo "<a href='../BookPage.php?id=".$id."'>".$row["Title"]."</a>&emsp;
+                /*echo "<a href='../BookPage.php?id=".$id."'>".$row["Title"]."</a>&emsp;
                       <p style='display: inline'>By: ".$row["Author"]."</p>
-                      <br><br>";
+                      <br><br>";*/
+                echo generateBookCard($id, "");
         }
 
     ?>
+    </div>
     <a href="AdvancedSearch.php"><button class="rounded navbtn">&leftarrow; Back to Search</button></a>
 </div>
 
