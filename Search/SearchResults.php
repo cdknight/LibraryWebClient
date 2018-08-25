@@ -16,7 +16,6 @@ require_once("../BookUtils/BookTools.php")
 <html>
 <head>
     <title>Search Results</title>
-    <link rel="stylesheet" type="text/css" href="../Assets/main.css">
 </head>
 <body>
 <div class="uifixes">

@@ -10,18 +10,25 @@ include("../Assets/Header.php");
 <head>
     <meta charset="UTF-8">
     <title>Search</title>
-    <link rel="stylesheet" type="text/css" href="../Assets/main.css">
 </head>
 <body>
     <div class="uifixes">
         <?php if(isset($_SESSION['msg'])){echo $_SESSION['msg'];unset($_SESSION['msg']);} ?>
         <h1 class="title">Search</h1>
         <form method="GET" action="SearchResults.php" autocomplete="off">
-            <input name="query" type="text" class="defaultinp"><br><br>
+            <input id="squery" name="query" type="text" class="defaultinp"><br><br>
+            <div id="searchSuggestionsContainer"></div>
             <input type="Submit" value="Search!" class="rounded navbtn"><br><br>
 
         </form>
         <a href="AdvancedSearch.php"><button class="rounded navbtn">Advanced Search</button></a>
     </div>
+    <script>
+        $("#squery").keyup(function(ev){
+            $.get("/FVLibraryWebClient/Search/SearchSuggestions.php?ajax=true&query=" + $("#squery").val(), function(data){
+                $("#searchSuggestionsContainer").html($(data));
+            });
+        });
+    </script>
 </body>
 </html>

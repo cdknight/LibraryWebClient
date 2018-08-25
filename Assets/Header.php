@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/FVLibraryWebClient/Assets/card.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/FVLibraryWebClient/Images/fvlogo.png">
+    <?php if ($_SERVER['PHP_SELF'] == "/FVLibraryWebClient/Search/Search.php"){echo "<link rel='stylesheet' href='/FVLibraryWebClient/Assets/searchSuggestions.css' />";} ?>
     <script src="/FVLibraryWebClient/Assets/jquery.min.js"></script>
 </head>
 

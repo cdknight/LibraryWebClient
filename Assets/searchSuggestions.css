@@ -1,0 +1,13 @@
+.small {
+    font-size: 14px;
+}
+
+.searchSuggestions {
+    max-width: 20%;
+    max-height:10%;
+    z-index: 1;
+    padding: 20px;
+    box-shadow: 2px 2px 20px 2px grey;
+    margin: auto;
+    margin-bottom: 10px;
+}

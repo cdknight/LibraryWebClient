@@ -1,2 +1,2 @@
-ErrorDocument 404 /FVLibraryWebClient/Errors/404.html
+ErrorDocument 404 /FVLibraryWebClient/Errors/404.php
 ErrorDocument 403 /FVLibraryWebClient/Errors/404.html
