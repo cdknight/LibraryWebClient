@@ -10,7 +10,7 @@
 
         $query = $_GET["query"];
 
-        $db_query = "SELECT * FROM Books WHERE Author LIKE '%$query%' OR Title LIKE '%$query%' OR Genre LIKE '%$query%' OR CheckedOut LIKE '%$query%' OR Missing LIKE '%$query%'";
+        $db_query = "SELECT * FROM Books WHERE Author LIKE '%$query%' OR Title LIKE '%$query%' OR Genre LIKE '%$query%'";
 
         $conn = getDefaultConnection();
 
@@ -21,7 +21,7 @@
             $title = $row['Title'];
             $author = $row['Author'];
             $title_and_author = $title." By: ".$author;
-            echo "<a href='/FVLibraryWebClient/BookPage.php?id=$id'><p class='small title'>$title_and_author</p></a>";
+            echo "<a href='/FVLibraryWebClient/BookPage.php?id=$id&squery=$query'><p class='small title'>$title_and_author</p></a>";
         }
 
        ?>
