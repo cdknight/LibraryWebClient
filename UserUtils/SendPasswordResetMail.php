@@ -16,7 +16,13 @@ function sendPasswordResetMail($emailaddr, $link_to_passwordreset)
     $email->addTo($emailaddr);
     $email->addContent('text/plain', 'Go to ' . $link_to_passwordreset . " to reset your password.");
     $email->addContent("text/html", 'Hello ' . getFirstnameFromEmail($_POST['emailaddr']) . ",<br>Please click <a href='" . $link_to_passwordreset . "'>here</a> to reset your password.");
-    $sendgrid = new \SendGrid('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');
+    if (getenv("SG_API_KEY")){
+        $sendgrid = new \SendGrid(getenv("SG_API_KEY"));
+    }
+    else {
+        $sendgrid = new \SendGrid("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");
+    }
+
     try {
         $response = $sendgrid->send($email);
         print $response->statusCode() . "\n";
