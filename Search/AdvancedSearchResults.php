@@ -106,6 +106,7 @@ require_once("../SQLUtils/GetConnection.php");
         }
 
     ?>
+    <script src="/FVLibraryWebClient/Assets/bookCardHandler.js"></script>
     </div>
     <a href="AdvancedSearch.php"><button class="rounded navbtn">&leftarrow; Back to Search</button></a>
 </div>

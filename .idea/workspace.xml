@@ -4,11 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/Search/SearchResults.php" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="099ca70d-196c-454e-a082-f26487f09cad" name="Default" comment="Searchsuggestions bugs fixed.">
+    <list default="true" id="099ca70d-196c-454e-a082-f26487f09cad" name="Default" comment="update SQL creations and fix annoying renew book bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Installer/sql_creations.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Installer/sql_creations.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserUtils/ItemsOut/RenewBook.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/ItemsOut/RenewBook.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserUtils/SendPasswordResetMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserUtils/SendPasswordResetMail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search/AdvancedSearchResults.php" beforeDir="false" afterPath="$PROJECT_DIR$/Search/AdvancedSearchResults.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,9 +58,9 @@
           <entry key="htaccess" value="3" />
           <entry key="html" value="223" />
           <entry key="js" value="646" />
-          <entry key="php" value="6104" />
+          <entry key="php" value="6148" />
           <entry key="sql" value="75" />
-          <entry key="txt" value="353" />
+          <entry key="txt" value="408" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -70,8 +68,8 @@
           <entry key="CSS" value="1721" />
           <entry key="HTML" value="223" />
           <entry key="JavaScript" value="646" />
-          <entry key="PHP" value="6104" />
-          <entry key="PLAIN_TEXT" value="353" />
+          <entry key="PHP" value="6148" />
+          <entry key="PLAIN_TEXT" value="408" />
           <entry key="SQL" value="75" />
           <entry key="htaccess" value="3" />
         </counts>
@@ -82,7 +80,7 @@
           <entry key="htaccess" value="1" />
           <entry key="html" value="1" />
           <entry key="js" value="2" />
-          <entry key="php" value="36" />
+          <entry key="php" value="37" />
           <entry key="png" value="1" />
           <entry key="sql" value="1" />
         </counts>
@@ -93,7 +91,7 @@
           <entry key="HTML" value="1" />
           <entry key="Image" value="1" />
           <entry key="JavaScript" value="2" />
-          <entry key="PHP" value="36" />
+          <entry key="PHP" value="37" />
           <entry key="SQL" value="1" />
           <entry key="htaccess" value="1" />
         </counts>
@@ -102,7 +100,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Installer/sql_creations.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="203">
@@ -111,11 +109,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Search/SearchSuggestions.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Search/AdvancedSearchResults.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+            <state relative-caret-position="553">
+              <caret line="108" column="44" selection-start-line="108" selection-start-column="44" selection-end-line="108" selection-end-column="44" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -305,7 +310,6 @@
         <option value="$PROJECT_DIR$/BookUtils/BookData.php" />
         <option value="$PROJECT_DIR$/BookUtils/BookTools.php" />
         <option value="$PROJECT_DIR$/BookPage.php" />
-        <option value="$PROJECT_DIR$/Search/AdvancedSearchResults.php" />
         <option value="$PROJECT_DIR$/Errors/404.html" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/Errors/404.php" />
@@ -317,6 +321,7 @@
         <option value="$PROJECT_DIR$/UserUtils/SendPasswordResetMail.php" />
         <option value="$PROJECT_DIR$/UserUtils/ItemsOut/RenewBook.php" />
         <option value="$PROJECT_DIR$/Installer/sql_creations.sql" />
+        <option value="$PROJECT_DIR$/Search/AdvancedSearchResults.php" />
       </list>
     </option>
   </component>
@@ -338,9 +343,9 @@
       <path value="$PROJECT_DIR$/vendor/sendgrid/php-http-client" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="446" />
-    <option name="y" value="185" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="498" />
+    <option name="y" value="838" />
     <option name="width" value="3204" />
     <option name="height" value="1650" />
   </component>
@@ -546,14 +551,7 @@
       <workItem from="1534978722776" duration="2498000" />
       <workItem from="1535197445591" duration="3915000" />
       <workItem from="1535488475320" duration="2384000" />
-      <workItem from="1535736433717" duration="2631000" />
-    </task>
-    <task id="LOCAL-00006" summary="ui fixes">
-      <created>1526865840374</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1526865840374</updated>
+      <workItem from="1535736433717" duration="3929000" />
     </task>
     <task id="LOCAL-00007" summary="more ui fixes, book.png for recent books feature coming soon">
       <created>1526869771182</created>
@@ -891,17 +889,24 @@
       <option name="project" value="LOCAL" />
       <updated>1535201793496</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="update SQL creations and fix annoying renew book bug">
+      <created>1535764466216</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1535764466217</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207317000" />
+    <option name="totallyTimeSpent" value="208615000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="46" width="3840" height="2114" extended-state="6" />
+    <frame x="498" y="838" width="3204" height="1650" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13578275" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16346154" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32857144" />
@@ -915,7 +920,7 @@
       <window_info anchor="bottom" id="Statistic" order="8" weight="0.32942432" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015625" side_tool="true" weight="0.3178419" />
       <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="File Transfer" order="11" sideWeight="0.4984375" visible="true" weight="0.3175381" />
+      <window_info anchor="bottom" id="File Transfer" order="11" sideWeight="0.4984375" visible="true" weight="0.42492712" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32959402" />
       <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49817708" weight="0.24618736" />
@@ -962,7 +967,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="password reset works" />
     <MESSAGE value="password reset **actually** works" />
     <MESSAGE value="encrypt email address in url" />
     <MESSAGE value="typo fix" />
@@ -987,7 +991,8 @@
     <MESSAGE value="update sql tables" />
     <MESSAGE value="search suggestions." />
     <MESSAGE value="Searchsuggestions bugs fixed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Searchsuggestions bugs fixed." />
+    <MESSAGE value="update SQL creations and fix annoying renew book bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="update SQL creations and fix annoying renew book bug" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/SQLUtils/UserDataTypes.php">
@@ -1244,13 +1249,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Search/AdvancedSearchResults.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Search/SearchSuggestions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
@@ -1340,6 +1338,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="7" column="82" selection-start-line="7" selection-start-column="82" selection-end-line="7" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Search/AdvancedSearchResults.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="108" column="44" selection-start-line="108" selection-start-column="44" selection-end-line="108" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
