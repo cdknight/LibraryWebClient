@@ -4,6 +4,8 @@
 -- ------------------------------------------------------
 -- Server version	10.1.29-MariaDB-6
 
+USE lcatalog;
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -27,8 +29,8 @@ CREATE TABLE `Books` (
   `Author` varchar(255) DEFAULT NULL,
   `Title` varchar(255) DEFAULT NULL,
   `Genre` varchar(255) DEFAULT NULL,
-  `Notes1` varchar(255) DEFAULT NULL,
-  `Notes2` varchar(255) DEFAULT NULL,
+  `CheckedOut` BOOL DEFAULT NULL,
+  `Missing` BOOL DEFAULT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `Books_ID_uindex` (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2169 DEFAULT CHARSET=utf8mb4;
@@ -67,7 +69,6 @@ CREATE TABLE `ItemsOut` (
 
 LOCK TABLES `ItemsOut` WRITE;
 /*!40000 ALTER TABLE `ItemsOut` DISABLE KEYS */;
-INSERT INTO `ItemsOut` VALUES (1,2156,58,'2018-07-24',NULL),(2,1420,58,'2018-07-24',NULL);
 /*!40000 ALTER TABLE `ItemsOut` ENABLE KEYS */;
 UNLOCK TABLES;
 

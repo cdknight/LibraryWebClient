@@ -37,17 +37,17 @@ require_once("SQLUtils/GetConnection.php");
     }
 
     echo "<h1 class='title'>".$title."</h1>";
-    echo "<p>Author: ".$author."</p>";
-    echo "<p>Genre: ".$genre."</p>";
+    echo "<p class='title'>Author: ".$author."</p>";
+    echo "<p class='title'>Genre: ".$genre."</p>";
     if ($notes_checkedout){
-        echo "<p>This book was checked out on: ".$notes_checkedout."</p>";
+        echo "<p class='title'>This book was checked out on: ".$notes_checkedout."</p>";
     }
     else{
-        echo "<p>This book has not been checked out.</p>";
+        echo "<p class='title'>This book has not been checked out.</p>";
     }
 
     if ($notes_missing){
-        echo "<p>This book has been reported as missing! You will not be able to check this book out.</p>";
+        echo "<p class='title'>This book has been reported as missing! You will not be able to check this book out.</p>";
     }
     if ($_SESSION['previous'] == "advancedsearch"){
         echo "<a href=\"Search/AdvancedSearch.php\"><button class=\"rounded navbtn\">Go Back to Advanced Search &leftarrow;</button></a><br><br>";

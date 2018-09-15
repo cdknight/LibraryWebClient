@@ -126,16 +126,16 @@
         },
         {
             "name": "sendgrid/sendgrid",
-            "version": "7.0.0",
+            "version": "7.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sendgrid/sendgrid-php.git",
-                "reference": "b659d96f19f69bcef6807300f88ac7a1b2449328"
+                "reference": "7a9b54f96e170272403d1d7c6c4a70a432967899"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sendgrid/sendgrid-php/zipball/b659d96f19f69bcef6807300f88ac7a1b2449328",
-                "reference": "b659d96f19f69bcef6807300f88ac7a1b2449328",
+                "url": "https://api.github.com/repos/sendgrid/sendgrid-php/zipball/7a9b54f96e170272403d1d7c6c4a70a432967899",
+                "reference": "7a9b54f96e170272403d1d7c6c4a70a432967899",
                 "shasum": ""
             },
             "require": {
@@ -177,7 +177,7 @@
                 "send",
                 "sendgrid"
             ],
-            "time": "2018-05-19T16:38:14+00:00"
+            "time": "2018-08-15T23:20:28+00:00"
         }
     ],
     "packages-dev": [],

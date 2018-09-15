@@ -6,10 +6,15 @@ error_reporting(E_ALL);
 require '../vendor/autoload.php';
 require 'EncryptLib.php';
 require '../SQLUtils/GetConnection.php';
+//require '../Configuration/config.php';
+include_once '../Configuration/config.php';
 
 
 function sendPasswordResetMail($emailaddr, $link_to_passwordreset)
 {
+    //var_dump();
+    //die();
+
     $email = new \SendGrid\Mail\Mail();
     $email->setFrom("warpnotifier.fvlib@sendgrid.net", "Fellowship Village Library Catalog Notifier");
     $email->setSubject("Fellowship Village Library Catalog Password Reset");
@@ -20,7 +25,7 @@ function sendPasswordResetMail($emailaddr, $link_to_passwordreset)
         $sendgrid = new \SendGrid(getenv("SG_API_KEY"));
     }
     else {
-        $sendgrid = new \SendGrid("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");
+        $sendgrid = new \SendGrid($GLOBALS['_lcc']['lc.mail.api_key']);
     }
 
     try {
