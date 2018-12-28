@@ -10,8 +10,13 @@ class ItemOut extends Model
     protected $dateFormat = "Y-m-d";
 
     public function book() {
-        return $this->belongsTo("App\Book", "bookid");
+        return $this->belongsTo("\App\Book", "bookid");
     }
+
+    public function user() {
+        return $this->belongsTo("\App\User", "userid");
+    }
+
 
 
 }

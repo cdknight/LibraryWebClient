@@ -1,4 +1,4 @@
-<div class="card mr-4" style="width: 18rem;">
+<div class="card mr-4 " style="width: 18rem;">
 
     <div class="card-body">
 

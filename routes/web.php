@@ -29,10 +29,14 @@ Route::get('/user/requests', "UserAccountController@requests")->middleware('auth
 Route::get('/user/items_out', "UserAccountController@itemsOut")->middleware('auth');
 
 
+
+
 // search routes
 
 Route::get('/search/quick', "SearchController@quickSearch");
 
+
+// USER ROUTES
 
 // json routes to update information and such (for use with javascript)
 
@@ -48,3 +52,18 @@ Route::get('/search/quick', "SearchController@quickSearch");
 */
 
 Route::put('/user/update_info', "UserAccountController@updateInfo")->middleware('auth');
+
+
+
+// REQUEST ROUTES
+
+
+/* Route to delete requetst
+*
+* Takes: request_id : ID of request that will be used to retrieve and update the user
+*
+* Returns: JSON : { "status": boolean, "msg": string }
+*
+*/
+
+Route::delete('/requests/delete', "RequestsController@deleteRequest")->middleware('auth');

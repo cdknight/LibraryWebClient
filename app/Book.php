@@ -20,4 +20,11 @@ class Book extends Model
     public function requests() {
         return $this->hasMany("\App\Request", $this->foreignKeyName);
     }
+
+    public function itemOut() {
+        // This might exist, this might not. Use isset() in order to check if it exists.
+
+        return $this->hasOne("\App\ItemOut", $this->foreignKeyName);
+
+    }
 }

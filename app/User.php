@@ -58,6 +58,8 @@ class User extends Model
 
             case "email":
 
+                // TODO: Critical, update password when the e-mail is changed.
+
                 $this->email = $newValue;
                 break;
 

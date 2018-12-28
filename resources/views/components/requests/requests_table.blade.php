@@ -12,7 +12,8 @@
 
         <tbody>
         @foreach ($requestsList as $request)
-            <tr>
+            <tr id="row-request-{{ $request->id }}">
+
                 <td>{{ $request->book->Title }}</td>
                 <td>{{ $request->date_out }}</td>
 
@@ -31,7 +32,7 @@
                 @endif
 
                 <td>
-                    <button class="btn btn-danger">Cancel Request</button>
+                    <button class="btn btn-danger toggleRequestModal" data-toggle="modal" data-target="#deleteRequestModal" data-requestid="{{ $request->id }}">Cancel Request</button>
                 </td>
 
             </tr>

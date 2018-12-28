@@ -68,4 +68,4 @@
 
 </div>
 
-<script src="{{ URL::asset('js/components/users/update_userinfo_modal.js') }}"></script>
+<script src="{{ asset('js/components/users/update_userinfo_modal.js') }}"></script>
