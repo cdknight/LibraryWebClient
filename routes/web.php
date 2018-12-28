@@ -29,6 +29,11 @@ Route::get('/user/requests', "UserAccountController@requests")->middleware('auth
 Route::get('/user/items_out', "UserAccountController@itemsOut")->middleware('auth');
 
 
+// search routes
+
+Route::get('/search/quick', "SearchController@quickSearch");
+
+
 // json routes to update information and such (for use with javascript)
 
 /* Route to update user information

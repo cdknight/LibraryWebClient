@@ -100,7 +100,7 @@
                     <!-- quick search widget -->
 
 
-                    <form class="ml-4 form-inline my-2">
+                    <form class="ml-4 form-inline my-2" action="/search/quick">
                         <div class="input-group">
                             <input type="text" placeholder="Quick Search" name="search_term" class="form-control">
                             <input type="submit" value="Search" class="ml-2 btn btn-success">

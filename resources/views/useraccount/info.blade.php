@@ -32,7 +32,7 @@
         </li>
         <li class="list-group-item">
             <p id="address-data" class="d-inline-block">Street Address: {{ $user->address}}</p>
-            <button class="inline-block btn btn-success float-right updateUserInfoModalButton" data-toggle="modal" data-userid="{{ $user->id }}" data-target="#updateUserInfoModal" data-fieldname="address" data-fieldnamefancy="Address" data-fieldtype="text">Change</button>
+            <button class="inline-block btn btn-success float-right updateUserInfoModalButton" data-toggle="modal" data-userid="{{ $user->id }}" data-target="#updateUserInfoModal" data-fieldname="address" data-fieldnamefancy="Street    Address" data-fieldtype="text">Change</button>
 
         </li>
     </ul>
