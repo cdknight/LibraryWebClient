@@ -4,9 +4,10 @@
 
 
 @section('content')
-    <h1>My Requests</h1>
+    <h1>My Items Out</h1>
 
-    @component('components.requests_table', ['requestsList' => $user->requests])
+    @component('components.item_out_table', ['itemsOutList' => $user->itemsOut])
+
 
     @endcomponent
 

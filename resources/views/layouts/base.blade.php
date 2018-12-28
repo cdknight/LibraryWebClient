@@ -21,6 +21,15 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
 
+        <!-- initialize all tooltips-->
+
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
+
+
     </head>
 
 
@@ -34,6 +43,8 @@
                     <a class="navbar-brand text-white" href="/">{{ $library_name }}</a>
 
 
+                    {{-- If the user is authenticated, we will present the following navigation elements to them. --}}
+
                     @if (Session::get('authenticated') == true)
 
                         <ul class="navbar-nav">
@@ -42,18 +53,49 @@
 
                                 <div class="dropdown-menu">
 
-                                    <a class="dropdown-item" href="/user/dashboard">Dashboard</a>
+                                    <a class="dropdown-item" href="/user/info">Info</a>
                                     <a class="dropdown-item" href="/user/requests">Requests</a>
-                                    <a class="dropdown-item">Items Out</a>
-                                    <a class="dropdown-item">Fines and Fees</a>
-                                    <a class="dropdown-item">My Info</a>
+                                    <a class="dropdown-item" href="/user/items_out">Items Out</a>
 
                                 </div>
 
                             </li>
+
+
+                            {{-- If the user is an administrator, we will present the following navigation elements to them. --}}
+
+                            @if (Session::get('user')->userPermissions)
+
+                                @if (Session::get('user')->userPermissions->admin == true)
+
+                                    <ul class="navbar-nav">
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbardrop" href="#">Administrator Panel</a>
+
+                                            <div class="dropdown-menu">
+
+                                                <a class="dropdown-item" href="/user/dashboard">Dashboard</a>
+                                                <a class="dropdown-item" href="/user/requests">Manage Requests</a>
+                                                <a class="dropdown-item" href="/user/items_out">Check Out Books</a>
+                                                <a class="dropdown-item">Manage Books</a>
+                                                <a class="dropdown-item">Manage Users</a>
+
+                                            </div>
+
+                                        </li>
+
+                                    </ul>
+                                @endif
+
+                            @endif
+
+
+
                         </ul>
 
                     @endif
+
 
                     <!-- quick search widget -->
 
@@ -70,6 +112,10 @@
 
                     <ul class="nav navbar-nav navbar-right ml-md-auto">
 
+
+
+                        {{-- Show the appropriate message for logging in or logging out here. --}}
+                        {{-- TODO: change this to a dropdown menu where the user can log out.--}}
 
 
                         <li class="nav-item">

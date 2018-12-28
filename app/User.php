@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class User extends Model
 {
     protected $table = "Users";
+    public $timestamps = false;
+
     private $foreignKeyName = "userid";
 
     /*
@@ -36,6 +38,47 @@ class User extends Model
     public function requests() {
         return $this->hasMany("\App\Request", $this->foreignKeyName);
     }
+
+    // Update user information with this function
+
+    public function updateInformation($valueToUpdate, $newValue) {
+
+        // Assign the new value to the corresponding variable.
+
+        switch ($valueToUpdate) {
+            case "firstname":
+
+                $this->firstname = $newValue;
+                break;
+
+            case "lastname":
+
+                $this->lastname = $newValue;
+                break;
+
+            case "email":
+
+                $this->email = $newValue;
+                break;
+
+            case "address":
+
+                $this->address = $newValue;
+                break;
+
+        }
+
+        // Save the information
+
+        $status = $this->save();
+
+        // Return the status of the save
+
+        return $status;
+
+
+    }
+
 
 
 }

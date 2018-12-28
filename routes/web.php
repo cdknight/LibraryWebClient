@@ -22,7 +22,24 @@ Route::post('/login', "Authentication\LoginController@doLogin");
 Route::get('/logout', "Authentication\LogoutController@doLogout");
 
 
-// user account routes
+// user account routes (viewable)
 
-Route::get('/user/dashboard', "UserAccountController@dashboard")->middleware('auth');
+Route::get('/user/info', "UserAccountController@info")->middleware('auth');
 Route::get('/user/requests', "UserAccountController@requests")->middleware('auth');
+Route::get('/user/items_out', "UserAccountController@itemsOut")->middleware('auth');
+
+
+// json routes to update information and such (for use with javascript)
+
+/* Route to update user information
+*
+* Takes: user_id : ID of user that will be used to retrieve and update the user
+* Takes: field_to_update: column that will be updated
+* Takes: new_value: new value for that column
+*
+* Returns: JSON : { "status": boolean, "msg": string }
+*
+* TODO update the middleware to allow for user auth parameters
+*/
+
+Route::put('/user/update_info', "UserAccountController@updateInfo")->middleware('auth');

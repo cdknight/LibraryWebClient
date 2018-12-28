@@ -22,6 +22,10 @@ class Authentication
         if ($request->session()->get("authenticated")){
             if ($request->session()->get("user")) {
 
+                // Refresh the user
+
+                $request->session()->get("user")->refresh();
+
                 return $next($request); // Proceed!
 
             }
