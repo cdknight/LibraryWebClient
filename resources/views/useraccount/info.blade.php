@@ -27,7 +27,10 @@
         </li>
         <li class="list-group-item">
             <p id="email-data" class="d-inline-block">E-Mail Address: {{ $user->email}}</p>
-            <button class="inline-block btn btn-success float-right updateUserInfoModalButton" data-toggle="modal" data-userid="{{ $user->id }}" data-target="#updateUserInfoModal" data-fieldname="email" data-fieldnamefancy="E-Mail" data-fieldtype="email">Change</button>
+
+            {{-- This is not allowed anymore. --}}
+            {{--<button class="inline-block btn btn-success float-right updateUserInfoModalButton" data-toggle="modal" data-userid="{{ $user->id }}" data-target="#updateUserInfoModal" data-fieldname="email" data-fieldnamefancy="E-Mail" data-fieldtype="email">Change</button>--}}
+
 
         </li>
         <li class="list-group-item">

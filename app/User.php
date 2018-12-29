@@ -56,12 +56,8 @@ class User extends Model
                 $this->lastname = $newValue;
                 break;
 
-            case "email":
 
-                // TODO: Critical, update password when the e-mail is changed.
-
-                $this->email = $newValue;
-                break;
+            // We have removed the E-Mail changing. The reason is simple. The E-Mail must be a fixed value that you cannot change because it is used as the salt. Since this is an insecure practice, the root cause of the problem needs to be solved first.
 
             case "address":
 
