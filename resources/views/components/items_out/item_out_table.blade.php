@@ -34,7 +34,7 @@
 
                     @else
 
-                        <button class="btn btn-success">Renew</button>
+                        <button class="btn btn-success openRenewModalButton" data-toggle="modal" data-target="#renewItemModal" data-itemoutid="{{ $itemOut->id }}">Renew</button>
 
                     @endif
 

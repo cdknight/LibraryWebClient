@@ -55,6 +55,8 @@ Route::put('/user/update_info', "UserAccountController@updateInfo")->middleware(
 
 
 
+
+
 // REQUEST ROUTES
 
 
@@ -67,3 +69,20 @@ Route::put('/user/update_info', "UserAccountController@updateInfo")->middleware(
 */
 
 Route::delete('/requests/delete', "RequestsController@deleteRequest")->middleware('auth');
+
+
+
+
+
+// ITEMS OUT ROUTES
+
+
+/* Route to renew an item out
+*
+* Takes: item_out_id : ID of item out that will be used to renew itself.
+*
+* Returns: JSON : { "status": boolean, "msg": string }
+*
+*/
+
+Route::put('/items_out/renew', "ItemsOutController@renewItemOut")->middleware('auth');
