@@ -31,8 +31,30 @@ $(function(){
 
                 // If things work out, we will have 'status' and 'msg' in the data variable. We need to hide our #deleteConfirmation row and show the #deleteRequestStatusBox row.
 
+                $("#deleteConfirmation").hide();
+                $("#deleteRequestStatusBox").show();
 
+                // Here we update the status <p> element with the status of what happened.
 
+                $("#deleteRequestStatus").html(data['msg']);
+
+                // We check if the operation was successful and update the color of the alert <p> accordingly.
+
+                if (data['status'] === true){
+
+                    $("#deleteRequestStatus").addClass("alert-success")
+
+                }
+
+                else {
+
+                    if (data['status'] === true){
+
+                        $("#deleteRequestStatus").addClass("alert-success")
+
+                    }
+
+                }
 
 
             },
