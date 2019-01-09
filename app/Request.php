@@ -8,6 +8,11 @@ class Request extends Model
 {
     protected $table = "Requests";
     protected $dateFormat = "Y-m-d";
+    public $timestamps = false;
+    
+    protected $attributes = [
+        'status' => 0,
+    ];
 
     public function book() {
         return $this->belongsTo("App\Book", "bookid");

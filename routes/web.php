@@ -31,9 +31,13 @@ Route::get('/user/items_out', "UserAccountController@itemsOut")->middleware('aut
 
 
 
-// search routes
+// Search routes
 
 Route::get('/search/quick', "SearchController@quickSearch");
+
+// Book information routes
+
+Route::get("/book/info/{id}", "BookInformationController@bookPage");
 
 
 // USER ROUTES
@@ -70,7 +74,15 @@ Route::put('/user/update_info', "UserAccountController@updateInfo")->middleware(
 
 Route::delete('/requests/delete', "RequestsController@deleteRequest")->middleware('auth');
 
+/* Route to create a request
+ *
+ * Takes: bookid: ID of book part of request
+ * Takes: userid: ID of user part of request
+ *
+*/
 
+
+Route::put('/requests/create', "RequestsController@createRequest")->middleware('auth');
 
 
 
@@ -86,3 +98,6 @@ Route::delete('/requests/delete', "RequestsController@deleteRequest")->middlewar
 */
 
 Route::put('/items_out/renew', "ItemsOutController@renewItemOut")->middleware('auth');
+
+
+

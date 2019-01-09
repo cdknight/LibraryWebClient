@@ -1,4 +1,4 @@
-<div class="card mr-4 " style="width: 18rem;">
+<div class="card mr-4 " style="width: 20rem;">
 
     <div class="card-body">
 
@@ -9,9 +9,12 @@
             @if (isset($book->bookInformation))
                 <p> {{ $book->bookInformation->description }} </p>
 
-            @endif
+	    @endif
 
-            <a href="#">More Information</a>
+		<div class="container row">
+		  <a href="/book/info/{{ $book->ID }}" class="mr-1">More Information</a>
+                </div>
+
         </div>
 
     </div>
