@@ -14,8 +14,13 @@ class AddBooksTable extends Migration
     public function up()
     {
         Schema::create('Books', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
+            $table->increments('ID');
+            $table->string("Author");
+            $table->string("Title");
+            $table->string("Genre");
+            $table->boolean("CheckedOut");
+            $table->boolean("Missing");
+
         });
     }
 

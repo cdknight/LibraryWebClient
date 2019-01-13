@@ -15,7 +15,17 @@ class AddItemsOutTable extends Migration
     {
         Schema::create('ItemsOut', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+            $table->integer("bookid");
+            $table->integer("userid");
+            $table->date("date_out");
+            $table->date("date_due");
+            $table->integer("renewals_remaining");
+
+            // This is an integer that is the number of renewals the user could renew the book from before. 
+            $table->integer("previous_renewal");
+            $table->integer("fine");
+            
+
         });
     }
 

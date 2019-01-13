@@ -15,7 +15,10 @@ class AddRequestsTable extends Migration
     {
         Schema::create('Requests', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+            $table->integer("bookid");
+            $table->integer("userid");
+            $table->date("date_out");
+            $table->integer("status");
         });
     }
 

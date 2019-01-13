@@ -15,7 +15,10 @@ class AddUsersPermissionsTable extends Migration
     {
         Schema::create('UsersPermissions', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+            $table->integer("userid");
+            $table->boolean("admin");
+            $table->boolean("insertbooks");
+
         });
     }
 
