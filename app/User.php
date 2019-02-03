@@ -77,6 +77,27 @@ class User extends Model
 
     }
 
+    public function setPassword($password) {
+        // Set password/Change password
 
+        $this->password = hash('sha256', $password.$this->email);
+        $result = $this->save();
+
+        return $result;
+    }
+
+    public function createPermissions() {
+        // Create UserPermissions entry for this user.
+
+        $perms = new UserPermissions;
+        $perms->userid = $this->id;
+        $perms->admin = false;
+        $perms->insertbooks = false;
+
+        $result = $perms->save();
+
+        return $result;
+        
+    }
 
 }
